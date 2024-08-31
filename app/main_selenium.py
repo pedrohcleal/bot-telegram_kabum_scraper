@@ -58,9 +58,11 @@ def percorrer_pags(driver):
         next_element.click()
         sleep(3)
     except NoSuchElementException:
-        return print("elemento de click next não encontrado, finalizando...")
+        print("elemento de click next não encontrado, finalizando...")
+        raise
     except ElementNotInteractableException:
-        return print("elemento de click next não pode ser iterado, finalizando...")
+        print("elemento de click next não pode ser iterado, finalizando...")
+        raise
     print("Indo para a próxima página")
     percorrer_pags(driver)
 

@@ -1,1 +1,2 @@
-Tempo de execução às 30/08/2024 23:51:37 -> 71.578601 segundos <- | com err= True
+Tempo de execução às 30/08/2024 23:56:56 -> 73.680855 segundos <- | com erro? -> True
+Tempo de execução às 30/08/2024 23:58:40 -> 73.679962 segundos <- | com erro? -> True

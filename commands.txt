@@ -11,3 +11,6 @@ pytest
 
 # run pylint
 pylint .
+
+# run and save logs
+python app\main.py *> logs.txt
