@@ -1,8 +1,11 @@
 from datetime import datetime
 import sqlite3
+from telegram_main import enviar_mensagem, mensagem_novo_valor_gpu, novo_produto
+import asyncio
 
 
 def insert_gpu(conn: sqlite3.Connection, gpu):
+    asyncio.run(novo_produto(gpu))
     try:
         now = datetime.now()
         date_now = now.strftime("%Y/%m/%d %H:%M:%S")
@@ -38,7 +41,7 @@ def gpu_have_in_bd(conn: sqlite3.Connection, gpu):
         raise e
 
 
-def get_gpu_price(conn: sqlite3.Connection, gpu):
+def get_gpu(conn: sqlite3.Connection, gpu):
     try:
         query = """
             SELECT * FROM gpus_prices
@@ -48,14 +51,23 @@ def get_gpu_price(conn: sqlite3.Connection, gpu):
         con_exec = conn.execute(query, params)
         result = con_exec.fetchone()
         if result:
-            return result[2]
+            return {
+                "id":result[0], 
+                "name":result[1], 
+                "price": result[2], 
+                "link": result[3], 
+                "last_register_date": result[4], 
+                "adm": result[5]
+                }
     except sqlite3.Error as e:
         print(f"SQL error = {e}")
         raise e
 
 
 def update_gpu_price(conn: sqlite3.Connection, gpu):
-    print(f"GPU ATUALIZADA = {gpu}")
+    old_gpu = get_gpu(conn, gpu)
+    asyncio.run(mensagem_novo_valor_gpu(old_gpu, gpu))
+    
     try:
         now = datetime.now()
         date_now = now.strftime("%Y/%m/%d %H:%M:%S")

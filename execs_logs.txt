@@ -1,2 +1,10 @@
 Tempo de execução às 30/08/2024 23:56:56 -> 73.680855 segundos <- | com erro? -> True
 Tempo de execução às 30/08/2024 23:58:40 -> 73.679962 segundos <- | com erro? -> True
+Tempo de execução às 31/08/2024 00:03:58 -> 75.483074 segundos <- | com erro? -> True 
+Tempo de execução às 31/08/2024 00:05:44 -> 152.080808 segundos <- | com erro? -> True 
+Tempo de execução às 31/08/2024 00:08:46 -> 88.438588 segundos <- | com erro? -> True 
+Tempo de execução às 31/08/2024 00:10:44 -> 150.948143 segundos <- | com erro? -> True 
+Tempo de execução às 31/08/2024 00:13:45 -> 151.136157 segundos <- | com erro? -> True 
+Tempo de execução às 31/08/2024 00:16:47 -> 89.506430 segundos <- | com erro? -> True 
+Tempo de execução às 03/09/2024 21:29:18 -> 13.956309 segundos <- | com erro? -> True 
+Tempo de execução às 03/09/2024 21:30:56 -> 190.780453 segundos <- | com erro? -> True 

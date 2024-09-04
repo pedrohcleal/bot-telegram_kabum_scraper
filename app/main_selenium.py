@@ -1,5 +1,4 @@
-from chrome_config import create_driver, reset_driver
-from crud import insert_gpu, gpu_have_in_bd, get_gpu_price, update_gpu_price
+from crud import insert_gpu, gpu_have_in_bd, get_gpu, update_gpu_price
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import (
     NoSuchElementException,
@@ -12,7 +11,9 @@ from db_config import get_db_connection
 
 
 def iterar_pag(driver):
-    table_selector = "#listing > div.sc-gsTEea.sc-202cc1e9-2.ezCvIu.SzkqH > div > div > div.sc-hKgJUU.hzqTWi > div > main > *"
+    #table_selector = "#listing > div.sc-gsTEea.sc-202cc1e9-2.ezCvIu.SzkqH > div > div > div.sc-hKgJUU.hzqTWi > div > main > *" # Categoria GPU
+    table_selector = "#listing > div.sc-ikPAEB.sc-202cc1e9-2.jcryDv.SzkqH > div > div > div.sc-biBsmb.kcFaol > div > main > *" # Categoria hardware
+
     WebDriverWait(driver, 15).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, table_selector))
     )
@@ -35,11 +36,10 @@ def iterar_pag(driver):
         # print(f"Link = {href_value}")
 
         with get_db_connection() as db_conn:
-            if (
-                gpu_have_in_bd(db_conn, gpu_item)
-                and get_gpu_price(db_conn, gpu_item) != gpu_item["price"]
-            ):
-                update_gpu_price(db_conn, gpu_item)
+            gpu = get_gpu(db_conn, gpu_item)
+            if gpu_have_in_bd(db_conn, gpu_item):
+                if gpu["price"] != gpu_item["price"]:
+                    update_gpu_price(db_conn, gpu_item)
             elif not gpu_have_in_bd(db_conn, gpu_item):
                 insert_gpu(db_conn, gpu_item)
 
@@ -57,18 +57,17 @@ def percorrer_pags(driver):
         )
         next_element.click()
         sleep(3)
-    except NoSuchElementException:
+    except NoSuchElementException as e:
         print("elemento de click next não encontrado, finalizando...")
-        raise
-    except ElementNotInteractableException:
+        raise e
+    except ElementNotInteractableException as e:
         print("elemento de click next não pode ser iterado, finalizando...")
-        raise
+        raise e
     print("Indo para a próxima página")
     percorrer_pags(driver)
 
 
-def main_selenium(driver):
-    URL = "https://www.kabum.com.br/hardware/placa-de-video-vga?page_number=1&page_size=100&facet_filters=&sort=most_searched"
+def main_selenium(driver, URL):
     print("Iniciando Scraping, URL =", URL)
     driver.get(URL)
     sleep(1)

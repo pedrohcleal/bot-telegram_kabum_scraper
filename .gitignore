@@ -4,6 +4,7 @@ __pycache__/
 /.mypy_cache
 # C extensions
 *.so
+.env
 
 # Distribution / packaging
 bin/
