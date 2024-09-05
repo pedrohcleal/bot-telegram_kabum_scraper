@@ -35,7 +35,7 @@ def iterar_pag(driver):
         gpu_item["link"] = href_value.strip()
         gpu_item["url_image"] = image_url
 
-        pprint.pprint(gpu_item)
+        # pprint.pprint(gpu_item)
         # print(f"Placa = {descricao.text}")
         # print(f"Preço = {preco.text}")
         # print(f"Link = {href_value}")

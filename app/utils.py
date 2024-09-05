@@ -25,7 +25,7 @@ def escape_markdown_v2(text):
             text = text.replace(char, replacement)
         return text
     
-def converter_real_to_float(reais):
+def real_to_float(reais):
     if ',' in reais and '.' in reais:
         reais = reais.replace("R$", '').replace(".",'').strip()
         reais = reais.replace(",", '.')

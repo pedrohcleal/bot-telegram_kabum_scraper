@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup as bs4
 from db_config import get_db_connection
 from time import sleep
-from utils import converter_real_to_float
+from utils import real_to_float
 
 def insert_gpu(conn: sqlite3.Connection, gpu):
     asyncio.run(novo_produto(gpu))
@@ -70,7 +70,7 @@ def get_gpu(conn: sqlite3.Connection, gpu):
 
 def update_gpu_price(conn: sqlite3.Connection, gpu):
     old_gpu = get_gpu(conn, gpu)
-    if converter_real_to_float(gpu["price"]) < converter_real_to_float(old_gpu["price"]):
+    if real_to_float(gpu["price"]) < real_to_float(old_gpu["price"]):
         asyncio.run(mensagem_novo_valor_gpu(old_gpu, gpu))
     
     try:
@@ -92,6 +92,7 @@ def update_gpu_price(conn: sqlite3.Connection, gpu):
         print(f"SQL error = {e}")
         raise e
 
+
 def deletar(conn: sqlite3.Connection, produto):
     print(f'--->  Deletando linha do produto -> {produto} <---')
     try:
@@ -110,6 +111,7 @@ def deletar(conn: sqlite3.Connection, produto):
     except sqlite3.Error as e:
         print(f"SQL error = {e}")
         raise e
+
 
 def verificar_banco(conn: sqlite3.Connection):
     seletor = "finalPrice"
