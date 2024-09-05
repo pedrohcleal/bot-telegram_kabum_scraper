@@ -48,10 +48,9 @@ def iterar_pag(driver):
             elif not gpu_have_in_bd(db_conn, gpu_item):
                 insert_gpu(db_conn, gpu_item)
 
-        #if index == len(table) - 1:
-
-        driver.execute_script("arguments[0].scrollIntoView();", preco)  # scrollar
-        sleep(0.05)
+        if index == len(table) - 1:
+            driver.execute_script("arguments[0].scrollIntoView();", preco)  # scrollar
+            sleep(1)
 
 
 def percorrer_pags(driver):
