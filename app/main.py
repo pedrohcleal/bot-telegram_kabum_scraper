@@ -17,6 +17,7 @@ while True:
         main_selenium(driver, URL)
     except Exception as e:
         print("Ocorre um erro em main_selenium() (main), reiniciando Script")
+        print(e)
         
     end = time.perf_counter()
     driver = reset_driver(driver)    

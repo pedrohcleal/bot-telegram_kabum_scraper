@@ -36,7 +36,6 @@ def iterar_pag(driver):
         gpu_item["url_image"] = image_url
 
         pprint.pprint(gpu_item)
-        sleep(0.2)
         # print(f"Placa = {descricao.text}")
         # print(f"Preço = {preco.text}")
         # print(f"Link = {href_value}")
@@ -50,8 +49,9 @@ def iterar_pag(driver):
                 insert_gpu(db_conn, gpu_item)
 
         #if index == len(table) - 1:
+
         driver.execute_script("arguments[0].scrollIntoView();", preco)  # scrollar
-        sleep(0.1)
+        sleep(0.05)
 
 
 def percorrer_pags(driver):
