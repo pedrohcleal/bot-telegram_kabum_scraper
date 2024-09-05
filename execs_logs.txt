@@ -8,3 +8,5 @@ Tempo de execução às 31/08/2024 00:13:45 -> 151.136157 segundos <- | com erro
 Tempo de execução às 31/08/2024 00:16:47 -> 89.506430 segundos <- | com erro? -> True 
 Tempo de execução às 03/09/2024 21:29:18 -> 13.956309 segundos <- | com erro? -> True 
 Tempo de execução às 03/09/2024 21:30:56 -> 190.780453 segundos <- | com erro? -> True 
+Tempo de execução às 05/09/2024 00:47:23 -> 97.918511 segundos <-
+Tempo de execução às 05/09/2024 00:49:10 -> 95.778784 segundos <-

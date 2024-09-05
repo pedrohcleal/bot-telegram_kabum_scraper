@@ -17,7 +17,7 @@ async def enviar_mensagem(texto):
 
 
 async def mensagem_novo_valor_gpu(old_gpu, gpu):
-    sleep(5)
+    sleep(3)
     old_name = escape_markdown_v2(old_gpu['name'])
     old_price = escape_markdown_v2(old_gpu['price'])
     new_price = escape_markdown_v2(gpu['price'])
@@ -37,7 +37,7 @@ async def mensagem_novo_valor_gpu(old_gpu, gpu):
 
 
 async def novo_produto(gpu):
-    sleep(5)
+    sleep(3)
     name = escape_markdown_v2(gpu['name'])
     price = escape_markdown_v2(gpu['price'])
     link = escape_markdown_v2(gpu['link'])

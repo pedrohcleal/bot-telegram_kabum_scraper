@@ -69,7 +69,8 @@ def get_gpu(conn: sqlite3.Connection, gpu):
 
 def update_gpu_price(conn: sqlite3.Connection, gpu):
     old_gpu = get_gpu(conn, gpu)
-    asyncio.run(mensagem_novo_valor_gpu(old_gpu, gpu))
+    if int(gpu["price"].replace("R$", '').replace(",",'.').strip()) < int(old_gpu["price"].replace("R$", '').replace(",",'.').strip()):
+        asyncio.run(mensagem_novo_valor_gpu(old_gpu, gpu))
     
     try:
         now = datetime.now()

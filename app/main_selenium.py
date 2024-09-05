@@ -12,8 +12,8 @@ import requests
 import pprint
 
 def iterar_pag(driver):
-    table_selector = "#listing > div.sc-gsTEea.sc-202cc1e9-2.ezCvIu.SzkqH > div > div > div.sc-hKgJUU.hzqTWi > div > main > *" # Categoria hardware/GPU
-    #table_selector = "#listing > div.sc-ikPAEB.sc-202cc1e9-2.jcryDv.SzkqH > div > div > div.sc-biBsmb.kcFaol > div > main > *" # Categoria hardware
+    #table_selector = "#listing > div.sc-gsTEea.sc-202cc1e9-2.ezCvIu.SzkqH > div > div > div.sc-hKgJUU.hzqTWi > div > main > *" # Categoria hardware/GPU
+    table_selector = "#listing > div.sc-ikPAEB.sc-202cc1e9-2.jcryDv.SzkqH > div > div > div.sc-biBsmb.kcFaol > div > main > *" # Categoria hardware
 
     WebDriverWait(driver, 15).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, table_selector))
@@ -27,9 +27,7 @@ def iterar_pag(driver):
         href_value = link.get_attribute("href")
         image_element = item.find_element(By.CLASS_NAME, "imageCard")
         image_url = url_main + image_element.get_attribute('src')
-        # image_data = requests.get(image_url).content
-        
-        
+ 
         gpu_item = {}
         gpu_item["adm"] = "kabum"
         gpu_item["name"] = descricao.text.strip()
@@ -38,6 +36,7 @@ def iterar_pag(driver):
         gpu_item["url_image"] = image_url
 
         pprint.pprint(gpu_item)
+        sleep(0.2)
         # print(f"Placa = {descricao.text}")
         # print(f"Preço = {preco.text}")
         # print(f"Link = {href_value}")
@@ -50,9 +49,9 @@ def iterar_pag(driver):
             elif not gpu_have_in_bd(db_conn, gpu_item):
                 insert_gpu(db_conn, gpu_item)
 
-        if index == len(table) - 1:
-            driver.execute_script("arguments[0].scrollIntoView();", preco)  # scrollar
-            sleep(1.5)
+        #if index == len(table) - 1:
+        driver.execute_script("arguments[0].scrollIntoView();", preco)  # scrollar
+        sleep(0.1)
 
 
 def percorrer_pags(driver):
