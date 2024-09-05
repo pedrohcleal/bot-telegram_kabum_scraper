@@ -22,6 +22,7 @@ async def mensagem_novo_valor_gpu(old_gpu, gpu):
     old_price = escape_markdown_v2(old_gpu['price'])
     new_price = escape_markdown_v2(gpu['price'])
     gpu_link = escape_markdown_v2(gpu["link"])
+    last_update = escape_markdown_v2(old_gpu["last_register_date"])
 
     text = (
         f"🚀 **Black Friday** 🚀\n\n"
@@ -29,6 +30,7 @@ async def mensagem_novo_valor_gpu(old_gpu, gpu):
         f"📉 Valor antigo: *{old_price}*\n"
         f"📈 Valor novo: *{new_price}*\n\n"
         f"🔍 Mais informações: {gpu_link}\n\n"
+        f"Última atualização foi em: {last_update}"
         f"🔥 Aproveite as ofertas 🔥"
     )
     
