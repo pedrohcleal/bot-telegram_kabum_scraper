@@ -8,29 +8,36 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 from db_config import get_db_connection
-
+import requests
+import pprint
 
 def iterar_pag(driver):
-    #table_selector = "#listing > div.sc-gsTEea.sc-202cc1e9-2.ezCvIu.SzkqH > div > div > div.sc-hKgJUU.hzqTWi > div > main > *" # Categoria GPU
-    table_selector = "#listing > div.sc-ikPAEB.sc-202cc1e9-2.jcryDv.SzkqH > div > div > div.sc-biBsmb.kcFaol > div > main > *" # Categoria hardware
+    table_selector = "#listing > div.sc-gsTEea.sc-202cc1e9-2.ezCvIu.SzkqH > div > div > div.sc-hKgJUU.hzqTWi > div > main > *" # Categoria hardware/GPU
+    #table_selector = "#listing > div.sc-ikPAEB.sc-202cc1e9-2.jcryDv.SzkqH > div > div > div.sc-biBsmb.kcFaol > div > main > *" # Categoria hardware
 
     WebDriverWait(driver, 15).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, table_selector))
     )
     table = driver.find_elements(By.CSS_SELECTOR, table_selector)
-
+    print('iterando pagina')
     for index, item in enumerate(table):
         descricao = item.find_element(By.TAG_NAME, "h3")
         preco = item.find_element(By.CLASS_NAME, "priceCard")
         link = item.find_element(By.CLASS_NAME, "productLink")
         href_value = link.get_attribute("href")
-
+        image_element = item.find_element(By.CLASS_NAME, "imageCard")
+        image_url = url_main + image_element.get_attribute('src')
+        # image_data = requests.get(image_url).content
+        
+        
         gpu_item = {}
         gpu_item["adm"] = "kabum"
         gpu_item["name"] = descricao.text.strip()
         gpu_item["price"] = preco.text.strip()
         gpu_item["link"] = href_value.strip()
+        gpu_item["url_image"] = image_url
 
+        pprint.pprint(gpu_item)
         # print(f"Placa = {descricao.text}")
         # print(f"Preço = {preco.text}")
         # print(f"Link = {href_value}")
@@ -68,6 +75,8 @@ def percorrer_pags(driver):
 
 
 def main_selenium(driver, URL):
+    global url_main
+    url_main = "https://www.kabum.com.br/"
     print("Iniciando Scraping, URL =", URL)
     driver.get(URL)
     sleep(1)

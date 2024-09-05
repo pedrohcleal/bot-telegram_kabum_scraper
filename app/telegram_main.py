@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from telegram import Bot
 from telegram.ext import Application
 from utils import escape_markdown_v2
-
+from time import sleep
 # Carregar variáveis de ambiente
 load_dotenv()
 
@@ -17,25 +17,27 @@ async def enviar_mensagem(texto):
 
 
 async def mensagem_novo_valor_gpu(old_gpu, gpu):
+    sleep(5)
     old_name = escape_markdown_v2(old_gpu['name'])
     old_price = escape_markdown_v2(old_gpu['price'])
     new_price = escape_markdown_v2(gpu['price'])
-    gpu_info = escape_markdown_v2(str(gpu))
+    gpu_link = escape_markdown_v2(gpu["link"])
 
     text = (
         f"🚀 **Black Friday** 🚀\n\n"
         f"🔄 O valor do item *\"{old_name}\"* foi atualizado\n\n"
         f"📉 Valor antigo: *{old_price}*\n"
         f"📈 Valor novo: *{new_price}*\n\n"
-        f"🔍 Mais informações: {gpu_info}\n\n"
+        f"🔍 Mais informações: {gpu_link}\n\n"
         f"🔥 Aproveite as ofertas 🔥"
     )
     
     bot = Bot(token=TOKEN)
-    await bot.send_message(chat_id=GROUP_ID, text=text, parse_mode='MarkdownV2')
+    await bot.send_photo(chat_id=GROUP_ID, caption=text, parse_mode='MarkdownV2', photo=gpu["url_image"])
 
 
 async def novo_produto(gpu):
+    sleep(5)
     name = escape_markdown_v2(gpu['name'])
     price = escape_markdown_v2(gpu['price'])
     link = escape_markdown_v2(gpu['link'])
@@ -49,7 +51,7 @@ async def novo_produto(gpu):
     )
     
     bot = Bot(token=TOKEN)
-    await bot.send_message(chat_id=GROUP_ID, text=text, parse_mode='MarkdownV2')
+    await bot.send_photo(chat_id=GROUP_ID, caption=text, parse_mode='MarkdownV2', photo=gpu["url_image"])
 ##
 async def main():
     app = Application.builder().token(TOKEN).build()

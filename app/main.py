@@ -9,8 +9,8 @@ driver = create_driver()
 while True:
     print("-----> NOVA ITERAÇÃO WHILE <--------")
     boole = False  # sempre dar erro por conta das exceptss em main_selenium.percorrer_pags !
-    #URL = "https://www.kabum.com.br/hardware/placa-de-video-vga?page_number=1&page_size=100&facet_filters=&sort=most_searched"
-    URL = "https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched" # Categoria hardware
+    URL = "https://www.kabum.com.br/hardware/placa-de-video-vga?page_number=1&page_size=100&facet_filters=&sort=most_searched" # GPU
+    #URL = "https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched" # Categoria hardware
     
     current_time = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     start = time.perf_counter()
@@ -29,5 +29,5 @@ while True:
 
     with open("execs_logs.txt", mode="a", encoding="utf-8") as file:
         file.write(log_message)
-    sleep(10)
+    sleep(2)
     print("-----> FIM DA ITERAÇÃO WHILE <--------\n\n")
