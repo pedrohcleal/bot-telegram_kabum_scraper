@@ -6,6 +6,7 @@ import requests
 from bs4 import BeautifulSoup as bs4
 from db_config import get_db_connection
 from time import sleep
+from utils import converter_real_to_float
 
 def insert_gpu(conn: sqlite3.Connection, gpu):
     asyncio.run(novo_produto(gpu))
@@ -65,11 +66,11 @@ def get_gpu(conn: sqlite3.Connection, gpu):
     except sqlite3.Error as e:
         print(f"SQL error = {e}")
         raise e
-
+    
 
 def update_gpu_price(conn: sqlite3.Connection, gpu):
     old_gpu = get_gpu(conn, gpu)
-    if float(gpu["price"].replace("R$", '').replace(",",'.').strip()) < float(old_gpu["price"].replace("R$", '').replace(",",'.').strip()):
+    if converter_real_to_float(gpu["price"]) < converter_real_to_float(old_gpu["price"]):
         asyncio.run(mensagem_novo_valor_gpu(old_gpu, gpu))
     
     try:
