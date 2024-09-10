@@ -2,7 +2,6 @@ from crud import get_gpu
 import sqlite3
 from datetime import datetime
 
-# TO DO
 
 def salvar_historico_produto(conn: sqlite3.Connection, produto):
     print('salvando_historico')
@@ -28,9 +27,9 @@ def get_ultimo_historico_produto(conn: sqlite3.Connection, produto):
     date_now = now.strftime("%Y/%m/%d %H:%M:%S")
     try:
         query = """
-            SELECT * FROM prices_hist WHERE link = ? ORDER BY dt_end
+            SELECT * FROM prices_hist WHERE link = ? ORDER BY DATE(dt_end)
         """
-        params = (produto["nome"], produto["link"], last_produto["last_register_date"], date_now)
+        params = (produto["link"], last_produto["last_register_date"], date_now)
         cursor: sqlite3.Cursor = conn.execute(query, params)
         result = cursor.fetchone()
         return result

@@ -11,7 +11,7 @@ def verificar_banco(conn: sqlite3.Connection):
         cursor = conn.execute(query)
         rows = cursor.fetchall()
         for produto in rows:
-            sleep(1)
+            sleep(0.5)
             print(f'verificando - > {produto["link"]}')
             response = requests.get(produto["link"])
             if response.status_code == 200:
