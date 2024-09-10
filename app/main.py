@@ -8,7 +8,7 @@ driver = create_driver()
 
 while True:
     print("-----> NOVA ITERAÇÃO WHILE <--------")
-    URL = "https://www.kabum.com.br/hardware/placa-de-video-vga?page_number=1&page_size=100&facet_filters=&sort=most_searched" # GPU
+    # URL = "https://www.kabum.com.br/hardware/placa-de-video-vga?page_number=1&page_size=100&facet_filters=&sort=most_searched" # GPU
     URL = "https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched" # Categoria hardware
     
     current_time = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
