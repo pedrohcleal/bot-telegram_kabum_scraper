@@ -2,7 +2,7 @@ from datetime import datetime
 import sqlite3
 from telegram_main import mensagem_novo_valor_gpu, novo_produto
 import asyncio
-from utils import converter_real_to_float
+from utils import real_to_float
 
 def insert_gpu(conn: sqlite3.Connection, gpu):
     asyncio.run(novo_produto(gpu))
