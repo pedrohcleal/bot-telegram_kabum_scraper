@@ -70,7 +70,7 @@ def get_gpu(conn: sqlite3.Connection, gpu):
 
 def update_gpu_price(conn: sqlite3.Connection, gpu):
     old_gpu = get_gpu(conn, gpu)
-    if real_to_float(gpu["price"]) < real_to_float(old_gpu["price"]):
+    if real_to_float(gpu["price"]) - real_to_float(old_gpu["price"]) < -39:
         asyncio.run(mensagem_novo_valor_gpu(old_gpu, gpu))
     
     try:
@@ -120,7 +120,7 @@ def verificar_banco(conn: sqlite3.Connection):
         cursor = conn.execute(query)
         rows = cursor.fetchall()
         for produto in rows:
-            sleep(0.5)
+            sleep(3)
             print(f'verificando - > {produto[3]}')
             response = requests.get(produto[3])
             if response.status_code == 200:
