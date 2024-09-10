@@ -4,7 +4,7 @@ from telegram import Bot
 from telegram.ext import Application
 from utils import escape_markdown_v2
 from time import sleep
-# Carregar variáveis de ambiente
+
 load_dotenv()
 
 TOKEN = os.getenv('TELEGRAM_TOKEN')
@@ -55,7 +55,7 @@ async def novo_produto(gpu):
     bot = Bot(token=TOKEN)
     await bot.send_photo(chat_id=GROUP_ID, caption=text, parse_mode='MarkdownV2', photo=gpu["url_image"])
 ##
-async def main():
+async def test_envio_mensagem_grupo():
     app = Application.builder().token(TOKEN).build()
     async with app:
         mensage = 'hello, world!'
@@ -63,4 +63,4 @@ async def main():
 
 if __name__ == "__main__":
     import asyncio
-    asyncio.run(main())
+    asyncio.run(test_envio_mensagem_grupo())

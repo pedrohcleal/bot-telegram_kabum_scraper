@@ -8,7 +8,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 from db_config import get_db_connection
-import requests
 import pprint
 
 def iterar_pag(driver):
@@ -36,9 +35,6 @@ def iterar_pag(driver):
         gpu_item["url_image"] = image_url
 
         pprint.pprint(gpu_item)
-        # print(f"Placa = {descricao.text}")
-        # print(f"Preço = {preco.text}")
-        # print(f"Link = {href_value}")
 
         with get_db_connection() as db_conn:
             gpu = get_gpu(db_conn, gpu_item)

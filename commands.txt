@@ -3,7 +3,7 @@ pip install pre-commit ruff mypy pytest
 # check all files
 pre-commit run --all-files
 
-# check tipyng
+# check tipyng if necessary
 mypy .
 
 # run tests

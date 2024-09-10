@@ -1,11 +1,7 @@
 from datetime import datetime
 import sqlite3
-from telegram_main import enviar_mensagem, mensagem_novo_valor_gpu, novo_produto
+from telegram_main import mensagem_novo_valor_gpu, novo_produto
 import asyncio
-import requests
-from bs4 import BeautifulSoup as bs4
-from db_config import get_db_connection
-from time import sleep
 from utils import converter_real_to_float
 
 def insert_gpu(conn: sqlite3.Connection, gpu):
@@ -54,19 +50,11 @@ def get_gpu(conn: sqlite3.Connection, gpu):
         params = (gpu["name"], gpu["adm"], gpu["link"])
         con_exec = conn.execute(query, params)
         result = con_exec.fetchone()
-        if result:
-            return {
-                "id":result[0], 
-                "name":result[1], 
-                "price": result[2], 
-                "link": result[3], 
-                "last_register_date": result[4], 
-                "adm": result[5]
-                }
+        return result
     except sqlite3.Error as e:
         print(f"SQL error = {e}")
         raise e
-    
+
 
 def update_gpu_price(conn: sqlite3.Connection, gpu):
     old_gpu = get_gpu(conn, gpu)
@@ -98,7 +86,7 @@ def deletar(conn: sqlite3.Connection, produto):
         query = """
             DELETE FROM gpus_prices WHERE link = ?
         """
-        params = (produto[3],)
+        params = (produto["link"],)
         cursor = conn.execute(query, params)
 
         if cursor.rowcount > 0:
@@ -110,30 +98,3 @@ def deletar(conn: sqlite3.Connection, produto):
     except sqlite3.Error as e:
         print(f"SQL error = {e}")
         raise e
-
-def verificar_banco(conn: sqlite3.Connection):
-    seletor = "finalPrice"
-    query = "SELECT * FROM gpus_prices"
-    try:
-        cursor = conn.execute(query)
-        rows = cursor.fetchall()
-        for produto in rows:
-            sleep(0.5)
-            print(f'verificando - > {produto[3]}')
-            response = requests.get(produto[3])
-            if response.status_code == 200:
-                soup = bs4(response.text, "html.parser")
-                if not soup.find(class_=seletor):
-                    with get_db_connection() as conn:
-                        deletar(conn, produto)
-            else:
-                print(f'link incorreto, Produto -> {produto}')
-                break
-    except sqlite3.Error as e:
-        print(f"SQL error = {e}")
-        raise e
-    
-    
-if __name__ == "__main__":
-    with get_db_connection() as conn:
-        verificar_banco(conn)
