@@ -18,7 +18,7 @@ async def enviar_mensagem(texto):
 
 
 async def mensagem_novo_valor_gpu(old_produto, produto):
-    print("enviando mensagem pro telegram - Novo produto")
+    print('enviando mensagem pro telegram - Atualização de produto')
     sleep(3)
     old_name = escape_markdown_v2(old_produto["name"])
     old_price = escape_markdown_v2(old_produto["price"])
@@ -37,13 +37,11 @@ async def mensagem_novo_valor_gpu(old_produto, produto):
     )
 
     bot = Bot(token=TOKEN)
-    await bot.send_photo(
-        chat_id=GROUP_ID, caption=text, parse_mode="MarkdownV2", photo=gpu["url_image"]
-    )
+    await bot.send_photo(chat_id=GROUP_ID, caption=text, parse_mode='MarkdownV2', photo=produto["url_image"])
 
 
 async def novo_produto(produto):
-    print("enviando mensagem pro telegram - Atualização de produto")
+    print('enviando mensagem pro telegram - Novo produto')
     sleep(3)
     name = escape_markdown_v2(produto["name"])
     price = escape_markdown_v2(produto["price"])
