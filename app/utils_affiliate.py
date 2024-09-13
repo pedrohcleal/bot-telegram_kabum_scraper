@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
 import os, requests
-
+from time import sleep
 load_dotenv()
 
 advertiser_id = os.getenv("advertiser_id")
@@ -13,6 +13,7 @@ headers = {
 
 
 def create_affiliate_link(original_url) -> str:
+    sleep(2)
     url_api = f"https://api.awin.com/publishers/{publisher_id}/linkbuilder/generate"
 
     data = {
@@ -23,7 +24,7 @@ def create_affiliate_link(original_url) -> str:
 
     response = requests.post(url_api, headers=headers, json=data)
     # response = requests.get('https://api.awin.com/accounts', headers=headers)
-
+    
     if response.status_code == 200:
         # print(response.text)
         return response.json()["shortUrl"]
