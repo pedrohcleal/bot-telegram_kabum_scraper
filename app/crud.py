@@ -5,7 +5,7 @@ import asyncio
 from utils import real_to_float
 
 def insert_gpu(conn: sqlite3.Connection, gpu):
-    asyncio.run(novo_produto(gpu))
+    #asyncio.run(novo_produto(gpu))
     try:
         now = datetime.now()
         date_now = now.strftime("%Y/%m/%d %H:%M:%S")
@@ -58,8 +58,8 @@ def get_gpu(conn: sqlite3.Connection, gpu):
 
 def update_gpu_price(conn: sqlite3.Connection, gpu):
     old_gpu = get_gpu(conn, gpu)
-    if real_to_float(gpu["price"]) - real_to_float(old_gpu["price"]) < -39:
-        asyncio.run(mensagem_novo_valor_gpu(old_gpu, gpu))
+    #if real_to_float(gpu["price"]) - real_to_float(old_gpu["price"]) < -39:
+    #    asyncio.run(mensagem_novo_valor_gpu(old_gpu, gpu))
     
     try:
         now = datetime.now()
