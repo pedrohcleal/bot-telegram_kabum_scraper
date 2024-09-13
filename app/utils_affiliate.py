@@ -33,5 +33,5 @@ def create_affiliate_link(original_url) -> str:
 
 if __name__ == "__main__":
     original_url = "https://www.kabum.com.br/produto/115413/headset-gamer-redragon-lamia-2-rgb-7-1-40mm-suporte-incluso-h320rgb-1"
-    affiliate_link = create_affiliate_link(original_url)
-    print(f"Link de afiliado: {affiliate_link}")
+    affiliate_link = create_affiliate_link(original_url=original_url)
+    print(f"Link de afiliado: '{affiliate_link}'")
