@@ -14,6 +14,7 @@ def verificar_banco(conn: psycopg2.extensions.connection):
         with conn.cursor(cursor_factory=RealDictCursor) as cursor:
             cursor.execute(query)
             rows = cursor.fetchall()
+            print(f'quantidade produtos a serem verificados = {len(rows)}')
             for produto in rows:
                 sleep(0.5)
                 print(f'verificando -> {produto["link"]}')
