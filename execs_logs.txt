@@ -1745,3 +1745,9 @@ Tempo de execução às 13/09/2024 07:56:04 -> 29.705340 segundos <-
 Tempo de execução às 13/09/2024 07:56:35 -> 32.185605 segundos <-
 Tempo de execução às 13/09/2024 07:57:09 -> 29.692580 segundos <-
 Tempo de execução às 13/09/2024 07:57:40 -> 29.934008 segundos <-
+Tempo de execução às 13/09/2024 09:19:13 -> 29.923097 segundos <-
+Tempo de execução às 13/09/2024 09:19:44 -> 26.622078 segundos <-
+Tempo de execução às 13/09/2024 09:20:12 -> 27.911744 segundos <-
+Tempo de execução às 13/09/2024 09:20:42 -> 29.454821 segundos <-
+Tempo de execução às 13/09/2024 09:21:12 -> 25.208220 segundos <-
+Tempo de execução às 13/09/2024 09:21:39 -> 27.220224 segundos <-
