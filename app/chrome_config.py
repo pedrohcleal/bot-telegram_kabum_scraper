@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
 
+
 def create_driver():
     chrome_options = Options()
     chrome_options.add_argument("--headless")
@@ -11,7 +12,7 @@ def create_driver():
     chrome_options.add_argument("--disable-notifications")
     chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--disable-extensions")
-    #chrome_options.add_argument("--window-size=1920,1080")
+    # chrome_options.add_argument("--window-size=1920,1080")
     chrome_options.add_argument("--disable-animations")
     chrome_options.add_argument("--disable-cache")
     chrome_options.add_argument("--disable-prefetch")

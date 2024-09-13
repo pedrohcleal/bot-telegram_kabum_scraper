@@ -7,6 +7,7 @@ from time import sleep
 from crud import deletar
 from db_config import get_db_connection
 
+
 def verificar_banco(conn: psycopg2.extensions.connection):
     seletor = "finalPrice"
     query = "SELECT * FROM public.produtos"
@@ -14,7 +15,7 @@ def verificar_banco(conn: psycopg2.extensions.connection):
         with conn.cursor(cursor_factory=RealDictCursor) as cursor:
             cursor.execute(query)
             rows = cursor.fetchall()
-            print(f'quantidade produtos a serem verificados = {len(rows)}')
+            print(f"quantidade produtos a serem verificados = {len(rows)}")
             for produto in rows:
                 sleep(0.5)
                 print(f'verificando -> {produto["link"]}')
@@ -25,11 +26,12 @@ def verificar_banco(conn: psycopg2.extensions.connection):
                         with get_db_connection() as conn:
                             deletar(conn, produto)
                 else:
-                    print(f'link incorreto, Produto -> {produto}')
+                    print(f"link incorreto, Produto -> {produto}")
                     break
     except OperationalError as e:
         print(f"SQL error = {e}")
         raise e
+
 
 if __name__ == "__main__":
     while True:

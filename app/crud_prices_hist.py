@@ -3,8 +3,9 @@ import psycopg2
 from psycopg2 import OperationalError
 from datetime import datetime
 
+
 def salvar_historico_produto(conn: psycopg2.extensions.connection, produto):
-    print('salvando_historico')
+    print("salvando_historico")
     last_produto = get_ultimo_historico_produto(conn, produto)
     now = datetime.now()
     date_now = now.strftime("%Y-%m-%d %H:%M:%S")  # Formato padrão para PostgreSQL
@@ -13,7 +14,12 @@ def salvar_historico_produto(conn: psycopg2.extensions.connection, produto):
             INSERT INTO public.produto_hist (nome, link, dt_start, dt_end)
             VALUES (%s, %s, %s, %s)
         """
-        params = (produto["nome"], produto["link"], last_produto["last_register_date"], date_now)
+        params = (
+            produto["nome"],
+            produto["link"],
+            last_produto["last_register_date"],
+            date_now,
+        )
         with conn.cursor() as cursor:
             cursor.execute(query, params)
             conn.commit()
@@ -21,6 +27,7 @@ def salvar_historico_produto(conn: psycopg2.extensions.connection, produto):
     except OperationalError as e:
         print(f"SQL error = {e}")
         raise e
+
 
 def get_ultimo_historico_produto(conn: psycopg2.extensions.connection, produto):
     last_produto = get_gpu(conn, produto)
