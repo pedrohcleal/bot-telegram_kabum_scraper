@@ -4,6 +4,7 @@ from telegram import Bot
 from telegram.ext import Application
 from utils import escape_markdown_v2
 from time import sleep
+from utils_affiliate import create_affiliate_link
 
 load_dotenv()
 
@@ -16,20 +17,21 @@ async def enviar_mensagem(texto):
     await bot.send_message(chat_id=GROUP_ID, text=texto)
 
 
-async def mensagem_novo_valor_gpu(old_gpu, gpu):
+async def mensagem_novo_valor_gpu(old_produto, produto):
+    print('enviando mensagem pro telegram - Novo produto')
     sleep(3)
-    old_name = escape_markdown_v2(old_gpu['name'])
-    old_price = escape_markdown_v2(old_gpu['price'])
-    new_price = escape_markdown_v2(gpu['price'])
-    gpu_link = escape_markdown_v2(gpu["link"])
-    last_update = escape_markdown_v2(old_gpu["last_register_date"])
+    old_name = escape_markdown_v2(old_produto['name'])
+    old_price = escape_markdown_v2(old_produto['price'])
+    new_price = escape_markdown_v2(produto['price'])
+    produto_link = escape_markdown_v2(create_affiliate_link(produto["link"]))
+    last_update = escape_markdown_v2(old_produto["last_register_date"])
 
     text = (
         f"🚀 **Black Friday** 🚀\n\n"
         f"🔄 O valor do item *\"{old_name}\"* foi atualizado\n\n"
         f"📉 Valor antigo: *{old_price}*\n"
         f"📈 Valor novo: *{new_price}*\n\n"
-        f"🔍 Mais informações: {gpu_link}\n\n"
+        f"🔍 Mais informações: {produto_link}\n\n"
         f"Última atualização foi em: {last_update}"
         f"🔥 Aproveite as ofertas 🔥"
     )
@@ -38,11 +40,12 @@ async def mensagem_novo_valor_gpu(old_gpu, gpu):
     await bot.send_photo(chat_id=GROUP_ID, caption=text, parse_mode='MarkdownV2', photo=gpu["url_image"])
 
 
-async def novo_produto(gpu):
+async def novo_produto(produto):
+    print('enviando mensagem pro telegram - Atualização de produto')
     sleep(3)
-    name = escape_markdown_v2(gpu['name'])
-    price = escape_markdown_v2(gpu['price'])
-    link = escape_markdown_v2(gpu['link'])
+    name = escape_markdown_v2(produto['name'])
+    price = escape_markdown_v2(produto['price'])
+    link = escape_markdown_v2(create_affiliate_link(produto['link']))
     
     text = (
         f"✨ **Novo Produto em Destaque** ✨\n\n"
@@ -53,8 +56,8 @@ async def novo_produto(gpu):
     )
     
     bot = Bot(token=TOKEN)
-    await bot.send_photo(chat_id=GROUP_ID, caption=text, parse_mode='MarkdownV2', photo=gpu["url_image"])
-##
+    await bot.send_photo(chat_id=GROUP_ID, caption=text, parse_mode='MarkdownV2', photo=produto["url_image"])
+
 async def test_envio_mensagem_grupo():
     app = Application.builder().token(TOKEN).build()
     async with app:

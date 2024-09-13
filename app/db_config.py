@@ -1,20 +1,27 @@
 import os
 from typing import Generator
 from contextlib import contextmanager
-import sqlite3
+import psycopg2
+from psycopg2 import OperationalError
 
-
-DATABASE: str = os.path.join(os.path.dirname(__file__), "kabum.db")
-
+HOST = os.getenv('host')
+PORT = os.getenv('port')
+USER = os.getenv('principaluser')
+PASSWORD = os.getenv('senha')
+DATABASE = 'produtos'
+ 
+DATABASE_URL = f'postgresql://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}'
 
 @contextmanager
-def get_db_connection() -> Generator[sqlite3.Connection, None, None]:
-    conn: sqlite3.Connection = sqlite3.connect(DATABASE, timeout=30.0)
-    conn.row_factory = sqlite3.Row
+def get_db_connection() -> Generator[psycopg2.extensions.connection, None, None]:
+    conn: psycopg2.extensions.connection
     try:
+        conn = psycopg2.connect(DATABASE_URL)
+        conn.autocommit = True  # Necessário para operações que não precisam de commit explícito
         yield conn
-    except sqlite3.Error as e:
+    except OperationalError as e:
         print(f"DB Error: {e}")
         raise
     finally:
-        conn.close()
+        if conn:
+            conn.close()

@@ -1,4 +1,4 @@
-from main_selenium import main_selenium
+from handler import main_selenium
 from chrome_config import create_driver, reset_driver
 import time
 from time import sleep

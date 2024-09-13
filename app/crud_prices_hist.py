@@ -1,38 +1,40 @@
 from crud import get_gpu
-import sqlite3
+import psycopg2
+from psycopg2 import OperationalError
 from datetime import datetime
 
-
-def salvar_historico_produto(conn: sqlite3.Connection, produto):
+def salvar_historico_produto(conn: psycopg2.extensions.connection, produto):
     print('salvando_historico')
     last_produto = get_ultimo_historico_produto(conn, produto)
     now = datetime.now()
-    date_now = now.strftime("%Y/%m/%d %H:%M:%S")
+    date_now = now.strftime("%Y-%m-%d %H:%M:%S")  # Formato padrão para PostgreSQL
     try:
         query = """
-            INSERT INTO prices_hist (nome, link, dt_start, dt_end)
-            VALUES (?, ?, ?, ?)
+            INSERT INTO public.produto_hist (nome, link, dt_start, dt_end)
+            VALUES (%s, %s, %s, %s)
         """
         params = (produto["nome"], produto["link"], last_produto["last_register_date"], date_now)
-        conn.execute(query, params)
-        conn.commit()
+        with conn.cursor() as cursor:
+            cursor.execute(query, params)
+            conn.commit()
         return True
-    except sqlite3.Error as e:
+    except OperationalError as e:
         print(f"SQL error = {e}")
         raise e
 
-def get_ultimo_historico_produto(conn: sqlite3.Connection, produto):
+def get_ultimo_historico_produto(conn: psycopg2.extensions.connection, produto):
     last_produto = get_gpu(conn, produto)
     now = datetime.now()
-    date_now = now.strftime("%Y/%m/%d %H:%M:%S")
+    date_now = now.strftime("%Y-%m-%d %H:%M:%S")
     try:
         query = """
-            SELECT * FROM prices_hist WHERE link = ? ORDER BY DATE(dt_end)
+            SELECT * FROM public.produto_hist WHERE link = %s ORDER BY dt_end DESC
         """
-        params = (produto["link"], last_produto["last_register_date"], date_now)
-        cursor: sqlite3.Cursor = conn.execute(query, params)
-        result = cursor.fetchone()
+        params = (produto["link"],)
+        with conn.cursor() as cursor:
+            cursor.execute(query, params)
+            result = cursor.fetchone()
         return result
-    except sqlite3.Error as e:
+    except OperationalError as e:
         print(f"SQL error = {e}")
         raise e

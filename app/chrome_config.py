@@ -3,7 +3,6 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
 
-# Função para criar e retornar um novo driver
 def create_driver():
     chrome_options = Options()
     chrome_options.add_argument("--headless")
@@ -22,7 +21,6 @@ def create_driver():
     return driver
 
 
-# Função para resetar o driver
 def reset_driver(driver):
     driver.quit()  # Fecha o driver atual
     return create_driver()  # Cria uma nova instância do driver
