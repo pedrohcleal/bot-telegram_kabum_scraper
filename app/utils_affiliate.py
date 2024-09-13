@@ -3,33 +3,35 @@ import os, requests
 
 load_dotenv()
 
-advertiser_id = os.getenv('advertiser_id')
-access_token = os.getenv('access_token')
-publisher_id = os.getenv('publisher_id')
+advertiser_id = os.getenv("advertiser_id")
+access_token = os.getenv("access_token")
+publisher_id = os.getenv("publisher_id")
 headers = {
-        'Authorization': f'Bearer {access_token}',
-        'Content-Type': 'application/json'
-    }
+    "Authorization": f"Bearer {access_token}",
+    "Content-Type": "application/json",
+}
+
 
 def create_affiliate_link(original_url) -> str:
-    url_api = f'https://api.awin.com/publishers/{publisher_id}/linkbuilder/generate'
-    
+    url_api = f"https://api.awin.com/publishers/{publisher_id}/linkbuilder/generate"
+
     data = {
         "advertiserId": advertiser_id,
-        "destinationUrl" : original_url,
-        "shorten": True
+        "destinationUrl": original_url,
+        "shorten": True,
     }
-    
+
     response = requests.post(url_api, headers=headers, json=data)
-    #response = requests.get('https://api.awin.com/accounts', headers=headers)
-    
+    # response = requests.get('https://api.awin.com/accounts', headers=headers)
+
     if response.status_code == 200:
-        #print(response.text)
+        # print(response.text)
         return response.json()["shortUrl"]
     else:
         return f"Erro: {response.status_code}, {response.content}"
 
-if __name__ == '__main__':
-    original_url = 'https://www.kabum.com.br/produto/115413/headset-gamer-redragon-lamia-2-rgb-7-1-40mm-suporte-incluso-h320rgb-1'
+
+if __name__ == "__main__":
+    original_url = "https://www.kabum.com.br/produto/115413/headset-gamer-redragon-lamia-2-rgb-7-1-40mm-suporte-incluso-h320rgb-1"
     affiliate_link = create_affiliate_link(original_url)
-    print(f'Link de afiliado: {affiliate_link}')
+    print(f"Link de afiliado: {affiliate_link}")

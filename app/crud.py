@@ -6,16 +6,24 @@ from utils_telegram import mensagem_novo_valor_gpu, novo_produto
 import asyncio
 from utils import real_to_float
 
+
 def insert_gpu(conn: psycopg2.extensions.connection, gpu):
     asyncio.run(novo_produto(gpu))
     try:
         now = datetime.now()
-        date_now = now.strftime("%Y-%m-%d %H:%M:%S") 
+        date_now = now.strftime("%Y-%m-%d %H:%M:%S")
         query = """
             INSERT INTO public.produtos (name, adm, price, link, last_register_date, image)
             VALUES (%s, %s, %s, %s, %s, %s)
         """
-        params = (gpu["name"], gpu["adm"], gpu["price"], gpu["link"], date_now, gpu["url_image"])
+        params = (
+            gpu["name"],
+            gpu["adm"],
+            gpu["price"],
+            gpu["link"],
+            date_now,
+            gpu["url_image"],
+        )
 
         with conn.cursor() as cursor:
             cursor.execute(query, params)
@@ -63,7 +71,7 @@ def update_gpu_price(conn: psycopg2.extensions.connection, gpu):
     old_gpu = get_gpu(conn, gpu)
     if old_gpu and real_to_float(gpu["price"]) - real_to_float(old_gpu["price"]) < -39:
         asyncio.run(mensagem_novo_valor_gpu(old_gpu, gpu))
-    
+
     try:
         now = datetime.now()
         date_now = now.strftime("%Y-%m-%d %H:%M:%S")
@@ -87,7 +95,7 @@ def update_gpu_price(conn: psycopg2.extensions.connection, gpu):
 
 
 def deletar(conn: psycopg2.extensions.connection, produto):
-    print(f'--->  Deletando linha do produto -> {produto} <---')
+    print(f"--->  Deletando linha do produto -> {produto} <---")
     try:
         query = """
             DELETE FROM public.produtos WHERE link = %s
@@ -98,7 +106,7 @@ def deletar(conn: psycopg2.extensions.connection, produto):
 
             if cursor.rowcount > 0:
                 conn.commit()
-                print('item deletado')
+                print("item deletado")
                 return True
             raise ValueError("Qtd de linhas afetadas = 0, verificar...")
 
