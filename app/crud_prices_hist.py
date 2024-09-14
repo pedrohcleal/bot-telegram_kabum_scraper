@@ -1,4 +1,4 @@
-from crud import get_gpu
+from crud import get_product
 import psycopg2
 from psycopg2 import OperationalError
 from datetime import datetime
@@ -30,7 +30,7 @@ def salvar_historico_produto(conn: psycopg2.extensions.connection, produto):
 
 
 def get_ultimo_historico_produto(conn: psycopg2.extensions.connection, produto):
-    last_produto = get_gpu(conn, produto)
+    last_produto = get_product(conn, produto)
     now = datetime.now()
     date_now = now.strftime("%Y-%m-%d %H:%M:%S")
     try:

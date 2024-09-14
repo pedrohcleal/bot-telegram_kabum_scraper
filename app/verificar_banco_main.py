@@ -4,7 +4,7 @@ from psycopg2.extras import RealDictCursor
 import requests
 from bs4 import BeautifulSoup as bs4
 from time import sleep
-from crud import deletar
+from crud import del_product
 from db_config import get_db_connection
 
 
@@ -24,7 +24,7 @@ def verificar_banco(conn: psycopg2.extensions.connection):
                     soup = bs4(response.text, "html.parser")
                     if not soup.find(class_=seletor):
                         with get_db_connection() as conn:
-                            deletar(conn, produto)
+                            del_product(conn, produto)
                 else:
                     print(f"link incorreto, Produto -> {produto}")
                     break

@@ -1,4 +1,4 @@
-from crud import insert_gpu, gpu_have_in_bd, get_gpu, update_gpu_price
+from crud import insert_product, have_product_in_bd, get_product, update_price
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import (
     NoSuchElementException,
@@ -38,12 +38,12 @@ def iterar_pag(driver):
         # pprint.pprint(gpu_item)
 
         with get_db_connection() as db_conn:
-            gpu = get_gpu(db_conn, gpu_item)
-            if gpu_have_in_bd(db_conn, gpu_item):
+            gpu = get_product(db_conn, gpu_item)
+            if have_product_in_bd(db_conn, gpu_item):
                 if gpu["price"] != gpu_item["price"]:
-                    update_gpu_price(db_conn, gpu_item)
-            elif not gpu_have_in_bd(db_conn, gpu_item):
-                insert_gpu(db_conn, gpu_item)
+                    update_price(db_conn, gpu_item)
+            elif not have_product_in_bd(db_conn, gpu_item):
+                insert_product(db_conn, gpu_item)
 
         if index == len(table) - 1:
             driver.execute_script("arguments[0].scrollIntoView();", preco)  # scrollar
