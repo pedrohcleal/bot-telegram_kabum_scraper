@@ -8,6 +8,7 @@ from utils import real_to_float
 
 
 def insert_gpu(conn: psycopg2.extensions.connection, gpu):
+    print(f'insert produto on aws -> {gpu}')
     # asyncio.run(novo_produto(gpu))
     try:
         now = datetime.now()
@@ -68,9 +69,11 @@ def get_gpu(conn: psycopg2.extensions.connection, gpu):
 
 
 def update_gpu_price(conn: psycopg2.extensions.connection, gpu):
+    print(f'update gpu on aws -> {gpu}')
     old_gpu = get_gpu(conn, gpu)
     if old_gpu and real_to_float(gpu["price"]) - real_to_float(old_gpu["price"]) < -50:
-        asyncio.run(mensagem_novo_valor_gpu(old_gpu, gpu))
+        pass
+        #asyncio.run(mensagem_novo_valor_gpu(old_gpu, gpu))
 
     try:
         now = datetime.now()
