@@ -31,7 +31,7 @@ def create_affiliate_link(original_url):
     else:
         sleep(60)
         print(f"Erro: {response.status_code}, {response.content}")
-        print('Tentando criar link de afiliado novamente')
+        print("Tentando criar link de afiliado novamente")
         create_affiliate_link(original_url)
 
 

@@ -8,7 +8,7 @@ from utils.utils import real_to_float
 
 
 def insert_product(conn: psycopg2.extensions.connection, produto):
-    print(f'insert produto on aws -> {produto}')
+    print(f"insert produto on aws -> {produto}")
     asyncio.run(novo_produto(produto))
     try:
         now = datetime.now()
@@ -69,9 +69,12 @@ def get_product(conn: psycopg2.extensions.connection, produto):
 
 
 def update_price(conn: psycopg2.extensions.connection, produto):
-    print(f'update gpu on aws -> {produto}')
+    print(f"update gpu on aws -> {produto}")
     old_produto = get_product(conn, produto)
-    if old_produto and real_to_float(produto["price"]) - real_to_float(old_produto["price"]) < -50:
+    if (
+        old_produto
+        and real_to_float(produto["price"]) - real_to_float(old_produto["price"]) < -50
+    ):
         asyncio.run(mensagem_novo_valor_gpu(old_produto, produto))
 
     try:
@@ -82,7 +85,13 @@ def update_price(conn: psycopg2.extensions.connection, produto):
             UPDATE public.produtos SET price = %s, last_register_date = %s
             WHERE name = %s AND adm = %s AND link = %s
         """
-        params = (produto["price"], date_now, produto["name"], produto["adm"], produto["link"])
+        params = (
+            produto["price"],
+            date_now,
+            produto["name"],
+            produto["adm"],
+            produto["link"],
+        )
         with conn.cursor() as cursor:
             cursor.execute(query, params)
 
