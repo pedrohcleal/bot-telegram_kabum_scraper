@@ -14,7 +14,7 @@ headers = {
 
 
 def create_affiliate_link(original_url):
-    sleep(10)
+    sleep(5)
     url_api = f"https://api.awin.com/publishers/{publisher_id}/linkbuilder/generate"
 
     data = {
@@ -29,7 +29,7 @@ def create_affiliate_link(original_url):
     if response.status_code == 200:
         return response.json()["shortUrl"]
     else:
-        sleep(10)
+        sleep(60)
         print(f"Erro: {response.status_code}, {response.content}")
         print('Tentando criar link de afiliado novamente')
         create_affiliate_link(original_url)

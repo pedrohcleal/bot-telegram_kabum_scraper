@@ -2,9 +2,9 @@ import os
 from dotenv import load_dotenv
 from telegram import Bot
 from telegram.ext import Application
-from utils import escape_markdown_v2
+from utils.utils import escape_markdown_v2
 from time import sleep
-from utils_affiliate import create_affiliate_link
+from utils.utils_affiliate import create_affiliate_link
 
 load_dotenv()
 

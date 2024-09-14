@@ -2,14 +2,14 @@ from datetime import datetime
 import psycopg2
 from psycopg2 import OperationalError
 from psycopg2.extras import RealDictCursor
-from utils_telegram import mensagem_novo_valor_gpu, novo_produto
+from utils.utils_telegram import mensagem_novo_valor_gpu, novo_produto
 import asyncio
-from utils import real_to_float
+from utils.utils import real_to_float
 
 
 def insert_product(conn: psycopg2.extensions.connection, produto):
     print(f'insert produto on aws -> {produto}')
-    # asyncio.run(novo_produto(produto))
+    asyncio.run(novo_produto(produto))
     try:
         now = datetime.now()
         date_now = now.strftime("%Y-%m-%d %H:%M:%S")
@@ -69,11 +69,10 @@ def get_product(conn: psycopg2.extensions.connection, produto):
 
 
 def update_price(conn: psycopg2.extensions.connection, produto):
-    print(f'update produto on aws -> {produto}')
-    old_produt = get_product(conn, produto)
-    if old_produt and real_to_float(produto["price"]) - real_to_float(old_produt["price"]) < -50:
-        pass
-        #asyncio.run(mensagem_novo_valor_gpu(old_gpu, gpu))
+    print(f'update gpu on aws -> {produto}')
+    old_produto = get_product(conn, produto)
+    if old_produto and real_to_float(produto["price"]) - real_to_float(old_produto["price"]) < -50:
+        asyncio.run(mensagem_novo_valor_gpu(old_produto, produto))
 
     try:
         now = datetime.now()
@@ -97,8 +96,8 @@ def update_price(conn: psycopg2.extensions.connection, produto):
         raise e
 
 
-def del_product(conn: psycopg2.extensions.connection, produto):
-    print(f"-> Deletando produto da AWS RDS - {produto} <-")
+def deletar(conn: psycopg2.extensions.connection, produto):
+    print(f"--->  Deletando linha do produto -> {produto} <---")
     try:
         query = """
             DELETE FROM public.produtos WHERE link = %s
@@ -109,7 +108,7 @@ def del_product(conn: psycopg2.extensions.connection, produto):
 
             if cursor.rowcount > 0:
                 conn.commit()
-                print("- item deletado -")
+                print("item deletado")
                 return True
             raise ValueError("Qtd de linhas afetadas = 0, verificar...")
 
