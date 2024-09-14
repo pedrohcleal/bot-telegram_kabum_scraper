@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
 import os, requests
 from time import sleep
+
 load_dotenv()
 
 advertiser_id = os.getenv("advertiser_id")
@@ -12,8 +13,8 @@ headers = {
 }
 
 
-def create_affiliate_link(original_url) -> str:
-    sleep(2)
+def create_affiliate_link(original_url):
+    sleep(10)
     url_api = f"https://api.awin.com/publishers/{publisher_id}/linkbuilder/generate"
 
     data = {
@@ -24,15 +25,17 @@ def create_affiliate_link(original_url) -> str:
 
     response = requests.post(url_api, headers=headers, json=data)
     # response = requests.get('https://api.awin.com/accounts', headers=headers)
-    
+
     if response.status_code == 200:
-        # print(response.text)
         return response.json()["shortUrl"]
     else:
-        return f"Erro: {response.status_code}, {response.content}"
+        sleep(10)
+        print(f"Erro: {response.status_code}, {response.content}")
+        print('Tentando criar link de afiliado novamente')
+        create_affiliate_link(original_url)
 
 
 if __name__ == "__main__":
     original_url = "https://www.kabum.com.br/produto/115413/headset-gamer-redragon-lamia-2-rgb-7-1-40mm-suporte-incluso-h320rgb-1"
-    affiliate_link = create_affiliate_link(original_url)
-    print(f"Link de afiliado: {affiliate_link}")
+    affiliate_link = create_affiliate_link(original_url=original_url)
+    print(f"Link de afiliado: '{affiliate_link}'")
