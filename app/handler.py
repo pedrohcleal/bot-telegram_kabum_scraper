@@ -8,77 +8,78 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 from db_config import get_db_connection
-import pprint
+
+URL_MAIN = "https://www.kabum.com.br/"
+TABLE_SELECTOR = "#listing > div.sc-ikPAEB.sc-202cc1e9-2.jcryDv.SzkqH > div > div > div.sc-biBsmb.kcFaol > div > main > *"
+NEXT_BUTTON_SELECTOR = "#listingPagination > ul > li.next > a"
+COOKIE_BUTTON_SELECTOR = "#onetrust-accept-btn-handler"
 
 
-def iterar_pag(driver):
-    # table_selector = "#listing > div.sc-gsTEea.sc-202cc1e9-2.ezCvIu.SzkqH > div > div > div.sc-hKgJUU.hzqTWi > div > main > *" # Categoria hardware/GPU
-    table_selector = "#listing > div.sc-ikPAEB.sc-202cc1e9-2.jcryDv.SzkqH > div > div > div.sc-biBsmb.kcFaol > div > main > *"  # Categoria hardware
+def fetch_product_data(item):
+    """Fetches product data from the given item element."""
+    descricao = item.find_element(By.TAG_NAME, "h3").text.strip()
+    preco = item.find_element(By.CLASS_NAME, "priceCard").text.strip()
+    link = item.find_element(By.CLASS_NAME, "productLink").get_attribute("href").strip()
+    image_element = item.find_element(By.CLASS_NAME, "imageCard")
+    image_url = URL_MAIN + image_element.get_attribute("src")
 
+    return {
+        "adm": "kabum",
+        "name": descricao,
+        "price": preco,
+        "link": link,
+        "url_image": image_url
+    }
+
+
+def process_products(driver):
+    """Iterates over each product on the page and processes its data."""
     WebDriverWait(driver, 15).until(
-        EC.presence_of_element_located((By.CSS_SELECTOR, table_selector))
+        EC.presence_of_element_located((By.CSS_SELECTOR, TABLE_SELECTOR))
     )
-    table = driver.find_elements(By.CSS_SELECTOR, table_selector)
-    print("iterando pagina")
+    table = driver.find_elements(By.CSS_SELECTOR, TABLE_SELECTOR)
+    print("Iterando página")
+    
     for index, item in enumerate(table):
-        descricao = item.find_element(By.TAG_NAME, "h3")
-        preco = item.find_element(By.CLASS_NAME, "priceCard")
-        link = item.find_element(By.CLASS_NAME, "productLink")
-        href_value = link.get_attribute("href")
-        image_element = item.find_element(By.CLASS_NAME, "imageCard")
-        image_url = url_main + image_element.get_attribute("src")
-
-        gpu_item = {}
-        gpu_item["adm"] = "kabum"
-        gpu_item["name"] = descricao.text.strip()
-        gpu_item["price"] = preco.text.strip()
-        gpu_item["link"] = href_value.strip()
-        gpu_item["url_image"] = image_url
-
-        # pprint.pprint(gpu_item)
-
+        gpu_item = fetch_product_data(item)
+        
         with get_db_connection() as db_conn:
-            gpu = get_product(db_conn, gpu_item)
             if have_product_in_bd(db_conn, gpu_item):
-                if gpu["price"] != gpu_item["price"]:
-                    update_price(db_conn, gpu_item)
-            elif not have_product_in_bd(db_conn, gpu_item):
+                existing_product = get_product(db_conn, gpu_item)
+                if existing_product is not None:
+                    if existing_product["price"] != gpu_item["price"]:
+                        update_price(db_conn, gpu_item)
+            else:
                 insert_product(db_conn, gpu_item)
 
         if index == len(table) - 1:
-            driver.execute_script("arguments[0].scrollIntoView();", preco)  # scrollar
+            driver.execute_script("arguments[0].scrollIntoView();", item)
             sleep(1)
 
 
-def percorrer_pags(driver):
-    iterar_pag(driver)
+def handle_pagination(driver):
+    """Handles pagination by clicking the 'next' button and processing subsequent pages."""
     try:
-        next_element = driver.find_element(
-            By.CSS_SELECTOR,
-            "#listingPagination > ul > li.next > a",
-        )
+        next_element = driver.find_element(By.CSS_SELECTOR, NEXT_BUTTON_SELECTOR)
         next_element.click()
         sleep(3)
-    except NoSuchElementException as e:
-        print("elemento de click next não encontrado, finalizando...")
-        raise e
-    except ElementNotInteractableException as e:
-        print("elemento de click next não pode ser iterado, finalizando...")
-        raise e
-    print("Indo para a próxima página")
-    percorrer_pags(driver)
+        process_products(driver)
+        handle_pagination(driver)
+    except (NoSuchElementException, ElementNotInteractableException) as e:
+        print(f"Erro na paginação: {e}")
+        print("Finalizando o scraping...")
 
 
 def main_selenium(driver, URL):
-    global url_main
-    url_main = "https://www.kabum.com.br/"
-    print("Iniciando Scraping, URL =", URL)
+    """Main function to initialize scraping process."""
+    print(f"Iniciando Scraping, URL = {URL}")
     driver.get(URL)
     sleep(1)
+    
     cookie_button = WebDriverWait(driver, 15).until(
-        EC.presence_of_element_located(
-            (By.CSS_SELECTOR, "#onetrust-accept-btn-handler")
-        )
+        EC.presence_of_element_located((By.CSS_SELECTOR, COOKIE_BUTTON_SELECTOR))
     )
     cookie_button.click()
-    percorrer_pags(driver)
+    
+    process_products(driver)
+    handle_pagination(driver)
