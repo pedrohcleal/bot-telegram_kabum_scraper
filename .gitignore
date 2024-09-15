@@ -5,7 +5,7 @@ __pycache__/
 # C extensions
 *.so
 .env
-
+execs_logs.txt
 # Distribution / packaging
 bin/
 build/

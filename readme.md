@@ -1,6 +1,3 @@
-Aqui está o `README.md` sugerido para o seu projeto:
-
-```markdown
 # 🛒 Kabum Scraper & Telegram Bot
 
 Este projeto faz o scraping de produtos da categoria de hardware (ex: GPUs) do site Kabum e utiliza um bot do Telegram para enviar atualizações de preço e novos produtos para um grupo. Além disso, gera links de afiliado automaticamente utilizando a API da Awin.
@@ -73,6 +70,3 @@ O projeto usa a API da Awin para gerar links de afiliados. Para mais informaçõ
 ## 📝 Licença
 
 Este projeto é distribuído sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-```
-
-Este README cobre os principais aspectos do seu projeto, desde as funcionalidades até a execução e configuração. Se precisar de ajustes, é só avisar!
