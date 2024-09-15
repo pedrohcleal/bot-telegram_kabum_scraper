@@ -3,11 +3,13 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import (
     NoSuchElementException,
     ElementNotInteractableException,
+    TimeoutException
 )
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 from db_config import get_db_connection
+from random import randint
 
 URL_MAIN = "https://www.kabum.com.br/"
 TABLE_SELECTOR = "#listing > div.sc-ikPAEB.sc-202cc1e9-2.jcryDv.SzkqH > div > div > div.sc-biBsmb.kcFaol > div > main > *"
@@ -45,9 +47,9 @@ def process_products(driver):
         
         with get_db_connection() as db_conn:
             if have_product_in_bd(db_conn, gpu_item):
-                existing_product = get_product(db_conn, gpu_item)
-                if existing_product is not None:
-                    if existing_product["price"] != gpu_item["price"]:
+                atual_product = get_product(db_conn, gpu_item)
+                if atual_product is not None:
+                    if atual_product["price"] != gpu_item["price"]:
                         update_price(db_conn, gpu_item)
             else:
                 insert_product(db_conn, gpu_item)
@@ -60,15 +62,17 @@ def process_products(driver):
 def handle_pagination(driver):
     """Handles pagination by clicking the 'next' button and processing subsequent pages."""
     try:
-        next_element = driver.find_element(By.CSS_SELECTOR, NEXT_BUTTON_SELECTOR)
+        next_element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, NEXT_BUTTON_SELECTOR)))
+        driver.execute_script("arguments[0].scrollIntoView();", next_element)
+        sleep(1)
         next_element.click()
-        sleep(3)
+        sleep(randint(0,4))
         process_products(driver)
         handle_pagination(driver)
-    except (NoSuchElementException, ElementNotInteractableException) as e:
+    except (NoSuchElementException, ElementNotInteractableException, TimeoutException) as e:
         print(f"Erro na paginação: {e}")
         print("Finalizando o scraping...")
-
+        return
 
 def main_selenium(driver, URL):
     """Main function to initialize scraping process."""

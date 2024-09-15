@@ -5,7 +5,7 @@ from psycopg2.extras import RealDictCursor
 from utils.utils_telegram import mensagem_novo_valor_gpu, novo_produto
 import asyncio
 from utils.utils import real_to_float
-
+from crud_prices_hist import salve_hist
 
 def insert_product(conn: psycopg2.extensions.connection, produto):
     print(f"insert produto on aws -> {produto}")
@@ -70,6 +70,7 @@ def get_product(conn: psycopg2.extensions.connection, produto):
 
 def update_price(conn: psycopg2.extensions.connection, produto):
     print(f"update gpu on aws -> {produto}")
+    salve_hist(conn, produto)
     old_produto = get_product(conn, produto)
     if (
         old_produto

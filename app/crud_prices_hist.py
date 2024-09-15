@@ -1,47 +1,43 @@
-from crud import get_product
 import psycopg2
 from psycopg2 import OperationalError
 from datetime import datetime
 
-
-def salvar_historico_produto(conn: psycopg2.extensions.connection, produto):
+def salve_hist(conn: psycopg2.extensions.connection, produto) -> None:
     print("salvando_historico")
-    last_produto = get_ultimo_historico_produto(conn, produto)
     now = datetime.now()
     date_now = now.strftime("%Y-%m-%d %H:%M:%S")  # Formato padrão para PostgreSQL
     try:
         query = """
-            INSERT INTO public.produto_hist (nome, link, dt_start, dt_end)
+            INSERT INTO public.produtos_hist (nome, link, price, register_date)
             VALUES (%s, %s, %s, %s)
         """
         params = (
-            produto["nome"],
+            produto["name"],
             produto["link"],
-            last_produto["last_register_date"],
+            produto["price"],
             date_now,
         )
         with conn.cursor() as cursor:
             cursor.execute(query, params)
             conn.commit()
-        return True
     except OperationalError as e:
         print(f"SQL error = {e}")
         raise e
 
 
-def get_ultimo_historico_produto(conn: psycopg2.extensions.connection, produto):
-    last_produto = get_product(conn, produto)
-    now = datetime.now()
-    date_now = now.strftime("%Y-%m-%d %H:%M:%S")
+def get_last_5prices(conn: psycopg2.extensions.connection, produto):
+    print('get ultimo produt')
     try:
         query = """
-            SELECT * FROM public.produto_hist WHERE link = %s ORDER BY dt_end DESC
+            SELECT price FROM public.produtos_hist WHERE link = %s ORDER BY register_date DESC LIMIT 5
         """
         params = (produto["link"],)
         with conn.cursor() as cursor:
             cursor.execute(query, params)
-            result = cursor.fetchone()
-        return result
+            result = cursor.fetchall()
+        if not result:
+            return 'sem histórico no momento...'
+        return ', '.join([x[0] for x in result])
     except OperationalError as e:
         print(f"SQL error = {e}")
         raise e

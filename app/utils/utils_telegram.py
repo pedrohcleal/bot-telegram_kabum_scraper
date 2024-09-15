@@ -5,6 +5,8 @@ from telegram.ext import Application
 from utils.utils import escape_markdown_v2
 from time import sleep
 from utils.utils_affiliate import create_affiliate_link
+from crud_prices_hist import get_last_5prices
+from db_config import get_db_connection
 
 load_dotenv()
 
@@ -25,14 +27,17 @@ async def mensagem_novo_valor_gpu(old_produto, produto):
     new_price = escape_markdown_v2(produto["price"])
     produto_link = escape_markdown_v2(create_affiliate_link(produto["link"]))
     last_update = escape_markdown_v2(old_produto["last_register_date"])
+    with get_db_connection() as conn:
+        last_5prices = escape_markdown_v2(get_last_5prices(conn, produto))
 
     text = (
         f"🚀 **Black Friday** 🚀\n\n"
         f'🔄 O valor do item *"{old_name}"* foi atualizado\n\n'
-        f"📉 Valor antigo: *{old_price}*\n"
-        f"📈 Valor novo: *{new_price}*\n\n"
+        f"📈Valor antigo: *{old_price}*\n"
+        f"📉 Valor novo: *{new_price}*\n\n"
         f"🔍 Mais informações: {produto_link}\n\n"
         f"Última atualização foi em: {last_update}"
+        f"5 últimos preços, {last_5prices}"
         f"🔥 Aproveite as ofertas 🔥"
     )
 
@@ -51,12 +56,15 @@ async def novo_produto(produto):
     name = escape_markdown_v2(produto["name"])
     price = escape_markdown_v2(produto["price"])
     link = escape_markdown_v2(create_affiliate_link(produto["link"]))
+    with get_db_connection() as conn:
+        last_5prices = escape_markdown_v2(get_last_5prices(conn, produto))
 
     text = (
         f"✨ **Novo Produto em Destaque** ✨\n\n"
         f'🆕 *Produto Adicionado:* *"{name}"*\n\n'
         f"💰 *Preço:* *{price}*\n\n"
         f"🔗 *Mais detalhes:* {link}\n\n"
+        f"5 últimos preços: {last_5prices}"
         f"🚀 Não perca essa novidade 🚀"
     )
 
