@@ -24,7 +24,8 @@ def fetch_product_data(item):
     link = item.find_element(By.CLASS_NAME, "productLink").get_attribute("href").strip()
     image_element = item.find_element(By.CLASS_NAME, "imageCard")
     image_url = URL_MAIN + image_element.get_attribute("src")
-
+    
+        
     return {
         "adm": "kabum",
         "name": descricao,
@@ -43,7 +44,12 @@ def process_products(driver):
     print("Iterando página")
     
     for index, item in enumerate(table):
+        preco = item.find_element(By.CLASS_NAME, "priceCard").text.strip()
+        if preco == 'R$ ----':
+            continue
+            
         gpu_item = fetch_product_data(item)
+        
         
         with get_db_connection() as db_conn:
             if have_product_in_bd(db_conn, gpu_item):
