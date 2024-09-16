@@ -10,7 +10,7 @@ from db_config import get_db_connection
 
 def verificar_banco(conn: psycopg2.extensions.connection):
     seletor = "finalPrice"
-    query = "SELECT * FROM public.produtos"
+    query = "SELECT DISTINCT(link) FROM public.produtos"
     try:
         with conn.cursor(cursor_factory=RealDictCursor) as cursor:
             cursor.execute(query)

@@ -33,11 +33,11 @@ async def mensagem_novo_valor_gpu(old_produto, produto):
     text = (
         f"🚀 **Black Friday** 🚀\n\n"
         f'🔄 O valor do item *"{old_name}"* foi atualizado\n\n'
-        f"📈Valor antigo: *{old_price}*\n"
+        f"📈 Valor antigo: *{old_price}*\n"
         f"📉 Valor novo: *{new_price}*\n\n"
         f"🔍 Mais informações: {produto_link}\n\n"
-        f"Última atualização foi em: {last_update}"
-        f"5 últimos preços, {last_5prices}"
+        f"Última atualização foi em: {last_update}\n\n"
+        f"5 últimos preços: {last_5prices}\n\n"
         f"🔥 Aproveite as ofertas 🔥"
     )
 
@@ -64,7 +64,7 @@ async def novo_produto(produto):
         f'🆕 *Produto Adicionado:* *"{name}"*\n\n'
         f"💰 *Preço:* *{price}*\n\n"
         f"🔗 *Mais detalhes:* {link}\n\n"
-        f"5 últimos preços: {last_5prices}"
+        f"5 últimos preços: {last_5prices}\n\n"
         f"🚀 Não perca essa novidade 🚀"
     )
 
