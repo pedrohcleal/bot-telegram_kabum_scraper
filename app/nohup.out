@@ -1,0 +1,2580 @@
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Processador AMD Ryzen 5 5500, 3.6GHz, Cache 16MB, Hexa Core, 12 Threads, AM4 - 100-100000457BOX', 'price': 'R$ 693,43', 'link': 'https://www.kabum.com.br/produto/356695/processador-amd-ryzen-5-5500-3-6ghz-cache-16mb-hexa-core-12-threads-am4-100-100000457box', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F356695%2FProcessador-AMD-Ryzen-5-5500-3-6GHz-Cache-16MB-Hexa-Core-12-Threads-AM4-100-100000457BOX_1725045709_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Upgrade AMD Ryzen 5 4600g + Placa Mãe B550m DDR4', 'price': 'R$ 1.439,91', 'link': 'https://www.kabum.com.br/produto/519114/kit-upgrade-amd-ryzen-5-4600g-placa-mae-b550m-ddr4', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F519114%2FKit-Upgrade-AMD-Ryzen-5-4600g-Placa-M-e-B550m-DDR4_1704463701_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Upgrade AMD Ryzen 5 4600g + Placa Mãe B550m DDR4 + Memória RAM 32GB 3200mhz DDR4', 'price': 'R$ 2.069,91', 'link': 'https://www.kabum.com.br/produto/519117/kit-upgrade-amd-ryzen-5-4600g-placa-mae-b550m-ddr4-memoria-ram-32gb-3200mhz-ddr4', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F519117%2FKit-Upgrade-AMD-Ryzen-5-4600g-Placa-M-e-B550m-DDR4-Mem-ria-RAM-32GB-3200mhz-DDR4_1711550894_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Erro na paginação: Message: element not interactable
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+#0 0x56106f0b72da <unknown>
+#1 0x56106ed85041 <unknown>
+#2 0x56106edd5d3f <unknown>
+#3 0x56106edc98c6 <unknown>
+#4 0x56106edf98d2 <unknown>
+#5 0x56106edc9279 <unknown>
+#6 0x56106edf9a9e <unknown>
+#7 0x56106ee17dfd <unknown>
+#8 0x56106edf9673 <unknown>
+#9 0x56106edc7473 <unknown>
+#10 0x56106edc847e <unknown>
+#11 0x56106f07e0db <unknown>
+#12 0x56106f082071 <unknown>
+#13 0x56106f06a9d5 <unknown>
+#14 0x56106f082bf2 <unknown>
+#15 0x56106f04fb6f <unknown>
+#16 0x56106f0a6248 <unknown>
+#17 0x56106f0a6417 <unknown>
+#18 0x56106f0b60cc <unknown>
+#19 0x7fb9f1415ac3 <unknown>
+
+Finalizando o scraping...
+-----> FIM DA ITERAÇÃO WHILE <--------
+
+
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Kingston Fury Beast, 8GB, 3200MHz, DDR4, CL16, Preto - KF432C16BB/8', 'price': 'R$ 199,99', 'link': 'https://www.kabum.com.br/produto/172365/memoria-ram-kingston-fury-beast-8gb-3200mhz-ddr4-cl16-preto-kf432c16bb-8', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F172365%2Fmemoria-kingston-fury-beast-8gb-3200mhz-ddr4-cl16-preto-kf432c16bb-8_1626270523_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Processador AMD Ryzen 7 7700X, 5.4GHz, Cache 40MB, AM5, 8 núcleos, 16 Threads, Radeon Graphics Com Vídeo - 100-100000591WOF', 'price': 'R$ 2.446,35', 'link': 'https://www.kabum.com.br/produto/390988/processador-amd-ryzen-7-7700x-5-4ghz-cache-40mb-am5-8-nucleos-16-threads-radeon-graphics-com-video-100-100000591wof', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F390988%2FProcessador-AMD-Ryzen-7-7700X-5-4GHz-Cache-40MB-AM5-8-n-cleos-16-Threads-Radeon-Graphics-Com-V-deo-100-100000591WOF_1724096333_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'HD Externo Portátil Toshiba Canvio Basics 4TB, 2.5", USB 3.0, Preto - HDTB440XK3CA', 'price': 'R$ 1.142,66', 'link': 'https://www.kabum.com.br/produto/133965/hd-externo-portatil-toshiba-canvio-basics-4tb-2-5-usb-3-0-preto-hdtb440xk3ca', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F133965%2FHD-Externo-Port-til-Toshiba-Canvio-Basics-4TB-2-5-USB-3-0-Preto-HDTB440XK3CA_1719517334_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'HD Externo Portátil Toshiba 1TB Canvio Basics - HDTB410XK3AA', 'price': 'R$ 535,56', 'link': 'https://www.kabum.com.br/produto/285219/hd-externo-portatil-toshiba-1tb-canvio-basics-hdtb410xk3aa', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F285219%2FHD-Externo-Port-til-Toshiba-1TB-Canvio-Basics-HDTB410XK3AA_1719514089_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Upgrade AMD Ryzen 5 4600g, Placa Mãe A520m, DDR4', 'price': 'R$ 1.214,91', 'link': 'https://www.kabum.com.br/produto/518987/kit-upgrade-amd-ryzen-5-4600g-placa-mae-a520m-ddr4', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F518987%2FKit-Upgrade-AMD-Ryzen-5-4600g-Placa-M-e-A520m-DDR4_1717782107_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Upgrade AMD Ryzen 5 4600g + Placa Mãe B550m DDR4 + Memória RAM 16GB 3200mhz DDR4', 'price': 'R$ 1.817,91', 'link': 'https://www.kabum.com.br/produto/519124/kit-upgrade-amd-ryzen-5-4600g-placa-mae-b550m-ddr4-memoria-ram-16gb-3200mhz-ddr4', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F519124%2FKit-Upgrade-AMD-Ryzen-5-4600g-Placa-M-e-B550m-DDR4-Mem-ria-RAM-16GB-3200mhz-DDR4_1704464893_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+DB Error: connection to server at "database-1.ch4wsw20wi2u.sa-east-1.rds.amazonaws.com" (54.232.232.159), port 5432 failed: SSL SYSCALL error: Success
+connection to server at "database-1.ch4wsw20wi2u.sa-east-1.rds.amazonaws.com" (54.232.232.159), port 5432 failed: FATAL:  no pg_hba.conf entry for host "179.191.123.254", user "phadmin", database "produtos", no encryption
+
+Ocorre um erro em main_selenium() (main), reiniciando Script
+local variable 'conn' referenced before assignment
+-----> FIM DA ITERAÇÃO WHILE <--------
+
+
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa-mãe Goldentec Chipset H610 Ddr4', 'price': 'R$ 833,16', 'link': 'https://www.kabum.com.br/produto/629100/placa-mae-goldentec-chipset-h610-ddr4', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F629100%2FPlaca-m-e-Goldentec-Chipset-H610-Ddr4_1725653879_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Erro na paginação: Message: element not interactable
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+#0 0x55c044b5c2da <unknown>
+#1 0x55c04482a041 <unknown>
+#2 0x55c04487ad3f <unknown>
+#3 0x55c04486e8c6 <unknown>
+#4 0x55c04489e8d2 <unknown>
+#5 0x55c04486e279 <unknown>
+#6 0x55c04489ea9e <unknown>
+#7 0x55c0448bcdfd <unknown>
+#8 0x55c04489e673 <unknown>
+#9 0x55c04486c473 <unknown>
+#10 0x55c04486d47e <unknown>
+#11 0x55c044b230db <unknown>
+#12 0x55c044b27071 <unknown>
+#13 0x55c044b0f9d5 <unknown>
+#14 0x55c044b27bf2 <unknown>
+#15 0x55c044af4b6f <unknown>
+#16 0x55c044b4b248 <unknown>
+#17 0x55c044b4b417 <unknown>
+#18 0x55c044b5b0cc <unknown>
+#19 0x7f1b79e12ac3 <unknown>
+
+Finalizando o scraping...
+-----> FIM DA ITERAÇÃO WHILE <--------
+
+
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Erro na paginação: Message: 
+Stacktrace:
+#0 0x55ddf7aae2da <unknown>
+#1 0x55ddf777c200 <unknown>
+#2 0x55ddf77cbaa2 <unknown>
+#3 0x55ddf77cbd41 <unknown>
+#4 0x55ddf7811964 <unknown>
+#5 0x55ddf77f08fd <unknown>
+#6 0x55ddf780edfd <unknown>
+#7 0x55ddf77f0673 <unknown>
+#8 0x55ddf77be473 <unknown>
+#9 0x55ddf77bf47e <unknown>
+#10 0x55ddf7a750db <unknown>
+#11 0x55ddf7a79071 <unknown>
+#12 0x55ddf7a619d5 <unknown>
+#13 0x55ddf7a79bf2 <unknown>
+#14 0x55ddf7a46b6f <unknown>
+#15 0x55ddf7a9d248 <unknown>
+#16 0x55ddf7a9d417 <unknown>
+#17 0x55ddf7aad0cc <unknown>
+#18 0x7fc990b1eac3 <unknown>
+
+Finalizando o scraping...
+-----> FIM DA ITERAÇÃO WHILE <--------
+
+
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Erro na paginação: Message: element not interactable
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+#0 0x55d7969f62da <unknown>
+#1 0x55d7966c4041 <unknown>
+#2 0x55d796714d3f <unknown>
+#3 0x55d7967088c6 <unknown>
+#4 0x55d7967388d2 <unknown>
+#5 0x55d796708279 <unknown>
+#6 0x55d796738a9e <unknown>
+#7 0x55d796756dfd <unknown>
+#8 0x55d796738673 <unknown>
+#9 0x55d796706473 <unknown>
+#10 0x55d79670747e <unknown>
+#11 0x55d7969bd0db <unknown>
+#12 0x55d7969c1071 <unknown>
+#13 0x55d7969a99d5 <unknown>
+#14 0x55d7969c1bf2 <unknown>
+#15 0x55d79698eb6f <unknown>
+#16 0x55d7969e5248 <unknown>
+#17 0x55d7969e5417 <unknown>
+#18 0x55d7969f50cc <unknown>
+#19 0x7f2bbfe96ac3 <unknown>
+
+Finalizando o scraping...
+-----> FIM DA ITERAÇÃO WHILE <--------
+
+
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Erro na paginação: Message: element not interactable
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+#0 0x55903b3702da <unknown>
+#1 0x55903b03e041 <unknown>
+#2 0x55903b08ed3f <unknown>
+#3 0x55903b0828c6 <unknown>
+#4 0x55903b0b28d2 <unknown>
+#5 0x55903b082279 <unknown>
+#6 0x55903b0b2a9e <unknown>
+#7 0x55903b0d0dfd <unknown>
+#8 0x55903b0b2673 <unknown>
+#9 0x55903b080473 <unknown>
+#10 0x55903b08147e <unknown>
+#11 0x55903b3370db <unknown>
+#12 0x55903b33b071 <unknown>
+#13 0x55903b3239d5 <unknown>
+#14 0x55903b33bbf2 <unknown>
+#15 0x55903b308b6f <unknown>
+#16 0x55903b35f248 <unknown>
+#17 0x55903b35f417 <unknown>
+#18 0x55903b36f0cc <unknown>
+#19 0x7f32a1972ac3 <unknown>
+
+Finalizando o scraping...
+-----> FIM DA ITERAÇÃO WHILE <--------
+
+
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Erro na paginação: Message: element not interactable
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+#0 0x559a97bd52da <unknown>
+#1 0x559a978a3041 <unknown>
+#2 0x559a978f3d3f <unknown>
+#3 0x559a978e78c6 <unknown>
+#4 0x559a979178d2 <unknown>
+#5 0x559a978e7279 <unknown>
+#6 0x559a97917a9e <unknown>
+#7 0x559a97935dfd <unknown>
+#8 0x559a97917673 <unknown>
+#9 0x559a978e5473 <unknown>
+#10 0x559a978e647e <unknown>
+#11 0x559a97b9c0db <unknown>
+#12 0x559a97ba0071 <unknown>
+#13 0x559a97b889d5 <unknown>
+#14 0x559a97ba0bf2 <unknown>
+#15 0x559a97b6db6f <unknown>
+#16 0x559a97bc4248 <unknown>
+#17 0x559a97bc4417 <unknown>
+#18 0x559a97bd40cc <unknown>
+#19 0x7f615cc76ac3 <unknown>
+
+Finalizando o scraping...
+-----> FIM DA ITERAÇÃO WHILE <--------
+
+
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Fonte Gigabyte GP-P550B, 550W, 80 Plus Bronze, PFC ativo, com cabo, Preto- 28200-P550B-1BRR', 'price': 'R$ 319,99', 'link': 'https://www.kabum.com.br/produto/114164/fonte-gigabyte-gp-p550b-550w-80-plus-bronze-pfc-ativo-com-cabo-preto-28200-p550b-1brr', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F114164%2Ffonte-gigabyte-gp-p550b-28200-p550b-1brr_1595354907_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD Sandisk Plus 1TB, M.2 2280 NVMe Pcie Gen 3.0, Leitura 3200MB/s E Gravação 2500MB/s - Sdssda3n-1t00-G26', 'price': 'R$ 416,29', 'link': 'https://www.kabum.com.br/produto/538416/ssd-sandisk-plus-1tb-m-2-2280-nvme-pcie-gen-3-0-leitura-3200mb-s-e-gravacao-2500mb-s-sdssda3n-1t00-g26', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F538416%2FSSD-Sandisk-Plus-1TB-M-2-2280-NVMe-Pcie-Gen-3-0-Leitura-3200MB-s-E-Grava-o-2500MB-s-Sdssda3n-1t00-G26_1715870565_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'HD Hewlett Packard-R0q59a, HPE SD 8TB, SAS 7.2k LFF', 'price': 'R$ 3.314,18', 'link': 'https://www.kabum.com.br/produto/501885/hd-hewlett-packard-r0q59a-hpe-sd-8tb-sas-7-2k-lff', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F501885%2FHD-Hewlett-Packard-R0q59a-HPE-SD-8TB-SAS-7-2k-LFF_1697477921_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Erro na paginação: Message: 
+Stacktrace:
+#0 0x56046dbfc2da <unknown>
+#1 0x56046d8ca200 <unknown>
+#2 0x56046d919aa2 <unknown>
+#3 0x56046d919d41 <unknown>
+#4 0x56046d95f964 <unknown>
+#5 0x56046d93e8fd <unknown>
+#6 0x56046d95cdfd <unknown>
+#7 0x56046d93e673 <unknown>
+#8 0x56046d90c473 <unknown>
+#9 0x56046d90d47e <unknown>
+#10 0x56046dbc30db <unknown>
+#11 0x56046dbc7071 <unknown>
+#12 0x56046dbaf9d5 <unknown>
+#13 0x56046dbc7bf2 <unknown>
+#14 0x56046db94b6f <unknown>
+#15 0x56046dbeb248 <unknown>
+#16 0x56046dbeb417 <unknown>
+#17 0x56046dbfb0cc <unknown>
+#18 0x7f0234d4cac3 <unknown>
+
+Finalizando o scraping...
+-----> FIM DA ITERAÇÃO WHILE <--------
+
+
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Disco Rígido Hpe 1.2tb Sas 10k Sff Bc Mv Hdd - P28586-b21', 'price': 'R$ 1.631,78', 'link': 'https://www.kabum.com.br/produto/517686/disco-rigido-hpe-1-2tb-sas-10k-sff-bc-mv-hdd-p28586-b21', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F517686%2FDisco-R-gido-Hpe-1-2tb-Sas-10k-Sff-Bc-Mv-Hdd-P28586-b21_1703613490_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória Hpe 32GB, 2rx4 Pc4-3200aa-r, Smart Kit - P06033-b21', 'price': 'R$ 2.020,81', 'link': 'https://www.kabum.com.br/produto/470101/memoria-hpe-32gb-2rx4-pc4-3200aa-r-smart-kit-p06033-b21', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F470101%2FMem-ria-Hpe-32GB-2rx4-Pc4-3200aa-r-Smart-Kit-P06033-b21_1689926918_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Disco Rígido Hpe 2.4tb Sas 10k Sff Bc 512e Mv Hdd - P28352-b21', 'price': 'R$ 2.449,98', 'link': 'https://www.kabum.com.br/produto/517688/disco-rigido-hpe-2-4tb-sas-10k-sff-bc-512e-mv-hdd-p28352-b21', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F517688%2FDisco-R-gido-Hpe-2-4tb-Sas-10k-Sff-Bc-512e-Mv-Hdd-P28352-b21_1703614090_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD Hpe Sd 1.92TB Sas Ri 12g Sff R0q47a', 'price': 'R$ 7.890,10', 'link': 'https://www.kabum.com.br/produto/602459/ssd-hpe-sd-1-92tb-sas-ri-12g-sff-r0q47a', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F602459%2FSSD-Hpe-Sd-1-92TB-Sas-Ri-12g-Sff-R0q47a_1719942010_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Disco Rígido Hewlett 1TB, NHP, 6G, 7.2K LFF, SATA - 801882-B21', 'price': 'R$ 1.056,62', 'link': 'https://www.kabum.com.br/produto/579018/disco-rigido-hewlett-1tb-nhp-6g-7-2k-lff-sata-801882-b21', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F579018%2FDisco-R-gido-Hewlett-1TB-NHP-6G-7-2K-LFF-SATA-801882-B21_1714506577_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Disco Rígido Hpe Msa Sas 16tb 7.2k Lff M2 Hdd - R3u72a', 'price': 'R$ 5.810,46', 'link': 'https://www.kabum.com.br/produto/622001/disco-rigido-hpe-msa-sas-16tb-7-2k-lff-m2-hdd-r3u72a', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F622001%2FDisco-R-gido-Hpe-Msa-Sas-16tb-7-2k-Lff-M2-Hdd-R3u72a_1723594280_m.jpg&w=384&q=75'}
+salvando_historico
+DB Error: connection to server at "database-1.ch4wsw20wi2u.sa-east-1.rds.amazonaws.com" (54.232.232.159), port 5432 failed: could not receive data from server: Connection timed out
+SSL SYSCALL error: Connection timed out
+connection to server at "database-1.ch4wsw20wi2u.sa-east-1.rds.amazonaws.com" (54.232.232.159), port 5432 failed: FATAL:  no pg_hba.conf entry for host "179.191.123.254", user "phadmin", database "produtos", no encryption
+
+Ocorre um erro em main_selenium() (main), reiniciando Script
+local variable 'conn' referenced before assignment
+-----> FIM DA ITERAÇÃO WHILE <--------
+
+
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Upgrade - Placa-Mãe H81 + Processador I7 4770 + Memória 16GB DDR3 + Cooler + SSD M.2 256GB', 'price': 'R$ 869,99', 'link': 'https://www.kabum.com.br/produto/452805/kit-upgrade-placa-mae-h81-processador-i7-4770-memoria-16gb-ddr3-cooler-ssd-m-2-256gb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F452805%2FKit-Upgrade-Placa-M-e-H81-Processador-I7-4770-Mem-ria-16GB-DDR3-Cooler-SSD-M-2-256GB_1702061296_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Processador AMD Ryzen 7 7700X, 5.4GHz, Cache 40MB, AM5, 8 núcleos, 16 Threads, Radeon Graphics Com Vídeo - 100-100000591WOF', 'price': 'R$ 2.339,10', 'link': 'https://www.kabum.com.br/produto/390988/processador-amd-ryzen-7-7700x-5-4ghz-cache-40mb-am5-8-nucleos-16-threads-radeon-graphics-com-video-100-100000591wof', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F390988%2FProcessador-AMD-Ryzen-7-7700X-5-4GHz-Cache-40MB-AM5-8-n-cleos-16-Threads-Radeon-Graphics-Com-V-deo-100-100000591WOF_1724096333_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'HD Interno Toshiba 12TB N300, 3.5 - HDWG21CXZSTAI', 'price': 'R$ 2.348,34', 'link': 'https://www.kabum.com.br/produto/324200/hd-interno-toshiba-12tb-n300-3-5-hdwg21cxzstai', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F324200%2FHD-Interno-Toshiba-12TB-N300-3-5-HDWG21CXZSTAI_1691672321_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória Notebook Kingston, 16GB, DDR4 3200mhz - KVR32S22D8/16', 'price': 'R$ 466,81', 'link': 'https://www.kabum.com.br/produto/464061/memoria-notebook-kingston-16gb-ddr4-3200mhz-kvr32s22d8-16', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F464061%2FMem-ria-Notebook-Kingston-16GB-DDR4-3200mhz-KVR32S22D8-16_1722695442_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Disco Rígido Hpe 2.4tb Sas 10k Sff Bc 512e Mv Hdd - P28352-b21', 'price': 'R$ 2.313,87', 'link': 'https://www.kabum.com.br/produto/517688/disco-rigido-hpe-2-4tb-sas-10k-sff-bc-512e-mv-hdd-p28352-b21', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F517688%2FDisco-R-gido-Hpe-2-4tb-Sas-10k-Sff-Bc-512e-Mv-Hdd-P28352-b21_1703614090_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória Hpe 32GB, 2rx4 Pc4-3200aa-r, Smart Kit - P06033-b21', 'price': 'R$ 1.908,54', 'link': 'https://www.kabum.com.br/produto/470101/memoria-hpe-32gb-2rx4-pc4-3200aa-r-smart-kit-p06033-b21', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F470101%2FMem-ria-Hpe-32GB-2rx4-Pc4-3200aa-r-Smart-Kit-P06033-b21_1689926918_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Pl Mãe H110 + Processador. I3 7100 + Memória. 8GB DDR4 + Cooler + M.2 256GB', 'price': 'R$ 853,16', 'link': 'https://www.kabum.com.br/produto/425015/kit-pl-mae-h110-processador-i3-7100-memoria-8gb-ddr4-cooler-m-2-256gb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F425015%2FKit-Pl-M-e-H110-Processador-I3-7100-Mem-ria-8GB-DDR4-Cooler-M-2-256GB_1688671722_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Disco Rígido Hpe 1.2tb Sas 10k Sff Bc Mv Hdd - P28586-b21', 'price': 'R$ 1.541,13', 'link': 'https://www.kabum.com.br/produto/517686/disco-rigido-hpe-1-2tb-sas-10k-sff-bc-mv-hdd-p28586-b21', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F517686%2FDisco-R-gido-Hpe-1-2tb-Sas-10k-Sff-Bc-Mv-Hdd-P28586-b21_1703613490_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Pl Mãe H310 + Processador I3 8100 + Memoria 8GB, DDR4 + Cooler + 256 M2', 'price': 'R$ 979,95', 'link': 'https://www.kabum.com.br/produto/532612/kit-pl-mae-h310-processador-i3-8100-memoria-8gb-ddr4-cooler-256-m2', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F532612%2FKit-Pl-M-e-H310-Processador-I3-8100-Memoria-8GB-DDR4-Cooler-256-M2_1709142496_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Powerpc Placa-Mãe H110 + Processador I5 7400 + Memória 8GB DDR4 + Cooler + M.2 256GB', 'price': 'R$ 1.000,80', 'link': 'https://www.kabum.com.br/produto/425525/kit-powerpc-placa-mae-h110-processador-i5-7400-memoria-8gb-ddr4-cooler-m-2-256gb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F425525%2FKit-Powerpc-Placa-M-e-H110-Processador-I5-7400-Mem-ria-8GB-DDR4-Cooler-M-2-256GB_1688817494_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Powerpc Placa-Mãe H61 + Processador I5 3470 + Memória 4GB DDR3 + Cooler + M.2 256GB', 'price': 'R$ 528,14', 'link': 'https://www.kabum.com.br/produto/426018/kit-powerpc-placa-mae-h61-processador-i5-3470-memoria-4gb-ddr3-cooler-m-2-256gb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F426018%2FKit-Powerpc-Placa-M-e-H61-Processador-I5-3470-Mem-ria-4GB-DDR3-Cooler-M-2-256GB_1689103697_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'HD Lenovo 2.4TB ISG, SAS, 12G, 10K, SFF, G7 - 7XB7A00069', 'price': 'R$ 3.338,16', 'link': 'https://www.kabum.com.br/produto/316299/hd-lenovo-2-4tb-isg-sas-12g-10k-sff-g7-7xb7a00069', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F316299%2FHD-Lenovo-2-4TB-ISG-SAS-12G-10K-SFF-G7-7XB7A00069_1691672317_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Ocorre um erro em main_selenium() (main), reiniciando Script
+Timed out
+-----> FIM DA ITERAÇÃO WHILE <--------
+
+
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'HD Interno Toshiba 12TB N300, 3.5 - HDWG21CXZSTAI', 'price': 'R$ 2.217,88', 'link': 'https://www.kabum.com.br/produto/324200/hd-interno-toshiba-12tb-n300-3-5-hdwg21cxzstai', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F324200%2FHD-Interno-Toshiba-12TB-N300-3-5-HDWG21CXZSTAI_1691672321_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória Notebook Kingston, 16GB, DDR4 3200mhz - KVR32S22D8/16', 'price': 'R$ 440,88', 'link': 'https://www.kabum.com.br/produto/464061/memoria-notebook-kingston-16gb-ddr4-3200mhz-kvr32s22d8-16', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F464061%2FMem-ria-Notebook-Kingston-16GB-DDR4-3200mhz-KVR32S22D8-16_1722695442_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'HD Lenovo 2.4TB ISG, SAS, 12G, 10K, SFF, G7 - 7XB7A00069', 'price': 'R$ 3.338,16', 'link': 'https://www.kabum.com.br/produto/316299/hd-lenovo-2-4tb-isg-sas-12g-10k-sff-g7-7xb7a00069', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F316299%2FHD-Lenovo-2-4TB-ISG-SAS-12G-10K-SFF-G7-7XB7A00069_1691672317_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Placa Mãe H110 + Processador I7 7700 + Memória 8GB DDR4 + Cooler + M.2 256GB - Powerpc', 'price': 'R$ 1.470,21', 'link': 'https://www.kabum.com.br/produto/477347/kit-placa-mae-h110-processador-i7-7700-memoria-8gb-ddr4-cooler-m-2-256gb-powerpc', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F477347%2FKit-Placa-M-e-H110-Processador-I7-7700-Mem-ria-8GB-DDR4-Cooler-M-2-256GB-Powerpc_1690828112_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD Western Digital SN700 Red 1TB, M.2, Leitura Até 3400MB/s, Gravação Até 2900MB/s', 'price': 'R$ 1.307,52', 'link': 'https://www.kabum.com.br/produto/387111/ssd-western-digital-sn700-red-1tb-m-2-leitura-ate-3400mb-s-gravacao-ate-2900mb-s', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F387111%2FSSD-Western-Digital-SN700-Red-1TB-M-2-Leitura-At-3400MB-s-Grava-o-At-2900MB-s_1710265696_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Upgrade Placa Mãe H81 + Proc. I7 4770 + Mem. 8GB Ddr3 + Cooler + M.2 256GB', 'price': 'R$ 804,25', 'link': 'https://www.kabum.com.br/produto/452394/kit-upgrade-placa-mae-h81-proc-i7-4770-mem-8gb-ddr3-cooler-m-2-256gb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F452394%2FKit-Upgrade-Placa-M-e-H81-Proc-I7-4770-Mem-8GB-Ddr3-Cooler-M-2-256GB_1689364693_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Powerpc Placa-Mãe H61 + Processador I3 2100 + Memória 4GB DDR3 + Cooler+ M.2 256GB', 'price': 'R$ 437,74', 'link': 'https://www.kabum.com.br/produto/426024/kit-powerpc-placa-mae-h61-processador-i3-2100-memoria-4gb-ddr3-cooler-m-2-256gb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F426024%2FKit-Powerpc-Placa-M-e-H61-Processador-I3-2100-Mem-ria-4GB-DDR3-Cooler-M-2-256GB_1688833093_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Pl Mãe H110 + Procesador. I3 6100 + Memória. 16GB DDR4 + Cooler+ M.2 256GB', 'price': 'R$ 932,30', 'link': 'https://www.kabum.com.br/produto/425016/kit-pl-mae-h110-procesador-i3-6100-memoria-16gb-ddr4-cooler-m-2-256gb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F425016%2FKit-Pl-M-e-H110-Procesador-I3-6100-Mem-ria-16GB-DDR4-Cooler-M-2-256GB_1689179895_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Pl Mãe H110 + Processador I3 7100 + Memória 16GB DDR4 + Cooler + M.2 256GB', 'price': 'R$ 965,23', 'link': 'https://www.kabum.com.br/produto/425014/kit-pl-mae-h110-processador-i3-7100-memoria-16gb-ddr4-cooler-m-2-256gb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F425014%2FKit-Pl-M-e-H110-Processador-I3-7100-Mem-ria-16GB-DDR4-Cooler-M-2-256GB_1688671722_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Powerpc Placa-Mãe H110 + Processador I5 7400 + Memória 16GB DDR4 + Cooler + M.2 256GB', 'price': 'R$ 1.172,22', 'link': 'https://www.kabum.com.br/produto/425528/kit-powerpc-placa-mae-h110-processador-i5-7400-memoria-16gb-ddr4-cooler-m-2-256gb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F425528%2FKit-Powerpc-Placa-M-e-H110-Processador-I5-7400-Mem-ria-16GB-DDR4-Cooler-M-2-256GB_1688817493_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Powerpc Placa-Mãe H110 + Processador I7 6700 + Memória 16GB DDR4 + Cooler + M.2 256GB', 'price': 'R$ 1.404,75', 'link': 'https://www.kabum.com.br/produto/425522/kit-powerpc-placa-mae-h110-processador-i7-6700-memoria-16gb-ddr4-cooler-m-2-256gb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F425522%2FKit-Powerpc-Placa-M-e-H110-Processador-I7-6700-Mem-ria-16GB-DDR4-Cooler-M-2-256GB_1689179895_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Powerpc Placa-Mãe H110 + Processador I5 6500 + Memória 8GB DDR4 + Cooler + M.2 256GB', 'price': 'R$ 964,66', 'link': 'https://www.kabum.com.br/produto/425523/kit-powerpc-placa-mae-h110-processador-i5-6500-memoria-8gb-ddr4-cooler-m-2-256gb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F425523%2FKit-Powerpc-Placa-M-e-H110-Processador-I5-6500-Mem-ria-8GB-DDR4-Cooler-M-2-256GB_1688840892_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Placa Mãe H310 + Proc. I5 8500 + Mem. 8GB Ddr4 + Cooler + M.2 256GB', 'price': 'R$ 1.186,68', 'link': 'https://www.kabum.com.br/produto/452826/kit-placa-mae-h310-proc-i5-8500-mem-8gb-ddr4-cooler-m-2-256gb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F452826%2FKit-Placa-M-e-H310-Proc-I5-8500-Mem-8GB-Ddr4-Cooler-M-2-256GB_1680703091_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Processador Intel Core I5 13600kf, 5.10ghz Max Turbo, 14-core, Lga1700', 'price': 'R$ 2.936,61', 'link': 'https://www.kabum.com.br/produto/400719/processador-intel-core-i5-13600kf-5-10ghz-max-turbo-14-core-lga1700', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F400719%2FProcessador-Intel-Core-I5-13600kf-5-10ghz-Max-Turbo-14-core-Lga1700_1714142363_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Placa Mãe H61 + Processador I3 3220 + Memoria 4GB DDR3 + Cooler + SSD 256GB M2', 'price': 'R$ 460,26', 'link': 'https://www.kabum.com.br/produto/424504/kit-placa-mae-h61-processador-i3-3220-memoria-4gb-ddr3-cooler-ssd-256gb-m2', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F424504%2FKit-Placa-M-e-H61-Processador-I3-3220-Memoria-4GB-DDR3-Cooler-SSD-256GB-M2_1689691720_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Kit Powerpc Placa-Mãe H61 + Processador I5 2400 + Memória 4GB DDR3 + Cooler + M.2 256GB', 'price': 'R$ 497,48', 'link': 'https://www.kabum.com.br/produto/426020/kit-powerpc-placa-mae-h61-processador-i5-2400-memoria-4gb-ddr3-cooler-m-2-256gb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F426020%2FKit-Powerpc-Placa-M-e-H61-Processador-I5-2400-Mem-ria-4GB-DDR3-Cooler-M-2-256GB_1689164892_m.jpg&w=384&q=75'}
+salvando_historico
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Powerpc Placa-Mãe H110 + Processador I5 6500 + Memória 16GB DDR4 + Cooler + M.2 256GB', 'price': 'R$ 1.076,74', 'link': 'https://www.kabum.com.br/produto/425524/kit-powerpc-placa-mae-h110-processador-i5-6500-memoria-16gb-ddr4-cooler-m-2-256gb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F425524%2FKit-Powerpc-Placa-M-e-H110-Processador-I5-6500-Mem-ria-16GB-DDR4-Cooler-M-2-256GB_1689179895_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Powerpc Placa-Mãe H110 + Processador I7 6700 + Memória 8GB DDR4 + Cooler + M.2 256GB', 'price': 'R$ 1.292,66', 'link': 'https://www.kabum.com.br/produto/425530/kit-powerpc-placa-mae-h110-processador-i7-6700-memoria-8gb-ddr4-cooler-m-2-256gb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F425530%2FKit-Powerpc-Placa-M-e-H110-Processador-I7-6700-Mem-ria-8GB-DDR4-Cooler-M-2-256GB_1688840893_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Ocorre um erro em main_selenium() (main), reiniciando Script
+Timed out
+-----> FIM DA ITERAÇÃO WHILE <--------
+
+
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Powerpc Placa-Mãe H110 + Processador I7 6700 + Memória 8GB DDR4 + Cooler + M.2 256GB', 'price': 'R$ 1.292,66', 'link': 'https://www.kabum.com.br/produto/425530/kit-powerpc-placa-mae-h110-processador-i7-6700-memoria-8gb-ddr4-cooler-m-2-256gb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F425530%2FKit-Powerpc-Placa-M-e-H110-Processador-I7-6700-Mem-ria-8GB-DDR4-Cooler-M-2-256GB_1688840893_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'HD Hewlett Packard-R0q59a, HPE SD 8TB, SAS 7.2k LFF', 'price': 'R$ 3.130,06', 'link': 'https://www.kabum.com.br/produto/501885/hd-hewlett-packard-r0q59a-hpe-sd-8tb-sas-7-2k-lff', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F501885%2FHD-Hewlett-Packard-R0q59a-HPE-SD-8TB-SAS-7-2k-LFF_1697477921_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Pl Mãe H310 + Proc. I5 8500 + Mem. 16GB Ddr4 + Cooler + M.2 256GB', 'price': 'R$ 1.315,00', 'link': 'https://www.kabum.com.br/produto/627623/kit-pl-mae-h310-proc-i5-8500-mem-16gb-ddr4-cooler-m-2-256gb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F627623%2FKit-Pl-M-e-H310-Proc-I5-8500-Mem-16GB-Ddr4-Cooler-M-2-256GB_1724102510_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte Memor K Datalogic De Parede P/ Cabo Usb 94acc0316', 'price': 'R$ 255,93', 'link': 'https://www.kabum.com.br/produto/618853/fonte-memor-k-datalogic-de-parede-p-cabo-usb-94acc0316', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F618853%2FFonte-Memor-K-Datalogic-De-Parede-P-Cabo-Usb-94acc0316_1722023887_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD Adata, 1TB, Legend 700 M.2 2280, Leitura 2000 Mb/s', 'price': 'R$ 697,85', 'link': 'https://www.kabum.com.br/produto/428667/ssd-adata-1tb-legend-700-m-2-2280-leitura-2000-mb-s', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F428667%2FSSD-Adata-1TB-Legend-700-M-2-2280-Leitura-2000-Mb-s_1712340486_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Disco Rígido Dell 16tb Sas Ise 7.2k 3.5" - 400-bjko', 'price': 'R$ 4.402,25', 'link': 'https://www.kabum.com.br/produto/634167/disco-rigido-dell-16tb-sas-ise-7-2k-3-5-400-bjko', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F634167%2FDisco-R-gido-Dell-16tb-Sas-Ise-7-2k-3-5-400-bjko_1725902125_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD Hpe Sd 1.92TB Sas Ri 12g Sff R0q47a', 'price': 'R$ 7.451,76', 'link': 'https://www.kabum.com.br/produto/602459/ssd-hpe-sd-1-92tb-sas-ri-12g-sff-r0q47a', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F602459%2FSSD-Hpe-Sd-1-92TB-Sas-Ri-12g-Sff-R0q47a_1719942010_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Disco Rígido Hewlett 1TB, NHP, 6G, 7.2K LFF, SATA - 801882-B21', 'price': 'R$ 997,92', 'link': 'https://www.kabum.com.br/produto/579018/disco-rigido-hewlett-1tb-nhp-6g-7-2k-lff-sata-801882-b21', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F579018%2FDisco-R-gido-Hewlett-1TB-NHP-6G-7-2K-LFF-SATA-801882-B21_1714506577_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Pl Mãe H310 + Proc. I3 6100 + Mem. 8GB Ddr4 + Cooler+ M.2 256GB', 'price': 'R$ 820,23', 'link': 'https://www.kabum.com.br/produto/627622/kit-pl-mae-h310-proc-i3-6100-mem-8gb-ddr4-cooler-m-2-256gb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F627622%2FKit-Pl-M-e-H310-Proc-I3-6100-Mem-8GB-Ddr4-Cooler-M-2-256GB_1724099908_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Kit Pl Mãe H81-10/100 + Processador I34130 + Memoria 8GB + Cooler + 256 M2', 'price': 'R$ 531,82', 'link': 'https://www.kabum.com.br/produto/532621/kit-pl-mae-h81-10-100-processador-i34130-memoria-8gb-cooler-256-m2', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F532621%2FKit-Pl-M-e-H81-10-100-Processador-I34130-Memoria-8GB-Cooler-256-M2_1709143693_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte De Alimentação Zebra - Pwr-bga12v50w0ww', 'price': 'R$ 200,01', 'link': 'https://www.kabum.com.br/produto/516811/fonte-de-alimentacao-zebra-pwr-bga12v50w0ww', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F516811%2FFonte-De-Alimenta-o-Zebra-Pwr-bga12v50w0ww_1703099297_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD Hewlett Packard Hpe 480GB, Sata, Ri Sff Bc Mv - P40497-b21', 'price': 'R$ 789,36', 'link': 'https://www.kabum.com.br/produto/470395/ssd-hewlett-packard-hpe-480gb-sata-ri-sff-bc-mv-p40497-b21', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F470395%2FSSD-Hewlett-Packard-Hpe-480GB-Sata-Ri-Sff-Bc-Mv-P40497-b21_1704900493_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Disco Rígido Hpe Msa Sas 16tb 7.2k Lff M2 Hdd - R3u72a', 'price': 'R$ 5.487,66', 'link': 'https://www.kabum.com.br/produto/622001/disco-rigido-hpe-msa-sas-16tb-7-2k-lff-m2-hdd-r3u72a', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F622001%2FDisco-R-gido-Hpe-Msa-Sas-16tb-7-2k-Lff-M2-Hdd-R3u72a_1723594280_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD Externo Kingston Portátil 4TB Usb 3.2 - Sxs20004000g', 'price': 'R$ 3.730,83', 'link': 'https://www.kabum.com.br/produto/577610/ssd-externo-kingston-portatil-4tb-usb-3-2-sxs20004000g', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F577610%2FSSD-Externo-Kingston-Port-til-4TB-Usb-3-2-Sxs20004000g_1722967454_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Hd Toshiba N300 14TB Nas 3.5 Hdwg51exzstai', 'price': 'R$ 3.011,62', 'link': 'https://www.kabum.com.br/produto/587250/hd-toshiba-n300-14tb-nas-3-5-hdwg51exzstai', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F587250%2FHd-Toshiba-N300-14TB-Nas-3-5-Hdwg51exzstai_1719958298_m.jpg&w=384&q=75'}
+salvando_historico
+insert produto on aws -> {'adm': 'kabum', 'name': 'Memória Kingston 8GB 3200mhz Ddr4 Cl22 Dimm Kvr32n22s6/8i', 'price': 'R$ 241,91', 'link': 'https://www.kabum.com.br/produto/580789/memoria-kingston-8gb-3200mhz-ddr4-cl22-dimm-kvr32n22s6-8i', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F580789%2FMem-ria-Kingston-8GB-3200mhz-Ddr4-Cl22-Dimm-Kvr32n22s6-8i_1722877311_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'HD Hewlett Packard 1TB ISS, SATA, 12G, 7.2K, LFF - 861686-B21', 'price': 'R$ 1.531,16', 'link': 'https://www.kabum.com.br/produto/203768/hd-hewlett-packard-1tb-iss-sata-12g-7-2k-lff-861686-b21', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F203768%2FHD-Hewlett-Packard-1TB-ISS-SATA-12G-7-2K-LFF-861686-B21_1711479495_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Processador Intel Core I7 12700F, 2.1GHz - Bx8071512700fI', 'price': 'R$ 2.425,67', 'link': 'https://www.kabum.com.br/produto/315017/processador-intel-core-i7-12700f-2-1ghz-bx8071512700fi', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F315017%2FProcessador-Intel-Core-I7-12700F-2-1GHz-Bx8071512700fI_1720742458_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'HD Interno Toshiba 10TB N300, NAS, 3.5 - HDWG11AXZSTAI', 'price': 'R$ 2.306,73', 'link': 'https://www.kabum.com.br/produto/324712/hd-interno-toshiba-10tb-n300-nas-3-5-hdwg11axzstai', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F324712%2FHD-Interno-Toshiba-10TB-N300-NAS-3-5-HDWG11AXZSTAI_1691672317_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Erro na paginação: Message: element not interactable
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+#0 0x5580b2b762da <unknown>
+#1 0x5580b2844041 <unknown>
+#2 0x5580b2894d3f <unknown>
+#3 0x5580b28888c6 <unknown>
+#4 0x5580b28b88d2 <unknown>
+#5 0x5580b2888279 <unknown>
+#6 0x5580b28b8a9e <unknown>
+#7 0x5580b28d6dfd <unknown>
+#8 0x5580b28b8673 <unknown>
+#9 0x5580b2886473 <unknown>
+#10 0x5580b288747e <unknown>
+#11 0x5580b2b3d0db <unknown>
+#12 0x5580b2b41071 <unknown>
+#13 0x5580b2b299d5 <unknown>
+#14 0x5580b2b41bf2 <unknown>
+#15 0x5580b2b0eb6f <unknown>
+#16 0x5580b2b65248 <unknown>
+#17 0x5580b2b65417 <unknown>
+#18 0x5580b2b750cc <unknown>
+#19 0x7f446dbc8ac3 <unknown>
+
+Finalizando o scraping...
+-----> FIM DA ITERAÇÃO WHILE <--------
+
+
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD Sandisk Plus 1TB, M.2 2280 NVMe Pcie Gen 3.0, Leitura 3200MB/s E Gravação 2500MB/s - Sdssda3n-1t00-G26', 'price': 'R$ 592,00', 'link': 'https://www.kabum.com.br/produto/538416/ssd-sandisk-plus-1tb-m-2-2280-nvme-pcie-gen-3-0-leitura-3200mb-s-e-gravacao-2500mb-s-sdssda3n-1t00-g26', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F538416%2FSSD-Sandisk-Plus-1TB-M-2-2280-NVMe-Pcie-Gen-3-0-Leitura-3200MB-s-E-Grava-o-2500MB-s-Sdssda3n-1t00-G26_1715870565_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'SSD Interno Westgatte, 1TB, M.2 Nvme', 'price': 'R$ 510,00', 'link': 'https://www.kabum.com.br/produto/542175/ssd-interno-westgatte-1tb-m-2-nvme', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F542175%2FSSD-Interno-Westgatte-1TB-M-2-Nvme_1724790006_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Erro na paginação: Message: element not interactable
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+#0 0x56164e6742da <unknown>
+#1 0x56164e342041 <unknown>
+#2 0x56164e392d3f <unknown>
+#3 0x56164e3868c6 <unknown>
+#4 0x56164e3b68d2 <unknown>
+#5 0x56164e386279 <unknown>
+#6 0x56164e3b6a9e <unknown>
+#7 0x56164e3d4dfd <unknown>
+#8 0x56164e3b6673 <unknown>
+#9 0x56164e384473 <unknown>
+#10 0x56164e38547e <unknown>
+#11 0x56164e63b0db <unknown>
+#12 0x56164e63f071 <unknown>
+#13 0x56164e6279d5 <unknown>
+#14 0x56164e63fbf2 <unknown>
+#15 0x56164e60cb6f <unknown>
+#16 0x56164e663248 <unknown>
+#17 0x56164e663417 <unknown>
+#18 0x56164e6730cc <unknown>
+#19 0x7f4c3655aac3 <unknown>
+
+Finalizando o scraping...
+-----> FIM DA ITERAÇÃO WHILE <--------
+
+
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Case para HD Externo F3, 2.5´, USB 2.0 - CS-U2', 'price': 'R$ 24,99', 'link': 'https://www.kabum.com.br/produto/112059/case-para-hd-externo-f3-2-5-usb-2-0-cs-u2', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F112059%2Fcase-para-hd-externo-f3-2-5-usb-2-0-f-01_1598013554_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Erro na paginação: Message: no such element: Unable to locate element: {"method":"css selector","selector":".priceCard"}
+  (Session info: chrome=128.0.6613.119); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55d13df212da <unknown>
+#1 0x55d13dbef200 <unknown>
+#2 0x55d13dc3eaa2 <unknown>
+#3 0x55d13dc3ed41 <unknown>
+#4 0x55d13dc33386 <unknown>
+#5 0x55d13dc638fd <unknown>
+#6 0x55d13dc33279 <unknown>
+#7 0x55d13dc63a9e <unknown>
+#8 0x55d13dc81dfd <unknown>
+#9 0x55d13dc63673 <unknown>
+#10 0x55d13dc31473 <unknown>
+#11 0x55d13dc3247e <unknown>
+#12 0x55d13dee80db <unknown>
+#13 0x55d13deec071 <unknown>
+#14 0x55d13ded49d5 <unknown>
+#15 0x55d13deecbf2 <unknown>
+#16 0x55d13deb9b6f <unknown>
+#17 0x55d13df10248 <unknown>
+#18 0x55d13df10417 <unknown>
+#19 0x55d13df200cc <unknown>
+#20 0x7fe290f38ac3 <unknown>
+
+Finalizando o scraping...
+-----> FIM DA ITERAÇÃO WHILE <--------
+
+
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD Kingston NV2 2 TB, M.2 2280 PCIe, NVMe, Leitura: 3500 MB/s e Gravação: 2800 MB/s - SNV2S/2000G', 'price': 'R$ 999,99', 'link': 'https://www.kabum.com.br/produto/380746/ssd-kingston-nv2-2-tb-m-2-2280-pcie-nvme-leitura-3500-mb-s-e-gravacao-2800-mb-s-snv2s-2000g', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F380746%2Fssd-kingston-nv2-2-tb-m-2-2280-pcie-nvme-leitura-2-100-mb-s-e-gravacao-1-700-mb-s-snv2s-2000g_1666033248_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD WD 250GB Green PC SN350, PCIe, NVMe, Leitura: 2400MB/s e Gravação: 1500MB/s - WDS250G2G0C', 'price': 'R$ 209,99', 'link': 'https://www.kabum.com.br/produto/510894/ssd-wd-250gb-green-pc-sn350-pcie-nvme-leitura-2400mb-s-e-gravacao-1500mb-s-wds250g2g0c', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F510894%2Fssd-wd-250gb-green-pc-sn350-pcie-nvme-leitura-2400mb-s-e-gravacao-1500mb-s-wds250g2g0c_1714677479_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD WD Black SN850X, 2TB, NVMe, Heatsink, M.2 2280 PCIe GEN4X4, Leitura:7300 MB/s e Gravação: 6600 MB/s, Preto - WDS200T2XHE, Compatível com PS5', 'price': 'R$ 1.299,99', 'link': 'https://www.kabum.com.br/produto/379760/ssd-wd-black-sn850x-2tb-nvme-heatsink-m-2-2280-pcie-gen4x4-leitura-7300-mb-s-e-gravacao-6600-mb-s-preto-wds200t2xhe-compativel-com-ps5', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F379760%2Fssd-wd-black-sn850x-gaming-2tb-nvme-com-dissipador-de-calor-m-2-2280-pcie-gen4x4-leitura-7300-mb-s-e-gravacao-6600-mb-s-compativel-com-playstation-5-wds200t2xhe_1671649371_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD Externo 1 TB Kingston XS2000, Leitura: 2.000 MB/s e Gravação: 2000MB/s - SXS2000/1000G', 'price': 'R$ 799,99', 'link': 'https://www.kabum.com.br/produto/332899/ssd-externo-1-tb-kingston-xs2000-leitura-2-000-mb-s-e-gravacao-2000mb-s-sxs2000-1000g', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F332899%2Fkingston-ssd-portatil-xs2000-1tb-usb-3-2-leitura-e-gravacao-de-ate-2000mb-s-sxs2000-1000g_1652117410_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD Externo Portátil Kingston XS1000, 2TB, USB 3.2, Leitura: 1050MB/s e Gravação: 1000MB/s, Vermelho - SXS1000R/2000G', 'price': 'R$ 869,99', 'link': 'https://www.kabum.com.br/produto/615714/ssd-externo-portatil-kingston-xs1000-2tb-usb-3-2-leitura-1050mb-s-e-gravacao-1000mb-s-vermelho-sxs1000r-2000g', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F615714%2Fssd-externo-portatil-kingston-2tb-usb-3-2-leitura-1050mb-s-e-gravacao-1000mb-s-vermelho-sxs1000r-2000g_1724246432_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+Iterando página
+Erro na paginação: Message: no such element: Unable to locate element: {"method":"css selector","selector":".priceCard"}
+  (Session info: chrome=128.0.6613.119); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55d4017802da <unknown>
+#1 0x55d40144e200 <unknown>
+#2 0x55d40149daa2 <unknown>
+#3 0x55d40149dd41 <unknown>
+#4 0x55d401492386 <unknown>
+#5 0x55d4014c28fd <unknown>
+#6 0x55d401492279 <unknown>
+#7 0x55d4014c2a9e <unknown>
+#8 0x55d4014e0dfd <unknown>
+#9 0x55d4014c2673 <unknown>
+#10 0x55d401490473 <unknown>
+#11 0x55d40149147e <unknown>
+#12 0x55d4017470db <unknown>
+#13 0x55d40174b071 <unknown>
+#14 0x55d4017339d5 <unknown>
+#15 0x55d40174bbf2 <unknown>
+#16 0x55d401718b6f <unknown>
+#17 0x55d40176f248 <unknown>
+#18 0x55d40176f417 <unknown>
+#19 0x55d40177f0cc <unknown>
+#20 0x7f65c0376ac3 <unknown>
+
+Finalizando o scraping...
+-----> FIM DA ITERAÇÃO WHILE <--------
+
+
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Kingston Fury Beast, 8GB, 3200MHz, DDR4, CL16, Preto - KF432C16BB/8', 'price': 'R$ 174,99', 'link': 'https://www.kabum.com.br/produto/172365/memoria-ram-kingston-fury-beast-8gb-3200mhz-ddr4-cl16-preto-kf432c16bb-8', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F172365%2Fmemoria-kingston-fury-beast-8gb-3200mhz-ddr4-cl16-preto-kf432c16bb-8_1626270523_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD SATA WD Green, 480GB, 2.5", Leitura: 545MB/s e Gravação: 430MB/s, Preto - WDS480G3G0A', 'price': 'R$ 229,99', 'link': 'https://www.kabum.com.br/produto/338408/ssd-sata-wd-green-480gb-2-5-leitura-545mb-s-e-gravacao-430mb-s-preto-wds480g3g0a', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F338408%2Fssd-wd-green-480gb-sata-leitura-545mb-s-gravacao-430mb-s-wds480g3g0a_1652465601_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD ADATA 1TB, M.2 2280, NVME, PCIe gen 4x4, Leitura: 3.500MB/s e Gravação: 2.800MB/s - ALEG-800-1000GCS', 'price': 'R$ 439,99', 'link': 'https://www.kabum.com.br/produto/593421/ssd-adata-1tb-m-2-2280-nvme-pcie-gen-4x4-leitura-3-500mb-s-e-gravacao-2-800mb-s-aleg-800-1000gcs', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F593421%2Fssd-pcie-adata-1000gb-nvme-leitura-3-500mb-s-e-gravacao-2-800mb-s-preto-aleg-800-1000gcs_1721848515_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Corsair Vengeance RT, RGB, 32GB (2x16GB), 4600MHz, DDR4, CL18, Preto - CMN32GX4M2Z4600C18', 'price': 'R$ 829,99', 'link': 'https://www.kabum.com.br/produto/304911/memoria-ram-corsair-vengeance-rt-rgb-32gb-2x16gb-4600mhz-ddr4-cl18-preto-cmn32gx4m2z4600c18', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F304911%2Fmemoria-corsair-vengeance-rt-rgb-32gb-2x16gb-4600mhz-ddr4-cl18-preto-cmn32gx4m2z4600c18_1643111217_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Asus TUF GAMING H770-PRO WIFI, Intel, ATX, DDR5, Wi-Fi, Bluetooth - 90MB1D50-M0EAY0', 'price': 'R$ 1.664,99', 'link': 'https://www.kabum.com.br/produto/461372/placa-mae-asus-tuf-gaming-h770-pro-wifi-intel-atx-ddr5-wi-fi-bluetooth-90mb1d50-m0eay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F461372%2Fplaca-mae-asus-tuf-gaming-h770-pro-wifi-intel-atx-ddr5-wi-fi-bluetooth-90mb1d50-m0eay0_1696354040_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte Asus ROG-LOKI-1200T-SFX-L-GAMING, 1200W, 80 Plus Titanium, SFX-L, PCIe 5.0, Aura Sync - 90YE00N0-B0BA00', 'price': 'R$ 2.349,99', 'link': 'https://www.kabum.com.br/produto/523068/fonte-asus-rog-loki-1200t-sfx-l-gaming-1200w-80-plus-titanium-sfx-l-pcie-5-0-aura-sync-90ye00n0-b0ba00', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F523068%2Ffonte-asus-rog-loki-1200t-sfx-l-gaming-1200w-80-plus-titanium-sfx-l-pcie-5-0-aura-sync-90ye00n0-b0ba00_1722024851_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Asus ROG MAXIMUS Z790 FORMULA, INTEL, Z790, ATX, DDR5 - 90MB1FS0-M0EAY0', 'price': 'R$ 5.664,99', 'link': 'https://www.kabum.com.br/produto/521059/placa-mae-asus-rog-maximus-z790-formula-intel-z790-atx-ddr5-90mb1fs0-m0eay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F521059%2Fplaca-mae-asus-rog-maximus-z790-formula-intel-z790-atx-ddr5-90mb1fs0-m0eay0_1716476901_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Kingston Fury Beast RGB, 64GB (2x32GB), 5600MHz, DDR5, CL40, para Intel XMP, Preto - KF556C40BBAK2-64', 'price': 'R$ 1.599,99', 'link': 'https://www.kabum.com.br/produto/388091/memoria-ram-kingston-fury-beast-rgb-64gb-2x32gb-5600mhz-ddr5-cl40-para-intel-xmp-preto-kf556c40bbak2-64', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F388091%2Fmemoria-kingston-fury-beast-rgb-64gb-5600mhz-ddr5-cl40-preto-kf556c40bbak2-64_1666123851_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Gravador Dvd Usb Externo Leitor Notebook Pc 3.0 Slim Portátil - Gv02', 'price': 'R$ 149,90', 'link': 'https://www.kabum.com.br/produto/576891/gravador-dvd-usb-externo-leitor-notebook-pc-3-0-slim-portatil-gv02', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F576891%2FGravador-Dvd-Usb-Externo-Leitor-Notebook-Pc-3-0-Slim-Port-til-Gv02_1725637931_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Gigabyte B550m Ds3h 1.1', 'price': 'R$ 994,56', 'link': 'https://www.kabum.com.br/produto/315000/placa-mae-gigabyte-b550m-ds3h-1-1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F315000%2FPlaca-M-e-Gigabyte-B550m-Ds3h-1-1_1712768295_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Msi Pro B660m-a, DDR4, M.2 Lga1700, Wi-fi, HDMI/DP', 'price': 'R$ 6.283,74', 'link': 'https://www.kabum.com.br/produto/398516/placa-mae-msi-pro-b660m-a-ddr4-m-2-lga1700-wi-fi-hdmi-dp', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F398516%2FPlaca-M-e-Msi-Pro-B660m-a-DDR4-M-2-Lga1700-Wi-fi-HDMI-DP_1712768295_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': "Jogo Dragon's Dogma 2 Playstation 5 Midia Fisica Original", 'price': 'R$ 336,90', 'link': 'https://www.kabum.com.br/produto/550449/jogo-dragon-s-dogma-2-playstation-5-midia-fisica-original', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F550449%2FJogo-Dragon-s-Dogma-2-Playstation-5-Midia-Fisica-Original_1725915371_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Erro na paginação: Message: element not interactable
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+#0 0x5620e81882da <unknown>
+#1 0x5620e7e56041 <unknown>
+#2 0x5620e7ea6d3f <unknown>
+#3 0x5620e7e9a8c6 <unknown>
+#4 0x5620e7eca8d2 <unknown>
+#5 0x5620e7e9a279 <unknown>
+#6 0x5620e7ecaa9e <unknown>
+#7 0x5620e7ee8dfd <unknown>
+#8 0x5620e7eca673 <unknown>
+#9 0x5620e7e98473 <unknown>
+#10 0x5620e7e9947e <unknown>
+#11 0x5620e814f0db <unknown>
+#12 0x5620e8153071 <unknown>
+#13 0x5620e813b9d5 <unknown>
+#14 0x5620e8153bf2 <unknown>
+#15 0x5620e8120b6f <unknown>
+#16 0x5620e8177248 <unknown>
+#17 0x5620e8177417 <unknown>
+#18 0x5620e81870cc <unknown>
+#19 0x7f6a43baeac3 <unknown>
+
+Finalizando o scraping...
+-----> FIM DA ITERAÇÃO WHILE <--------
+
+
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte MSI MAG A650BN, 650W, 80 Plus Bronze, PFC Ativo, Com Cabo, Preto - 306-7ZP2B22-CE0', 'price': 'R$ 294,99', 'link': 'https://www.kabum.com.br/produto/369658/fonte-msi-mag-a650bn-650w-80-plus-bronze-pfc-ativo-com-cabo-preto-306-7zp2b22-ce0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F369658%2Ffonte-msi-mag-a650bn-atx-650w-80-plus-bronze-pfc-ativo-entrada-bivolt-preto-306-7zp2b22-ce0_1665770996_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD 512GB KBM! Gaming, SATA III, Leitura 520 MB/s, Gravação 450 MB/s - KGSSD110512', 'price': 'R$ 259,99', 'link': 'https://www.kabum.com.br/produto/538706/ssd-512gb-kbm-gaming-sata-iii-leitura-520-mb-s-gravacao-450-mb-s-kgssd110512', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F538706%2Fssd-512gb-kbm-gaming-sata-iii-leitura-520-mb-s-gravacao-450-mb-s-kgssd110512_1718387474_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM para Notebook Corsair Vengeance, 16GB, 4800MHz, DDR5, CL40, Preto - CMSX16GX5M1A4800C40', 'price': 'R$ 389,99', 'link': 'https://www.kabum.com.br/produto/382756/memoria-ram-para-notebook-corsair-vengeance-16gb-4800mhz-ddr5-cl40-preto-cmsx16gx5m1a4800c40', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F382756%2Fmemoria-corsair-vengeance-ddr5-sodimm-16gb-4800mhz-ddr5-c40-preto-cmsx16gx5m1a4800c40_1665495453_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa-Mãe MSI B450M Pro-VDH Max p/ AMD AM4, m-ATX, DDR4', 'price': 'R$ 529,99', 'link': 'https://www.kabum.com.br/produto/108499/placa-mae-msi-b450m-pro-vdh-max-p-amd-am4-m-atx-ddr4', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F108499%2Fplaca-mae-msi-b450m-pro-vdh-max-p-amd-am4-m-atx-ddr4-_1576079415_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa de Vídeo RTX 4060 Ti Click OC Galax NVIDIA GeForce, 8 GB GDDR6, DLSS, Ray Tracing - 46ISL8MD8COC', 'price': 'R$ 2.899,99', 'link': 'https://www.kabum.com.br/produto/462199/placa-de-video-rtx-4060-ti-click-oc-galax-nvidia-geforce-8-gb-gddr6-dlss-ray-tracing-46isl8md8coc', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F462199%2Fplaca-de-video-rtx-4060-ti-click-oc-galax-nvidia-geforce-8-gb-gddr6-dlss-ray-tracing-46isl8md8coc_1684931957_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Kingston Fury Beast, RGB, 32GB (2x16GB), 6000MHz, DDR5, CL40, Preto - KF560C40BBAK2-32', 'price': 'R$ 1.089,99', 'link': 'https://www.kabum.com.br/produto/388095/memoria-ram-kingston-fury-beast-rgb-32gb-2x16gb-6000mhz-ddr5-cl40-preto-kf560c40bbak2-32', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F388095%2Fmemoria-kingston-fury-beast-rgb-32gb-6000mhz-ddr5-cl40-preto-kf560c40bbak2-32_1666094293_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte XPG Kyber, 750W, 80 Plus Gold, Com Cabo, Preto - KYBER750G-BKCBR', 'price': 'R$ 479,99', 'link': 'https://www.kabum.com.br/produto/471344/fonte-xpg-kyber-750w-80-plus-gold-com-cabo-preto-kyber750g-bkcbr', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F471344%2Ffonte-xpg-kyber-750w-80-plus-gold-bivolt-preto-kyber750g-bkcbr_1698676190_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM XPG Gammix D10, 16GB, 3200MHz, DDR4, CL16, Preto - AX4U320016G16A-SB10', 'price': 'R$ 299,99', 'link': 'https://www.kabum.com.br/produto/156634/memoria-ram-xpg-gammix-d10-16gb-3200mhz-ddr4-cl16-preto-ax4u320016g16a-sb10', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F156634%2Fmemoria-xpg-gammix-d10-16gb-3200mhz-ddr4-cl-16-preto-ax4u320016g16a-sb10_1623955437_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Corsair Vengeance, 32GB, 5200MHz, DDR5, CL40, Preto - CMK32GX5M1B5200C40', 'price': 'R$ 649,99', 'link': 'https://www.kabum.com.br/produto/388478/memoria-ram-corsair-vengeance-32gb-5200mhz-ddr5-cl40-preto-cmk32gx5m1b5200c40', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F388478%2Fmemoria-corsair-vengeance-32gb-5200mhz-ddr5-c40-preto-cmk32gx5m1b5200c40_1710780987_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD SATA Kingston KC600, 512GB, 2.5", Leitura: 550MB/s e Gravação: 520MB/s, Preto - SKC600/512G', 'price': 'R$ 449,99', 'link': 'https://www.kabum.com.br/produto/107339/ssd-sata-kingston-kc600-512gb-2-5-leitura-550mb-s-e-gravacao-520mb-s-preto-skc600-512g', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F107339%2Fssd-kingston-kc600-512gb-sata-leitura-550mb-s-gravacao-520mb-s-skc600-512g_ssd-kingston-kc600-512gb-sata-leitura-550mb-s-gravacao-520mb-s-skc600-512g_1572360204_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Processador Intel Core i5-12400, 2.5GHz (4.4GHz Max Turbo), Cache 18MB, LGA 1700 - BX8071512400', 'price': 'R$ 979,99', 'link': 'https://www.kabum.com.br/produto/283713/processador-intel-core-i5-12400-2-5ghz-4-4ghz-max-turbo-cache-18mb-lga-1700-bx8071512400', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F283713%2Fprocessador-intel-core-i5-12400-cache-xmb-xghz-xghz-max-turbo-lga-1700-bx8071512400_1640031464_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Air Cooler Deepcool Gammaxx Ag400 ArGB, Led RGB, 120mm, Intel/amd - R-ag400-bkanmc-g-1', 'price': 'R$ 216,48', 'link': 'https://www.kabum.com.br/produto/446573/air-cooler-deepcool-gammaxx-ag400-argb-led-rgb-120mm-intel-amd-r-ag400-bkanmc-g-1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F446573%2FAir-Cooler-Deepcool-Gammaxx-Ag400-ArGB-Led-RGB-120mm-Intel-amd-R-ag400-bkanmc-g-1_1720040936_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Gigabyte B550m Ds3h 1.1', 'price': 'R$ 911,05', 'link': 'https://www.kabum.com.br/produto/315000/placa-mae-gigabyte-b550m-ds3h-1-1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F315000%2FPlaca-M-e-Gigabyte-B550m-Ds3h-1-1_1712768295_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Erro na paginação: Message: 
+Stacktrace:
+#0 0x559a12bf62da <unknown>
+#1 0x559a128c4200 <unknown>
+#2 0x559a12913aa2 <unknown>
+#3 0x559a12913d41 <unknown>
+#4 0x559a12959964 <unknown>
+#5 0x559a129388fd <unknown>
+#6 0x559a12956dfd <unknown>
+#7 0x559a12938673 <unknown>
+#8 0x559a12906473 <unknown>
+#9 0x559a1290747e <unknown>
+#10 0x559a12bbd0db <unknown>
+#11 0x559a12bc1071 <unknown>
+#12 0x559a12ba99d5 <unknown>
+#13 0x559a12bc1bf2 <unknown>
+#14 0x559a12b8eb6f <unknown>
+#15 0x559a12be5248 <unknown>
+#16 0x559a12be5417 <unknown>
+#17 0x559a12bf50cc <unknown>
+#18 0x7f00e83faac3 <unknown>
+
+Finalizando o scraping...
+-----> FIM DA ITERAÇÃO WHILE <--------
+
+
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler Rise Mode Gamer Black, RGB, 240mm, AMD/Intel, Preto - RM-WCB-02-RGB', 'price': 'R$ 149,99', 'link': 'https://www.kabum.com.br/produto/130043/water-cooler-rise-mode-gamer-black-rgb-240mm-amd-intel-preto-rm-wcb-02-rgb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F130043%2Fwater-cooler-rise-mode-gamer-black-rgb-240mm-preto-rm-wcb-02-rgb_1663776681_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler Corsair H150 RGB, 360mm, AMD/Intel, Preto - CW-9060054-WW', 'price': 'R$ 599,99', 'link': 'https://www.kabum.com.br/produto/162466/water-cooler-corsair-h150-rgb-360mm-amd-intel-preto-cw-9060054-ww', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F162466%2Fwater-cooler-corsair-h150-rgb-intel-amd-360mm-3x-120mm-preto-cw-9060054-ww_1636559275_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+insert produto on aws -> {'adm': 'kabum', 'name': 'Memória RAM Corsair Vengeance, 16GB, DDR5 5200MHz, CL40, Preto - CMK16GX5M1B5200C40', 'price': 'R$ 429,99', 'link': 'https://www.kabum.com.br/produto/363887/memoria-ram-corsair-vengeance-16gb-ddr5-5200mhz-cl40-preto-cmk16gx5m1b5200c40', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F363887%2Fmemoria-gamer-corsair-vengeance-rgb-16gb-ddr5-5600mhz-preto-cmk16gx5m1b5200c40_1659711446_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Asus TUF GAMING A620M-PLUS WIFI, AMD AM5, mATX, DDR5, Wi-Fi, Bluetooth - 90MB1F00-M0EAY0', 'price': 'R$ 949,99', 'link': 'https://www.kabum.com.br/produto/461377/placa-mae-asus-tuf-gaming-a620m-plus-wifi-amd-am5-matx-ddr5-wi-fi-bluetooth-90mb1f00-m0eay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F461377%2Fplaca-mae-asus-tuf-gaming-a620m-plus-wifi-amd-am5-matx-ddr5-wi-fi-bluetooth-90mb1f00-m0eay0_1696363566_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Placa de Vídeo Galax GT 210 Nvidia GeForce 1GB, DDR3, 64-bits - 21GGF4HI00NP', 'price': 'R$ 112,90', 'link': 'https://www.kabum.com.br/produto/191932/placa-de-video-galax-gt-210-nvidia-geforce-1gb-ddr3-64-bits-21ggf4hi00np', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F191932%2FPlaca-de-V-deo-Galax-GT-210-Nvidia-GeForce-1GB-DDR3-64-bits-21GGF4HI00NP_1726487298_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Asus TUF Gaming B650M-Plus Wi-Fi, AMD AM5 B650, mATX, DDR5, Wi-Fi - 90MB1BF0-M0EAY0', 'price': 'R$ 1.449,99', 'link': 'https://www.kabum.com.br/produto/392051/placa-mae-asus-tuf-gaming-b650m-plus-wi-fi-amd-am5-b650-matx-ddr5-wi-fi-90mb1bf0-m0eay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F392051%2Fplaca-mae-asus-tuf-gaming-b650m-plus-wifi-amd-am5-b650-matx-ddr5-90mb1bf0-m0eay0_1667216583_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa de Vídeo RTX 4070 Super ASUS TUF 12G Gaming OC NVIDIA GeForce, 12GB GDDR6X, DLSS, Ray Tracing, - TUF-RTX4070S-O12G-GAMING', 'price': 'R$ 5.299,99', 'link': 'https://www.kabum.com.br/produto/517001/placa-de-video-rtx-4070-super-asus-tuf-12g-gaming-oc-nvidia-geforce-12gb-gddr6x-dlss-ray-tracing-tuf-rtx4070s-o12g-gaming', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F517001%2Fplaca-de-video-rtx4070s-tuf-o12g-gaming-asus-90yv0k80-m0na00_1705437576_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+insert produto on aws -> {'adm': 'kabum', 'name': 'Memória Kingston, 8GB, 1333Mhz, DDR3, PC3-10600, Para PC - 0761 - KVR1333D3N98G', 'price': 'R$ 120,00', 'link': 'https://www.kabum.com.br/produto/184782/memoria-kingston-8gb-1333mhz-ddr3-pc3-10600-para-pc-0761-kvr1333d3n98g', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2Fsync_mirakl%2F184782%2FMem-ria-Kingston-8GB-1333Mhz-DDR3-PC3-10600-Para-PC-0761-KVR1333D3N98G_1725566960_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Pasta Térmica Cooler Master E2 IC Essential, 1.5ml, Dourado - RG-ICE2-TA15-R1', 'price': 'R$ 26,99', 'link': 'https://www.kabum.com.br/produto/35959/pasta-termica-cooler-master-e2-ic-essential-1-5ml-dourado-rg-ice2-ta15-r1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F35959%2F35959_index_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mae Asus ROG Strix X670E-F Gaming Wi-Fi, AMD X670, AM5, DDR5 - 90MB1BA0-M0EAY0', 'price': 'R$ 3.954,98', 'link': 'https://www.kabum.com.br/produto/376218/placa-mae-asus-rog-strix-x670e-f-gaming-wi-fi-amd-x670-am5-ddr5-90mb1ba0-m0eay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F376218%2Fplaca-mae-asus-rog-strix-x670e-f-gaming-wifi-amd-x670-am5-ddr5-90mb1ba0-m0eay0_1668176712_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte MSI MEG Ai1300P, 1300W, 80 Plus Platinum, Modular, PFC Ativo, Bivolt, Preto - MEG Ai1300P PCIE5', 'price': 'R$ 1.999,98', 'link': 'https://www.kabum.com.br/produto/508037/fonte-msi-meg-ai1300p-1300w-80-plus-platinum-modular-pfc-ativo-bivolt-preto-meg-ai1300p-pcie5', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F508037%2Ffonte-msi-meg-ai1300p-1300w-80-plus-platina-modular-pfc-ativo-bivolt-preto-meg-ai1300p-pcie5_1710333398_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD Gigabyte AORUS Gen4 7300 2TB, PCI Express 4.0 x4, NVMe 1.4, Leitura:7300MB/s e Gravação:6850MB/s - AG4732TB', 'price': 'R$ 1.399,99', 'link': 'https://www.kabum.com.br/produto/485005/ssd-gigabyte-aorus-gen4-7300-2tb-pci-express-4-0-x4-nvme-1-4-leitura-7300mb-s-e-gravacao-6850mb-s-ag4732tb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F485005%2Fssd-gigabyte-aorus-gen4-7300-2tb-pci-express-4-0-x4-nvme-1-4-leitura-7300mb-s-e-gravacao-6850mb-s-ag4732tb_1699538311_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Husky Gaming Storm RGB, 8GB, 3200MHz, DDR4 - CL22, Dourada - HGMF019', 'price': 'R$ 199,99', 'link': 'https://www.kabum.com.br/produto/454444/memoria-ram-husky-gaming-storm-rgb-8gb-3200mhz-ddr4-cl22-dourada-hgmf019', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F454444%2Fmemoria-husky-gaming-storm-rgb-8gb-3200mhz-ddr4-cl22-dourada-hgmf019_1691158365_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'HD Externo WD 1TB Elements, USB 3.0, Preto - WDBUZG0010BBK', 'price': 'R$ 454,99', 'link': 'https://www.kabum.com.br/produto/66405/hd-externo-wd-1tb-elements-usb-3-0-preto-wdbuzg0010bbk', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F66405%2F66405_1439816331_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe ASRock B550M Phantom Gaming 4, AMD B550, mATX, DDR4 - 90-MXBE9*', 'price': 'R$ 884,99', 'link': 'https://www.kabum.com.br/produto/525051/placa-mae-asrock-b550m-phantom-gaming-4-amd-b550-matx-ddr4-90-mxbe9-', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F525051%2Fplaca-mae-asrock-b550m-phantom-gaming-4-amd-b550-matx-ddr4-90-mxbe9-_1718718634_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'HD WD Externo Portátil My Passport, 2TB, USB 3.2, Vermelho - WDBYVG0020BRD-WESN', 'price': 'R$ 579,99', 'link': 'https://www.kabum.com.br/produto/108062/hd-wd-externo-portatil-my-passport-2tb-usb-3-2-vermelho-wdbyvg0020brd-wesn', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F108062%2Fhd-wd-externo-portatil-my-passport-2tb-usb-3-0-vermelho-wdbyvg0020brd-wesn_hd-wd-externo-portatil-my-passport-2tb-usb-3-0-vermelho-wdbyvg0020brd-wesn_1573648569_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Kit Com 3 Ventoinhas NZXT, 120mm, RGB, Branco - RF-R12TF-W1', 'price': 'R$ 489,99', 'link': 'https://www.kabum.com.br/produto/369239/kit-com-3-ventoinhas-nzxt-120mm-rgb-branco-rf-r12tf-w1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F369239%2Fkit-3-cooler-fan-nzxt-120mm-rgb-branco-rf-r12tf-w1_1667925640_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler MSI Mag Coreliquid E240, ARGB, 240mm, Intel/AMD, Preto - MAG CORELIQUID E240', 'price': 'R$ 700,00', 'link': 'https://www.kabum.com.br/produto/524435/water-cooler-msi-mag-coreliquid-e240-argb-240mm-intel-amd-preto-mag-coreliquid-e240', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F524435%2Fwater-cooler-msi-mag-coreliquid-e240-argb-240mm-intel-amd-preto-mag-coreliquid-e240_1713809616_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Husky Gaming Blizzard RGB, 16GB, 3600MHz, DDR4 - CL26, Dourada - HGMF028', 'price': 'R$ 319,99', 'link': 'https://www.kabum.com.br/produto/454461/memoria-ram-husky-gaming-blizzard-rgb-16gb-3600mhz-ddr4-cl26-dourada-hgmf028', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F454461%2Fmemoria-husky-gaming-blizzard-rgb-16gb-3600mhz-ddr4-cl26-dourada-hgmf028_1696871808_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte KBM! GAMING FN750, 750W, 80 Plus e Cybenetics Gold, PFC Ativo, Full Modular, Bivolt - KGFN75075PT', 'price': 'R$ 707,58', 'link': 'https://www.kabum.com.br/produto/472037/fonte-kbm-gaming-fn750-750w-80-plus-e-cybenetics-gold-pfc-ativo-full-modular-bivolt-kgfn75075pt', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F472037%2Ffonte-kbm-gaming-fn750-750w-80-plus-e-cybenetics-gold-pfc-ativo-full-modular-bivolt-kgfn75075pt_1723556203_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Air Cooler Cooler Master MasterAir MA824 Stealth, Intel-AMD, 120mm, Preto - MAM-D8PN-318PK-R1', 'price': 'R$ 799,98', 'link': 'https://www.kabum.com.br/produto/472542/air-cooler-cooler-master-masterair-ma824-stealth-intel-amd-120mm-preto-mam-d8pn-318pk-r1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F472542%2Fcooler-para-processador-cooler-master-masterair-ma824-stealth-rgb-intel-amd-120mm-preto-mam-d8pn-318pk-r1_1690222672_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler Cooler Master Masterliquid ML120L V2, 120mm, AMD/Intel, Preto - MLW-D12M-A18PK-R2', 'price': 'R$ 439,99', 'link': 'https://www.kabum.com.br/produto/129927/water-cooler-cooler-master-masterliquid-ml120l-v2-120mm-amd-intel-preto-mlw-d12m-a18pk-r2', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F129927%2Fwater-cooler-cooler-master-masterliquid-ml120l-v2-120mm-rgb-mlw-d12m-a18pk-r2_1604694642_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Kingston Fury Beast, 128GB (4x32GB), 5600MHz, DDR5, CL40,para Intel XMP, Preto - KF556C40BBK4-128', 'price': 'R$ 3.699,99', 'link': 'https://www.kabum.com.br/produto/452733/memoria-ram-kingston-fury-beast-128gb-4x32gb-5600mhz-ddr5-cl40-para-intel-xmp-preto-kf556c40bbk4-128', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F452733%2Fmemoria-kingston-fury-beast-para-intel-xmp-128gb-4x32gb-5600mhz-ddr5-cl40-preto-kf556c40bbk4-128_1688753455_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler NZXT Kraken Elite 240, 240mm, AMD/Intel, Preto - RL-KN24E-B1', 'price': 'R$ 1.799,99', 'link': 'https://www.kabum.com.br/produto/415803/water-cooler-nzxt-kraken-elite-240-240mm-amd-intel-preto-rl-kn24e-b1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F415803%2Fwater-cooler-nzxt-kraken-elite-240-240mm-c-display-e-radiator-fans-preto-rl-kn24e-b1_1685642333_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Asus ROG STRIX Z790-A GAMING WIFI II, INTEL, Z790, ATX, DDR5 - 90MB1FN0-M0AAY0', 'price': 'R$ 3.774,99', 'link': 'https://www.kabum.com.br/produto/521062/placa-mae-asus-rog-strix-z790-a-gaming-wifi-ii-intel-z790-atx-ddr5-90mb1fn0-m0aay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F521062%2Fplaca-mae-asus-rog-strix-z790-a-gaming-wifi-ii-intel-z790-atx-ddr5-90mb1fn0-m0aay0_1723750263_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte EVGA 650 B5, 650W, 80 Plus Bronze, Full Modular, EVGA ECO Mode, Tamanho Compacto 150mm Size - 220-B5-0650-V1', 'price': 'R$ 749,99', 'link': 'https://www.kabum.com.br/produto/518022/fonte-evga-650-b5-650w-80-plus-bronze-full-modular-evga-eco-mode-tamanho-compacto-150mm-size-220-b5-0650-v1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F518022%2Ffonte-evga-650-b5-650w-80-plus-bronze-full-modular-evga-eco-mode-tamanho-compacto-150mm-size-220-b5-0650-v_1714410751_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler Corsair H100i Elite, RGB, 240mm, AMD/Intel, Branco - CW-9060078-WW', 'price': 'R$ 859,99', 'link': 'https://www.kabum.com.br/produto/496665/water-cooler-corsair-h100i-elite-rgb-240mm-amd-intel-branco-cw-9060078-ww', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F496665%2Fwater-cooler-corsair-h100i-rgb-elite-branco-16-leds-rgb-dinamicos-ventoinhas-af120-elite-pwm-cw-9060078-ww_1706641967_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Asus ROG MAXIMUS Z790 DARK HERO, INTEL, Z790, ATX, DDR5 - 90MB1F90-M0EAY0', 'price': 'R$ 6.229,99', 'link': 'https://www.kabum.com.br/produto/521061/placa-mae-asus-rog-maximus-z790-dark-hero-intel-z790-atx-ddr5-90mb1f90-m0eay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F521061%2Fplaca-mae-asus-rog-maximus-z790-dark-hero-intel-z790-atx-ddr5-90mb1f90-m0eay0_1716481297_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD Externo Portátil SanDisk Extreme, 500GB, USB 3.1, Leitura: 1050 MB/s e Gravação: 1000 MB/s, Preto e Laranja - SDSSDE61-500G-G25', 'price': 'R$ 699,99', 'link': 'https://www.kabum.com.br/produto/129774/ssd-externo-portatil-sandisk-extreme-500gb-usb-3-1-leitura-1050-mb-s-e-gravacao-1000-mb-s-preto-e-laranja-sdssde61-500g-g25', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F129774%2Fssd-portatil-sandisk-extreme-500gb-usb-3-1-sdssde61-500g-g25_1603113519_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Kit Com 2 Ventoinhas NZXT, 140mm, RGB, Com Controlador, Branco - RF-R14DF-W1', 'price': 'R$ 269,99', 'link': 'https://www.kabum.com.br/produto/369242/kit-com-2-ventoinhas-nzxt-140mm-rgb-com-controlador-branco-rf-r14df-w1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F369242%2Fkit-2-cooler-fan-nzxt-140mm-rgb-com-controlador-branco-rf-r14df-w1_1667932064_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Kit Com 2 Ventoinhas Corsair iCUE LINK QX140, 140mm, RGB, Preto - CO-9051004-WW', 'price': 'R$ 799,98', 'link': 'https://www.kabum.com.br/produto/496600/kit-com-2-ventoinhas-corsair-icue-link-qx140-140mm-rgb-preto-co-9051004-ww', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F496600%2Fcooler-fan-corsair-qx-rgb-series-icue-link-qx140-rgb-kit-basico-ventoinha-rgb-de-domo-magnetico-de-140mm-co-9051004-ww_1706300250_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD Corsair 2TB MP600 Core Mini, M.2 NVMe, Leitura 5000MB/s e Gravação 3800MB/s - CSSD-F2000GBMP600CMN', 'price': 'R$ 1.799,99', 'link': 'https://www.kabum.com.br/produto/542163/ssd-corsair-2tb-mp600-core-mini-m-2-nvme-leitura-5000mb-s-e-gravacao-3800mb-s-cssd-f2000gbmp600cmn', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F542163%2Fssd-corsair-2tb-mp600-core-mini-m-2-nvme-leitura-5000mb-s-e-gravacao-3800mb-s-cssd-f2000gbmp600cmn_1720207560_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Kingston Fury Beast RGB, 8GB, 5200MHz, DDR5, CL40, para Intel XMP, Preto - KF552C40BBA-8', 'price': 'R$ 321,00', 'link': 'https://www.kabum.com.br/produto/388080/memoria-ram-kingston-fury-beast-rgb-8gb-5200mhz-ddr5-cl40-para-intel-xmp-preto-kf552c40bba-8', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F388080%2Fmemoria-kingston-fury-beast-rgb-8gb-5200mhz-ddr5-cl40-preto-kf552c40bba-8_1666040397_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'HD WD Red Pro NAS, 14TB, SATA 3.5", 7200 RPM, Até 255MB/s - WD142KFGX', 'price': 'R$ 2.914,99', 'link': 'https://www.kabum.com.br/produto/537376/hd-wd-red-pro-nas-14tb-sata-3-5-7200-rpm-ate-255mb-s-wd142kfgx', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F537376%2Fhd-wd-red-pro-nas-14tb-3-5-sata-wd142kfgx_1719859318_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Ventoinha Corsair iCUE SP140 Elite Performance, RGB, 140mm, Preto - CO-9050110-WW', 'price': 'R$ 169,99', 'link': 'https://www.kabum.com.br/produto/156954/ventoinha-corsair-icue-sp140-elite-performance-rgb-140mm-preto-co-9050110-ww', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F156954%2Fcooler-fan-corsair-icue-sp140-elite-performance-rgb-140mm-preto-co-9050110-ww_1632252650_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'HD Externo WD Elements Desktop 10TB, Conexão USB 2.0/3.0 - WDBWLG0100HBK-NESN', 'price': 'R$ 1.924,99', 'link': 'https://www.kabum.com.br/produto/155573/hd-externo-wd-elements-desktop-10tb-conexao-usb-2-0-3-0-wdbwlg0100hbk-nesn', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F155573%2Fhd-externo-wd-elements-desktop-10tb-conexao-usb-2-0-3-0-wdbwlg0100hbk-nesn_1617908618_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Asus ROG STRIX B760-G GAMING WIFI, Intel, mATX, DDR5, Wi-Fi, Bluetooth - 90MB1EQ0-M0EAY0', 'price': 'R$ 2.114,99', 'link': 'https://www.kabum.com.br/produto/461374/placa-mae-asus-rog-strix-b760-g-gaming-wifi-intel-matx-ddr5-wi-fi-bluetooth-90mb1eq0-m0eay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F461374%2Fplaca-mae-asus-rog-strix-b760-g-gaming-wifi-intel-matx-ddr5-wi-fi-bluetooth-90mb1eq0-m0eay0_1696357727_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler Corsair iCUE H115i Elite Capellix XT, RGB, 280mm, AMD/Intel, Preto - CW-9060069-WW', 'price': 'R$ 1.399,99', 'link': 'https://www.kabum.com.br/produto/472706/water-cooler-corsair-icue-h115i-elite-capellix-xt-rgb-280mm-amd-intel-preto-cw-9060069-ww', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F472706%2Fwater-cooler-corsair-icue-h115i-elite-capellix-xt-rgb-140mm-intel-e-amd-preto-cw-9060069-ww_1697638845_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler ASUS ROG Strix LC III 360 ARGB WHT, AMD e Intel - 90RC00T2-M0UAY0', 'price': 'R$ 1.499,99', 'link': 'https://www.kabum.com.br/produto/526979/water-cooler-asus-rog-strix-lc-iii-360-argb-wht-amd-e-intel-90rc00t2-m0uay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F526979%2Fwater-cooler-asus-rog-strix-lc-iii-360-argb-wht-240mm-amd-e-intel-branco-90rc00t2-m0uay0_1722342144_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Gigabyte Z790 Aero G (rev 1.0), Intel LGA1700, ATX, DDR5, Wi-Fi, Bluetooth - Z790 AERO G', 'price': 'R$ 3.089,99', 'link': 'https://www.kabum.com.br/produto/395126/placa-mae-gigabyte-z790-aero-g-rev-1-0-intel-lga1700-atx-ddr5-wi-fi-bluetooth-z790-aero-g', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F395126%2Fplaca-mae-z790-aero-g-z790-aero-g_1668455322_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Asus Proart Z790 Creator, Intel, ATX, DDR5, WiFi, Bluetooth - 90MB1DV0-M1EAY0', 'price': 'R$ 4.319,99', 'link': 'https://www.kabum.com.br/produto/427129/placa-mae-asus-proart-z790-creator-intel-atx-ddr5-wifi-bluetooth-90mb1dv0-m1eay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F427129%2Fplaca-mae-asus-proart-z790-creator-wifi-90mb1dv0-m0eay0_1684842369_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler NZXT Kraken 240 RGB, 240mm, AMD/Intel, Branco - RL-KR240-W1', 'price': 'R$ 1.199,99', 'link': 'https://www.kabum.com.br/produto/415797/water-cooler-nzxt-kraken-240-rgb-240mm-amd-intel-branco-rl-kr240-w1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F415797%2Fwater-cooler-nzxt-kraken-240-rgb-240mm1-54in-display-rgb-controller-e-rgb-fans-branco-rl-kr240-w1_1685723095_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte XPG Cyber Coreii 1300P-BKCBR, 1300W, 80 Plus Platinum, Modular, PFC Ativo - 15260171', 'price': 'R$ 1.899,99', 'link': 'https://www.kabum.com.br/produto/514902/fonte-xpg-cyber-coreii-1300p-bkcbr-1300w-80-plus-platinum-modular-pfc-ativo-15260171', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F514902%2Ffonte-xpg-cyber-core-ll-1300p-bkcbr-1300w-80-plus-platinum-modular-pfc-ativo-15260171_1715094638_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Lexar RGB, 32GB (2x16GB), 6400MHz, DDR5, CL32, U-DIMM - LD5EU016G-R6400GDLA', 'price': 'R$ 1.100,00', 'link': 'https://www.kabum.com.br/produto/548612/memoria-ram-lexar-rgb-32gb-2x16gb-6400mhz-ddr5-cl32-u-dimm-ld5eu016g-r6400gdla', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F548612%2Fmemoria-ram-lexar-rgb-32gb-2x16gb-6400mhz-ddr5-cl32-u-dimm-ld5eu016g-r6400gdla_1718826420_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte Corsair HXi Series (2022), HX1500i, 1500W, 80 Plus Platinum, (Sem Cabo AC) - CP-9020215-WW', 'price': 'R$ 2.699,99', 'link': 'https://www.kabum.com.br/produto/371160/fonte-corsair-hxi-series-2022-hx1500i-1500w-80-plus-platinum-sem-cabo-ac-cp-9020215-ww', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F371160%2Ffonte-corsair-hxi-series-2022-hx1500i-1500w-80-plus-platinum-sem-cabo-ac-cp-9020215-ww_1667579022_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'HD Externo WD 1TB My Passport, USB 3.0, Preto - WDBYVG0010BBK-WESN', 'price': 'R$ 474,99', 'link': 'https://www.kabum.com.br/produto/108060/hd-externo-wd-1tb-my-passport-usb-3-0-preto-wdbyvg0010bbk-wesn', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F108060%2Fhd-wd-externo-portatil-my-passport-1tb-usb-3-0-wdbyvg0010bbk-wesn-_hd-wd-externo-portatil-my-passport-1tb-usb-3-0-wdbyvg0010bbk-wesn-_1573647531_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler ASUS ROG Ryuo III 360, ARGB, 360mm, AMD/Intel, Preto - 90RC00I1-M0UAY0', 'price': 'R$ 1.699,99', 'link': 'https://www.kabum.com.br/produto/463420/water-cooler-asus-rog-ryuo-iii-360-argb-360mm-amd-intel-preto-90rc00i1-m0uay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F463420%2Fwater-cooler-asus-rog-ryuo-iii-360-argb-360mm-amd-intel-preto-90rc00i1-m0uay0_1713207612_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Asus Rog Strix X670E-E Gaming Wi-Fi, AMD X670, AM5, DDR5 - 90MB1BR0-M0EAY0', 'price': 'R$ 4.769,99', 'link': 'https://www.kabum.com.br/produto/376217/placa-mae-asus-rog-strix-x670e-e-gaming-wi-fi-amd-x670-am5-ddr5-90mb1br0-m0eay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F376217%2Fplaca-mae-asus-rog-strix-x670e-e-gaming-wifi-amd-x670-am5-ddr5-90mb1br0-m0eay0_1666295392_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Asus Prime Z790-A Wi-Fi, Intel LGA1700 Z790, ATX, DDR5 - 90MB1CS0-M0EAY0', 'price': 'R$ 2.729,99', 'link': 'https://www.kabum.com.br/produto/392035/placa-mae-asus-prime-z790-a-wi-fi-intel-lga1700-z790-atx-ddr5-90mb1cs0-m0eay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F392035%2Fplaca-mae-asus-prime-z790-a-wifi-intel-lga1700-z790-atx-ddr5-90mb1cs0-m0eay0_1666887004_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler Gigabyte Aorus Liquid Cooler 280, RGB, 280mm, AMD/Intel, Com Display LCD - GP-AORUS WATERFORCE X 280', 'price': 'R$ 1.299,99', 'link': 'https://www.kabum.com.br/produto/164418/water-cooler-gigabyte-aorus-liquid-cooler-280-rgb-280mm-amd-intel-com-display-lcd-gp-aorus-waterforce-x-280', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F164418%2Fwater-cooler-gigabyte-aorus-liquid-cooler-280-140mm-2x-120mm-rgb-intel-amd-com-display-lcd-gp-aorus-waterforce-x-280_1631622469_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte Aerocool KCAS 1000GM, 1000W, 80 Plus Gold, Modular, Full Range APFC, Sem Cabo, Preto - 81062', 'price': 'R$ 899,99', 'link': 'https://www.kabum.com.br/produto/549619/fonte-aerocool-kcas-1000gm-1000w-80-plus-gold-modular-full-range-apfc-sem-cabo-preto-81062', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F549619%2Ffonte-aerocool-kcas-1000gm-1000w-80-plus-gold-modular-full-range-apfc-sem-cabo-preto-81062_1715267468_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Asus Tuf Gaming Z790-Plus D4, Intel, ATX, DDR4 - 90MB1CQ0-M0EAY0', 'price': 'R$ 2.519,99', 'link': 'https://www.kabum.com.br/produto/427123/placa-mae-asus-tuf-gaming-z790-plus-d4-intel-atx-ddr4-90mb1cq0-m0eay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F427123%2Fplaca-mae-asus-tuf-gaming-z790-plus-d4-intel-atx-ddr4-wifi-90mb1cq0-m0eay0_1684941030_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD Externo Portátil SanDisk Extreme 4TB, USB, Leitura: 1050 MB/s e Gravação: 1000 MB/s, Azul - SDSSDE61-4T00-G25B', 'price': 'R$ 2.299,99', 'link': 'https://www.kabum.com.br/produto/478458/ssd-externo-portatil-sandisk-extreme-4tb-usb-leitura-1050-mb-s-e-gravacao-1000-mb-s-azul-sdssde61-4t00-g25b', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F478458%2Fssd-externo-portatil-sandisk-extreme-4tb-usb-leitura-1050-mb-s-e-gravacao-1000-mb-s-azul-sdssde61-4t00-g25b_1700059983_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Controlador de Fan C3Tech, Conector ARGB, Conexão de 10 Coolers, 2 fitas Leds, Controle Remoto - FH-L100RGB', 'price': 'R$ 50,99', 'link': 'https://www.kabum.com.br/produto/485450/controlador-de-fan-c3tech-conector-argb-conexao-de-10-coolers-2-fitas-leds-controle-remoto-fh-l100rgb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F485450%2Fcontrolador-de-fan-c3tech-conector-argb-conexao-de-10-coolers-2-fitas-leds-controle-remoto-fh-l100rgb_1697488245_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD 4TB Corsair MP600 PRO LPX, PCIe Gen 4.0 x4 NVMe M.2, Leitura: 7100MB/s e Gravação: 6800MB/s, Branco - CSSD-F4000GBMP600PLPW', 'price': 'R$ 2.849,99', 'link': 'https://www.kabum.com.br/produto/454659/ssd-4tb-corsair-mp600-pro-lpx-pcie-gen-4-0-x4-nvme-m-2-leitura-7100mb-s-e-gravacao-6800mb-s-branco-cssd-f4000gbmp600plpw', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F454659%2Fssd-4tb-corsair-mp600-pro-lpx-pcie-gen-4-0-x4-nvme-m-2-leitura-7100mb-s-e-gravacao-6800mb-s-branco-cssd-f4000gbmp600plpw_1688137814_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte Acer AC550 550W, 80 Plus Bronze, Modular, PFC Ativo, Com Cabo, Bivolt, Preto - AC550', 'price': 'R$ 309,99', 'link': 'https://www.kabum.com.br/produto/536183/fonte-acer-ac550-550w-80-plus-bronze-modular-pfc-ativo-com-cabo-bivolt-preto-ac550', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F536183%2Ffonte-acer-ac550-550w-80-plus-bronze-modular-pfc-ativo-com-cabo-bivolt-preto-ac550_1715006140_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler Corsair iCUE LINK H100i RGB, 240mm, AMD/Intel, Branco - CW-9061005-WW', 'price': 'R$ 1.199,99', 'link': 'https://www.kabum.com.br/produto/496674/water-cooler-corsair-icue-link-h100i-rgb-240mm-amd-intel-branco-cw-9061005-ww', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F496674%2Fwater-cooler-corsair-icue-link-h100i-rgb-ventoinhas-qx120-rgb-branco-radiador-de-240mm-cw-9061005-ww_1706627107_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler NZXT Kraken 280, 280mm, Intel e AMD, Preto - RL-KN280-B1', 'price': 'R$ 1.299,99', 'link': 'https://www.kabum.com.br/produto/415795/water-cooler-nzxt-kraken-280-280mm-intel-e-amd-preto-rl-kn280-b1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F415795%2Fwater-cooler-nzxt-kraken-280-280mm-1-54in-display-preto-rl-kn280-b1_1686338912_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Kit Com 3 Ventoinhas Ryvel Frost, 3x 120mm, ARGB, Branco -RY-FN-FT-WT', 'price': 'R$ 139,99', 'link': 'https://www.kabum.com.br/produto/545672/kit-com-3-ventoinhas-ryvel-frost-3x-120mm-argb-branco-ry-fn-ft-wt', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F545672%2Fkit-com-3-ventoinhas-ryvel-frost-3x-120mm-argb-branco-ry-fn-ft-wt_1717701347_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler MSI Mag Coreliquid E360, ARGB, 360mm, Intel/AMD, Preto - MAG CORELIQUID E360', 'price': 'R$ 899,99', 'link': 'https://www.kabum.com.br/produto/524433/water-cooler-msi-mag-coreliquid-e360-argb-360mm-intel-amd-preto-mag-coreliquid-e360', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F524433%2Fwater-cooler-msi-mag-coreliquid-e360-argb-360mm-intel-amd-preto-mag-coreliquid-e360_1713876335_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte ASUS ROG Loki SFX-L, 750W, 80 Plus Platinum, Modular, PFC Ativo, sem cabo, Preto - 90YE00N4-B0BA00', 'price': 'R$ 1.599,99', 'link': 'https://www.kabum.com.br/produto/406103/fonte-asus-rog-loki-sfx-l-750w-80-plus-platinum-modular-pfc-ativo-sem-cabo-preto-90ye00n4-b0ba00', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F406103%2Ffonte-asus-rog-loki-sfx-l-750w-80-plus-platinum-argb-bivolt-preto-90ye00n4-b0ba00_1675351845_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte NZXT C Series, 750W, 80 Plus Bronze, PFC Ativo, sem cabo, Preto - PA-7G1BB-US', 'price': 'R$ 679,99', 'link': 'https://www.kabum.com.br/produto/504730/fonte-nzxt-c-series-750w-80-plus-bronze-pfc-ativo-sem-cabo-preto-pa-7g1bb-us', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F504730%2Ffonte-nzxt-c-series-750w-80-plus-bronze-v2-pfc-ativo-bivolt-preto-pa-7g1bb-us_1705343440_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Colorful Battle-AX B550M-D GAMING FROZEN V14, Chipset B550, AMD AM4, mAXT, DDR4 - BAX-B550MD-DDR4-WW', 'price': 'R$ 749,99', 'link': 'https://www.kabum.com.br/produto/522300/placa-mae-colorful-battle-ax-b550m-d-gaming-frozen-v14-chipset-b550-amd-am4-maxt-ddr4-bax-b550md-ddr4-ww', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F522300%2Fplaca-mae-colorful-battle-ax-b550m-d-gaming-frozen-v14-chipset-b550-amd-am4-maxt-ddr4-bax-b550md-ddr4-ww_1718274050_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler Gigabyte Aorus 240, RGB, 240mm, Intel/AMD, com Display LCD, Preto - GP-AORUS WATERFORCE X II 240', 'price': 'R$ 1.599,99', 'link': 'https://www.kabum.com.br/produto/508352/water-cooler-gigabyte-aorus-240-rgb-240mm-intel-amd-com-display-lcd-preto-gp-aorus-waterforce-x-ii-240', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F508352%2Fwater-cooler-gigabyte-aorus-240-rgb-240mm-intel-amd-com-display-lcd-preto-gp-aorus-waterforce-x-ii-240_1714740473_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte Asus ROG-LOKI-1200T-SFX-L-GAMING, 1200W, 80 Plus Titanium, SFX-L, PCIe 5.0, Aura Sync - 90YE00N0-B0BA00', 'price': 'R$ 2.999,99', 'link': 'https://www.kabum.com.br/produto/523068/fonte-asus-rog-loki-1200t-sfx-l-gaming-1200w-80-plus-titanium-sfx-l-pcie-5-0-aura-sync-90ye00n0-b0ba00', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F523068%2Ffonte-asus-rog-loki-1200t-sfx-l-gaming-1200w-80-plus-titanium-sfx-l-pcie-5-0-aura-sync-90ye00n0-b0ba00_1722024851_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte ASUS ROG Loki SFX-L Platinum White Edition, 850W, 80 Plus Platinum, Modular, PFC Ativo, sem cabo, Branco - 90YE00N2-B0BA00', 'price': 'R$ 2.499,98', 'link': 'https://www.kabum.com.br/produto/463382/fonte-asus-rog-loki-sfx-l-platinum-white-edition-850w-80-plus-platinum-modular-pfc-ativo-sem-cabo-branco-90ye00n2-b0ba00', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F463382%2Ffonte-asus-rog-loki-sfx-l-850w-platinum-white-edition-850w-80-plus-platinum-bivolt-argb-branco-90ye00n2-b0ba00_1699284388_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe MSI PRO Z790-A Max, ATX, DDR5, Wi-Fi, RGB, Bluetooth', 'price': 'R$ 2.579,99', 'link': 'https://www.kabum.com.br/produto/498971/placa-mae-msi-pro-z790-a-max-atx-ddr5-wi-fi-rgb-bluetooth', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F498971%2Fplaca-mae-msi-pro-z790-a-max-atx-ddr5-wi-fi-rgb-bluetooth_1706102462_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler Asus ROG Strix LC III 360, 360mm, AMD e Intel, Preto - 90RC00T0-M0UAY0', 'price': 'R$ 1.399,98', 'link': 'https://www.kabum.com.br/produto/526974/water-cooler-asus-rog-strix-lc-iii-360-360mm-amd-e-intel-preto-90rc00t0-m0uay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F526974%2Fwater-cooler-asus-rog-strix-lc-iii-360-360mm-amd-e-intel-preto-90rc00t0-m0uay0_1718967809_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Kingston Fury Beast, RGB, 16GB, 5600MHz, DDR5, CL36, Branco - KF556C36BWEA-16', 'price': 'R$ 525,98', 'link': 'https://www.kabum.com.br/produto/448301/memoria-ram-kingston-fury-beast-rgb-16gb-5600mhz-ddr5-cl36-branco-kf556c36bwea-16', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F448301%2Fmemoria-kingston-fury-beast-rgb-16gb-5600mhz-ddr5-cl36-branco-kf556c36bwea-16_1682627049_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte ASUS TUF Gaming, 750W, 80 Plus Gold, Modular, PFC Ativo, sem cabo, Preto - 90YE00S3-B0BA00', 'price': 'R$ 1.199,99', 'link': 'https://www.kabum.com.br/produto/406111/fonte-asus-tuf-gaming-750w-80-plus-gold-modular-pfc-ativo-sem-cabo-preto-90ye00s3-b0ba00', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F406111%2Ffonte-asus-tuf-gaming-750w-80-plus-gold-bivolt-preto-90ye00s3-b0ba00_1683633005_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM para Notebook Corsair Vengeance, 64GB (2x32GB), 2666MHz, DDR4, CL18, Preto - CMSX64GX4M2A2666C18', 'price': 'R$ 1.032,99', 'link': 'https://www.kabum.com.br/produto/110939/memoria-ram-para-notebook-corsair-vengeance-64gb-2x32gb-2666mhz-ddr4-cl18-preto-cmsx64gx4m2a2666c18', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F110939%2Fmemoria-corsair-vengeance-para-notebook-64gb-2x32gb-2666mhz-ddr4-c18-cmsx64gx4m2a2666c18_1590076724_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': "Case F3 para HD Externo, 2.5', USB 3.0 - JC- CS3.0", 'price': 'R$ 54,99', 'link': 'https://www.kabum.com.br/produto/112058/case-f3-para-hd-externo-2-5-usb-3-0-jc-cs3-0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F112058%2Fcase-para-hd-externo-f3-2-5-usb-3-0-jc-cs3-0_1591708615_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte XPG Core Reactor II VE, 650W, 80 Plus Gold, Modular, PFC Ativo, Preto - 75261414', 'price': 'R$ 700,00', 'link': 'https://www.kabum.com.br/produto/514894/fonte-xpg-core-reactor-ii-ve-650w-80-plus-gold-modular-pfc-ativo-preto-75261414', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F514894%2Ffonte-xpg-core-reactor-ii-ve-650w-75261414_1721238006_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Asus Prime X670E-Pro Wi-Fi, AMD X670, AM5, DDR5 - 90MB1BL0-M0EAY0', 'price': 'R$ 3.209,99', 'link': 'https://www.kabum.com.br/produto/376223/placa-mae-asus-prime-x670e-pro-wi-fi-amd-x670-am5-ddr5-90mb1bl0-m0eay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F376223%2Fplaca-mae-asus-prime-x670e-pro-wifi-amd-x670-am5-ddr5-90mb1bl0-m0eay0_1668432349_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler Corsair iCUE LINK H170i RGB, 420mm, AMD/Intel, Preto - CW-9061004-WW', 'price': 'R$ 2.199,99', 'link': 'https://www.kabum.com.br/produto/496672/water-cooler-corsair-icue-link-h170i-rgb-420mm-amd-intel-preto-cw-9061004-ww', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F496672%2Fwater-cooler-corsair-icue-link-h170i-rgb-ventoinhas-qx140-rgb-radiador-grande-de-420mm-cw-9061004-ww_1706632270_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler NZXT Kraken Elite 240 RGB, 240mm, AMD/Intel, Preto - RL-KR24E-B1', 'price': 'R$ 1.799,99', 'link': 'https://www.kabum.com.br/produto/415807/water-cooler-nzxt-kraken-elite-240-rgb-240mm-amd-intel-preto-rl-kr24e-b1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F415807%2Fwater-cooler-nzxt-kraken-elite-240-rgb-240mm-c-display-rgb-controller-e-rgb-fans-preto-rl-kr24e-b1_1687196284_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Corsair Vengeance RGB Pro, 16GB (2x8GB), 3200MHz, DDR4, CL16, Preto - CMW16GX4M2C3200C16-TUF', 'price': 'R$ 439,99', 'link': 'https://www.kabum.com.br/produto/110996/memoria-ram-corsair-vengeance-rgb-pro-16gb-2x8gb-3200mhz-ddr4-cl16-preto-cmw16gx4m2c3200c16-tuf', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F110996%2Fmemoria-corsair-vengeance-rgb-pro-16gb-2x8gb-3200mhz-ddr4-c16-tuf-black-cmw16gx4m2c3200c16-tuf_1589974083_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Corsair Vengeance RGB PRO SL, 16GB (2x8GB), 3600MHz, DDR4, CL18, Preto - CMH16GX4M2D3600C18', 'price': 'R$ 439,99', 'link': 'https://www.kabum.com.br/produto/382751/memoria-ram-corsair-vengeance-rgb-pro-sl-16gb-2x8gb-3600mhz-ddr4-cl18-preto-cmh16gx4m2d3600c18', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F382751%2Fmemoria-corsair-vengeance-rgb-pro-sl-16gb-3600mhz-ddr4-c18-preto-cmh16gx4m2d3600c18_1665489472_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe ASUS Prime B760-Plus, Intel, M-ATX, DDR5, RGB - 90MB1EF0-M1EAY0', 'price': 'R$ 1.500,00', 'link': 'https://www.kabum.com.br/produto/521841/placa-mae-asus-prime-b760-plus-intel-m-atx-ddr5-rgb-90mb1ef0-m1eay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F521841%2Fplaca-mae-asus-prime-b760-plus-b650-intel-m-atx-ddr5-rgb-90mb1ef0-m1eay0_1708972841_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Kingston Fury Beast, 32GB (2x16GB), 5600MHz, DDR5, CL40, para Intel XMP, Preto - KF556C40BBK2-32', 'price': 'R$ 925,99', 'link': 'https://www.kabum.com.br/produto/285968/memoria-ram-kingston-fury-beast-32gb-2x16gb-5600mhz-ddr5-cl40-para-intel-xmp-preto-kf556c40bbk2-32', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F285968%2Fmemoria-kingston-fury-beast-32gb-2x16gb-5600mhz-ddr5-cl40-preto-kf556c40bbk2-32_1639578384_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler Cooler Master MasterLiquid ML240R RGB, 240mm - MLX-D24M-A20PC-R1', 'price': 'R$ 729,99', 'link': 'https://www.kabum.com.br/produto/96501/water-cooler-cooler-master-masterliquid-ml240r-rgb-240mm-mlx-d24m-a20pc-r1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F96501%2F96501_1_1525283795_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Asus TUF Gaming B550-PRO, AMD AM4, ATX, DDR4 - 90MB17R0-M0EAY0', 'price': 'R$ 1.404,99', 'link': 'https://www.kabum.com.br/produto/548939/placa-mae-asus-tuf-gaming-b550-pro-amd-am4-atx-ddr4-90mb17r0-m0eay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F548939%2Fplaca-mae-asus-tuf-gaming-b550-pro-amd-am4-atx-ddr4-90mb17r0-m0eay0_1722266159_m.jpg&w=384&q=75'}
+salvando_historico
+insert produto on aws -> {'adm': 'kabum', 'name': 'Memória RAM XPG Gammix D20, 32GB (2x16GB), 3200MHz, DDR4, CL16, Preto - AX4U320016G16A-DCBK20', 'price': 'R$ 649,99', 'link': 'https://www.kabum.com.br/produto/156637/memoria-ram-xpg-gammix-d20-32gb-2x16gb-3200mhz-ddr4-cl16-preto-ax4u320016g16a-dcbk20', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F156637%2Fmemoria-xpg-gammix-d20-32gb-2x16gb-3200mhz-ddr4-cl-16-preto-ax4u320016g16a-dcbk20_1623957514_m.jpg&w=384&q=75'}
+enviando mensagem pro telegram - Novo produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD Externo Portátil SanDisk Extreme 2TB, USB, Leitura: 1050 MB/s e Gravação: 1000 MB/s, Azul - SDSSDE61-2T00-G25B', 'price': 'R$ 1.349,99', 'link': 'https://www.kabum.com.br/produto/478457/ssd-externo-portatil-sandisk-extreme-2tb-usb-leitura-1050-mb-s-e-gravacao-1000-mb-s-azul-sdssde61-2t00-g25b', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F478457%2Fssd-externo-portatil-sandisk-extreme-2tb-usb-leitura-1050-mb-s-e-gravacao-1000-mb-s-azul-sdssde61-2t00-g25b_1700059199_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler NZXT Kraken Elite 280 RGB, 280mm, Intel e AMD, Branco - RL-KR28E-W1', 'price': 'R$ 1.899,99', 'link': 'https://www.kabum.com.br/produto/415808/water-cooler-nzxt-kraken-elite-280-rgb-280mm-intel-e-amd-branco-rl-kr28e-w1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F415808%2Fwater-cooler-nzxt-kraken-elite-280-rgb-280mm-c-display-rgb-controller-e-rgb-fans-branco-rl-kr28e-w1_1687198946_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Corsair Vengeance, RGB, 64GB (2x32GB), 5200MHz, DDR5, C40, Preto - CMH64GX5M2B5200Z40K', 'price': 'R$ 1.699,99', 'link': 'https://www.kabum.com.br/produto/442708/memoria-ram-corsair-vengeance-rgb-64gb-2x32gb-5200mhz-ddr5-c40-preto-cmh64gx5m2b5200z40k', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F442708%2Fmemoria-corsair-vengeance-rgb-64gb-2x32gb-5200mt-s-ddr5-c40-preto-cmh64gx5m2b5200z40k_1682617492_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Kingston Fury Beast RGB, 32GB (2x16GB), 5600MHz, DDR5, CL40, para Intel XMP, Preto - KF556C40BBAK2-32', 'price': 'R$ 1.049,98', 'link': 'https://www.kabum.com.br/produto/388089/memoria-ram-kingston-fury-beast-rgb-32gb-2x16gb-5600mhz-ddr5-cl40-para-intel-xmp-preto-kf556c40bbak2-32', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F388089%2Fmemoria-kingston-fury-beast-rgb-32gb-5600mhz-ddr5-cl40-preto-kf556c40bbak2-32_1666124599_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Asus ROG MAXIMUS Z790 APEX ENCORE, INTEL, Z790, ATX, DDR5 - 90MB1FX0-M0AAY0', 'price': 'R$ 5.789,99', 'link': 'https://www.kabum.com.br/produto/521060/placa-mae-asus-rog-maximus-z790-apex-encore-intel-z790-atx-ddr5-90mb1fx0-m0aay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F521060%2Fplaca-mae-asus-rog-maximus-z790-apex-encore-intel-z790-atx-ddr5-90mb1fx0-m0aay0_1716476715_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mae Asus ProArt X670E-Creator Wi-Fi, AMD X670, AM5, DDR5 - 90MB1B90-M0EAY0', 'price': 'R$ 4.604,99', 'link': 'https://www.kabum.com.br/produto/376232/placa-mae-asus-proart-x670e-creator-wi-fi-amd-x670-am5-ddr5-90mb1b90-m0eay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F376232%2Fplaca-mae-asus-proart-x670e-creator-wifi-amd-x670-am5-ddr5-90mb1b90-m0eay0_1668443223_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Ventoinha Corsair Elite Single, 140mm, RGB, Branco - CO-9050138-WW', 'price': 'R$ 159,98', 'link': 'https://www.kabum.com.br/produto/352611/ventoinha-corsair-elite-single-140mm-rgb-branco-co-9050138-ww', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F352611%2Fcooler-fan-corsair-elite-single-140mm-rgb-branco-co-9050138-ww_1665172066_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler Corsair iCUE LINK H100i, RGB, 240mm, AMD/Intel, Preto - CW-9061001-WW', 'price': 'R$ 1.499,99', 'link': 'https://www.kabum.com.br/produto/496668/water-cooler-corsair-icue-link-h100i-rgb-240mm-amd-intel-preto-cw-9061001-ww', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F496668%2Fwater-cooler-corsair-icue-link-h100i-rgb-ventoinhas-qx120-rgb-radiador-de-240mm-cw-9061001-ww_1706717107_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler Cooler Master Masterliquid PL240 Flux White Edition, RGB, 240mm, AMD/Intel, Branco - MLY-D24M-A23PZ-RW', 'price': 'R$ 999,99', 'link': 'https://www.kabum.com.br/produto/405695/water-cooler-cooler-master-masterliquid-pl240-flux-white-edition-rgb-240mm-amd-intel-branco-mly-d24m-a23pz-rw', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F405695%2Fwater-cooler-cooler-master-masterliquid-pl240-flux-white-edition-rgb-240mm-amd-branco-mly-d24m-a23pz-r1_1671824892_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler Corsair iCUE H150i Elite LCD XT, RGB, 360mm, AMD/Intel, Branco - CW-9060077-WW', 'price': 'R$ 2.499,98', 'link': 'https://www.kabum.com.br/produto/496663/water-cooler-corsair-icue-h150i-elite-lcd-xt-rgb-360mm-amd-intel-branco-cw-9060077-ww', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F496663%2Fwater-cooler-corsair-icue-h150i-elite-lcd-xt-branco-tela-lcd-ips-fans-af120-rgb-elite-radiador-360mm-cw-9060077-ww_1706715611_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Kingston Fury Beast RGB, 16GB, 5600MHz, DDR5, CL40, para Intel XMP, Preto - KF556C40BBA-16', 'price': 'R$ 549,99', 'link': 'https://www.kabum.com.br/produto/388088/memoria-ram-kingston-fury-beast-rgb-16gb-5600mhz-ddr5-cl40-para-intel-xmp-preto-kf556c40bba-16', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F388088%2Fmemoria-kingston-fury-beast-rgb-16gb-5600mhz-ddr5-cl40-preto-kf556c40bba-16_1666124297_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte ASUS ROG Thor 1600T, 1600W, 80 Plus Titanium, Modular, PFC Ativo, sem cabo, Preto - 90YE00K0-B0BA00', 'price': 'R$ 6.299,99', 'link': 'https://www.kabum.com.br/produto/347226/fonte-asus-rog-thor-1600t-1600w-80-plus-titanium-modular-pfc-ativo-sem-cabo-preto-90ye00k0-b0ba00', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F347226%2Ffonte-asus-rog-thor-1600t-1600w-80-plus-platinum-display-led-aura-sync-bivolt-preto-90ye00k0-b0ba00_1661178768_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Corsair Dominator, RGB, 32GB (2x16GB), 5600MHz, DDR5, CL36, Preto - CMT32GX5M2B5600C36', 'price': 'R$ 1.071,99', 'link': 'https://www.kabum.com.br/produto/286774/memoria-ram-corsair-dominator-rgb-32gb-2x16gb-5600mhz-ddr5-cl36-preto-cmt32gx5m2b5600c36', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F286774%2Fmemoria-corsair-dominator-rgb-32gb-2x16gb-5600mhz-ddr5-cl36-preto-cmt32gx5m2x5600c36_1639584058_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe ASUS TUF GAMING B760M-BTF WIFI, Intel LGA1700, B760, DDR5 - 90MB1G50-M0EAY0', 'price': 'R$ 2.674,99', 'link': 'https://www.kabum.com.br/produto/596423/placa-mae-asus-tuf-gaming-b760m-btf-wifi-intel-lga1700-b760-ddr5-90mb1g50-m0eay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F596423%2Fplaca-mae-asus-tuf-gaming-b760m-btf-wifi-intel-lga1700-b760-ddr5-90mb1g50-m0eay0_1719931118_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD 1TB Corsair MP600 PRO NH, PCIe Gen 4.0 x4 NVMe M.2, Leitura: 7000MB/s e Gravação: 5700MB/s, Preto - CSSD-F1000GBMP600PNH', 'price': 'R$ 839,99', 'link': 'https://www.kabum.com.br/produto/454641/ssd-1tb-corsair-mp600-pro-nh-pcie-gen-4-0-x4-nvme-m-2-leitura-7000mb-s-e-gravacao-5700mb-s-preto-cssd-f1000gbmp600pnh', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F454641%2Fssd-1tb-corsair-mp600-pro-nh-pcie-gen-4-0-x4-nvme-m-2-leitura-7000mb-s-e-gravacao-5700mb-s-preto-cssd-f1000gbmp600pnh_1688128941_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte ASUS ROG Loki SFX-L, 850W, 80 Plus Platinum, Modular, PFC Ativo, sem cabo, Preto - 90YE00N3-B0BA00', 'price': 'R$ 1.699,99', 'link': 'https://www.kabum.com.br/produto/406102/fonte-asus-rog-loki-sfx-l-850w-80-plus-platinum-modular-pfc-ativo-sem-cabo-preto-90ye00n3-b0ba00', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F406102%2Ffonte-asus-rog-loki-sfx-l-850w-80-plus-platinum-argb-bivolt-preto-90ye00n3-b0ba00_1675343282_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Kingston Fury Beast RGB, 32GB, 4800MHz, DDR5, CL38, para Intel XMP, Preto - KF548C38BBA-32', 'price': 'R$ 859,99', 'link': 'https://www.kabum.com.br/produto/388078/memoria-ram-kingston-fury-beast-rgb-32gb-4800mhz-ddr5-cl38-para-intel-xmp-preto-kf548c38bba-32', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F388078%2Fmemoria-kingston-fury-beast-rgb-32gb-4800mhz-ddr5-cl38-preto-kf548c38bba-32_1666039907_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte Redragon 750W, 80 Plus Gold, Modular, PFC Ativo, Bivolt, RGB, Preto - GC-PS006-1', 'price': 'R$ 778,99', 'link': 'https://www.kabum.com.br/produto/521828/fonte-redragon-750w-80-plus-gold-modular-pfc-ativo-bivolt-rgb-preto-gc-ps006-1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F521828%2Ffonte-redragon-750w-80-plus-gold-full-modular-pfc-ativo-bivolt-rgb-preto-gc-ps006-1_1709132338_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler NZXT Kraken 120, RGB, 120mm, AMD/Intel, Preto - RL-KR120-B1', 'price': 'R$ 399,99', 'link': 'https://www.kabum.com.br/produto/240191/water-cooler-nzxt-kraken-120-rgb-120mm-amd-intel-preto-rl-kr120-b1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F240191%2Fwater-cooler-nzxt-kraken-120-rgb-fan-de-120mm-intel-e-amd-1700-para-pc-preto-rl-kr120-b1_1633976462_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD SATA Kingston DC600M Mixed-Use, 7.68TB, 2.5", Leitura: 560MB/s e Gravação: 530MB/s, Preto - SEDC600M/7680G', 'price': 'R$ 6.999,99', 'link': 'https://www.kabum.com.br/produto/459939/ssd-sata-kingston-dc600m-mixed-use-7-68tb-2-5-leitura-560mb-s-e-gravacao-530mb-s-preto-sedc600m-7680g', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F459939%2Fssd-kingston-7680tb-dc600m-mixed-use-sata-2-5-leitura-560mb-s-e-gravacao-530mb-s-sedc600m-7680g_1686055754_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Asus ROG MAXIMUS Z790 FORMULA, INTEL, Z790, ATX, DDR5 - 90MB1FS0-M0EAY0', 'price': 'R$ 6.419,99', 'link': 'https://www.kabum.com.br/produto/521059/placa-mae-asus-rog-maximus-z790-formula-intel-z790-atx-ddr5-90mb1fs0-m0eay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F521059%2Fplaca-mae-asus-rog-maximus-z790-formula-intel-z790-atx-ddr5-90mb1fs0-m0eay0_1716476901_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'HD WD Black Performance, 4TB, 3.5´, SATA - WD4005FZBX', 'price': 'R$ 1.429,99', 'link': 'https://www.kabum.com.br/produto/97074/hd-wd-black-performance-4tb-3-5-sata-wd4005fzbx', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F97074%2F97074_1528827683_index_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe ASRock A520M Phantom Gaming 4, AMD A520, mATX, DDR4 - 90-MXBEK*', 'price': 'R$ 709,99', 'link': 'https://www.kabum.com.br/produto/525052/placa-mae-asrock-a520m-phantom-gaming-4-amd-a520-matx-ddr4-90-mxbek-', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F525052%2Fplaca-mae-asrock-a520m-phantom-gaming-4-amd-a520-matx-ddr4-90-mxbek-_1718716118_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Gigabyte Z790 Gaming X AX, Intel, ATX, DDR5, Wi-Fi, Bluetooth - Z790 GAMING X AX', 'price': 'R$ 2.299,99', 'link': 'https://www.kabum.com.br/produto/447410/placa-mae-gigabyte-z790-gaming-x-ax-intel-atx-ddr5-wi-fi-bluetooth-z790-gaming-x-ax', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F447410%2Fplaca-mae-gigabyte-z790-gaming-x-ax-intel-atx-ddr5-wi-fi-bluetooth-z790-gaming-x-ax_1689078182_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte DeepCool 850W, 80 Plus Gold, Modular, PFC Ativo, Bivolt, Sem Cabo, Preto - R-PX850G-FC0B-WO', 'price': 'R$ 1.499,99', 'link': 'https://www.kabum.com.br/produto/532937/fonte-deepcool-850w-80-plus-gold-modular-pfc-ativo-bivolt-sem-cabo-preto-r-px850g-fc0b-wo', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F532937%2Ffonte-deepcool-850w-80-plus-gold-modular-pfc-ativo-bivolt-sem-cabo-preto-r-px850g-fc0b-wo-_1713529720_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Air Cooler Cooler Master MA410M, AMD/Intel, RGB, Preto - MAM-T4PN-218PC-R1', 'price': 'R$ 499,99', 'link': 'https://www.kabum.com.br/produto/100184/air-cooler-cooler-master-ma410m-amd-intel-rgb-preto-mam-t4pn-218pc-r1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F100184%2Fcooler-para-processador-cooler-master-ma410m-mam-t4pn-218pc-r1_cooler-para-processador-cooler-master-ma410m-mam-t4pn-218pc-r1_1552056977_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD Externo ADATA 2TB SD810, USB 3.2, 1000G IP68, até 2.000 MB/s, para iPhone 15/Pro/Max, Android, Prata - SD810-2000G-CSG', 'price': 'R$ 1.159,98', 'link': 'https://www.kabum.com.br/produto/521710/ssd-externo-adata-2tb-sd810-usb-3-2-1000g-ip68-ate-2-000-mb-s-para-iphone-15-pro-max-android-prata-sd810-2000g-csg', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F521710%2Fssd-externo-adata-2tb-sd810-usb-3-2-1000g-ip68-ate-2-000-mb-s-para-iphone-15-pro-max-android-prata-sd810-2000g-csg_1709820874_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte Corsair RMx Shift Series RM850x, 850W, 80 Plus Gold, Modular, Sem Cabo, Preto - CP-9020252-BR', 'price': 'R$ 1.199,99', 'link': 'https://www.kabum.com.br/produto/516062/fonte-corsair-rmx-shift-series-rm850x-850w-80-plus-gold-modular-sem-cabo-preto-cp-9020252-br', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F516062%2Ffonte-corsair-rmx-shift-series-rm850x-850w-80-plus-gold-modular-sem-cabo-preto-cp-9020252-br_1714481320_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Corsair Dominator Platinum, RGB, 32GB (2x16GB), 3600MHz, DDR4, CL18, para AMD, Preto - CMT32GX4M2Z3600C18', 'price': 'R$ 999,99', 'link': 'https://www.kabum.com.br/produto/526362/memoria-ram-corsair-dominator-platinum-rgb-32gb-2x16gb-3600mhz-ddr4-cl18-para-amd-preto-cmt32gx4m2z3600c18', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F526362%2Fmemoria-corsair-dominator-platinum-rgb-32gb-2x16gb-3600mhz-ddr4-cl18-otimizado-amd-preto-cmt32gx4m2z3600c18_1711655193_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler Gigabyte Aorus Waterforce, ARGB, 280mm, AMD/Intel, Preto - GP-AORUS WATERFORCE 280', 'price': 'R$ 950,00', 'link': 'https://www.kabum.com.br/produto/329767/water-cooler-gigabyte-aorus-waterforce-argb-280mm-amd-intel-preto-gp-aorus-waterforce-280', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F329767%2Fwater-cooler-gigabyte-aorus-waterforce-argb-280mm-para-pc-preto-gp-aorus-waterforce-280_1651679921_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte KBM! GAMING FN850, 850W, 80 Plus e Cybenetics Gold, PFC Ativo, Full Modular, Bivolt - KGFN85085PT', 'price': 'R$ 756,38', 'link': 'https://www.kabum.com.br/produto/472039/fonte-kbm-gaming-fn850-850w-80-plus-e-cybenetics-gold-pfc-ativo-full-modular-bivolt-kgfn85085pt', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F472039%2Ffonte-kbm-gaming-fn850-850w-80-plus-e-cybenetics-gold-pfc-ativo-full-modular-bivolt-kgfn85085pt_1723555778_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe MSI MAG Z790 Tomahawk Max, ATX, DDR5, Wi-Fi, RGB, Bluetooth', 'price': 'R$ 2.909,98', 'link': 'https://www.kabum.com.br/produto/498970/placa-mae-msi-mag-z790-tomahawk-max-atx-ddr5-wi-fi-rgb-bluetooth', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F498970%2Fplaca-mae-msi-mag-z790-tomahawk-max-atx-ddr5-wi-fi-rgb-bluetooth_1705585028_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Ventoinha Cooler Master Masterfan MF120 halo 2, 120mm, ARGB, Branco - MFL-B2DW-21NP2-R2', 'price': 'R$ 109,99', 'link': 'https://www.kabum.com.br/produto/532501/ventoinha-cooler-master-masterfan-mf120-halo-2-120mm-argb-branco-mfl-b2dw-21np2-r2', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F532501%2Fventoinha-cooler-master-masterfan-mf120-halo-2-120mm-argb-branco-mfl-b2dw-21np2-r2_1722451585_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte Gamdias Cyclops M1-550B, 550W, 80 Plus Bronze, RGB', 'price': 'R$ 400,00', 'link': 'https://www.kabum.com.br/produto/543044/fonte-gamdias-cyclops-m1-550b-550w-80-plus-bronze-rgb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F543044%2Ffonte-gamdias-cyclops-m1-550b-550w-80-plus-bronze-rgb_1714399085_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Colorful BATTLE-AX B760M-T PRO V20, Intel LGA 1700, ITX para Core de 13ª e 12ª Geração, PCIe 5.0 - CVN-B760MTP-DDR4', 'price': 'R$ 809,99', 'link': 'https://www.kabum.com.br/produto/522305/placa-mae-colorful-battle-ax-b760m-t-pro-v20-intel-lga-1700-itx-para-core-de-13-e-12-geracao-pcie-5-0-cvn-b760mtp-ddr4', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F522305%2Fplaca-mae-colorful-battle-ax-b760m-t-pro-v20-lga-1700-itx-para-core-de-13-e-12-geracao-pcie-5-0-cvn-b760mtp-ddr4_1719580143_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler NZXT Kraken Elite 280, 280mm, Intel e AMD, Preto - RL-KN28E-B1', 'price': 'R$ 1.699,99', 'link': 'https://www.kabum.com.br/produto/415804/water-cooler-nzxt-kraken-elite-280-280mm-intel-e-amd-preto-rl-kn28e-b1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F415804%2Fwater-cooler-nzxt-kraken-elite-280-280mm-c-display-e-radiator-fans-preto-rl-kn28e-b1_1686341459_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler Corsair iCUE H170i Elite Capellix XT, RGB, 420mm, AMD/Intel, Preto - CW-9060071-WW', 'price': 'R$ 1.899,99', 'link': 'https://www.kabum.com.br/produto/496643/water-cooler-corsair-icue-h170i-elite-capellix-xt-rgb-420mm-amd-intel-preto-cw-9060071-ww', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F496643%2Fwater-cooler-corsair-icue-h170i-elite-capellix-xt-fans-af140-rgb-elite-radiador-de-420mm-cw-9060071-ww_1706624620_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Gigabyte AORUS Z790 PRO X, Intel, ATX, DDR5, RGB, Wi-Fi, Bluetooth - Z790 AORUS PRO X', 'price': 'R$ 4.629,99', 'link': 'https://www.kabum.com.br/produto/485275/placa-mae-gigabyte-aorus-z790-pro-x-intel-atx-ddr5-rgb-wi-fi-bluetooth-z790-aorus-pro-x', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F485275%2Fplaca-mae-gigabyte-aorus-z790-pro-x-intel-atx-ddr5-rgb-wi-fi-bluetooth-z790-aorus-pro-x_1703619890_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler ASUS ROG Ryuo III 240 White Edition, ARGB, 240mm, AMD/Intel, Branco - 90RC00J2-M0UAY0', 'price': 'R$ 899,99', 'link': 'https://www.kabum.com.br/produto/463419/water-cooler-asus-rog-ryuo-iii-240-white-edition-argb-240mm-amd-intel-branco-90rc00j2-m0uay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F463419%2Fwater-cooler-asus-rog-ryuo-iii-240-argb-white-edition-240mm-amd-e-intel-para-pc-90rc00j2-m0uay0_1699561146_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Kingston KVR, 4GB, DDR4, 2666MHz, CL19 - KVR26N19S6L/4', 'price': 'R$ 115,99', 'link': 'https://www.kabum.com.br/produto/444338/memoria-ram-kingston-kvr-4gb-ddr4-2666mhz-cl19-kvr26n19s6l-4', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F444338%2Fmemoria-kingston-kvr-4gb-ddr4-2666mhz-cl19-kvr26n19s6l-4_1687349223_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe MSI MPG Z790 Edge TI Max, ATX, DDR5, Wi-Fi, RGB, Bluetooth', 'price': 'R$ 3.854,99', 'link': 'https://www.kabum.com.br/produto/498969/placa-mae-msi-mpg-z790-edge-ti-max-atx-ddr5-wi-fi-rgb-bluetooth', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F498969%2Fplaca-mae-msi-mpg-z790-edge-ti-max-atx-ddr5-wi-fi-rgb-bluetooth_1706116421_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Asus PRIME H770-PLUS D4, Intel, ATX, DDR4 - 90MB1CU0-M0EAY0', 'price': 'R$ 1.399,99', 'link': 'https://www.kabum.com.br/produto/461371/placa-mae-asus-prime-h770-plus-d4-intel-atx-ddr4-90mb1cu0-m0eay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F461371%2Fplaca-mae-asus-prime-h770-plus-d4-intel-atx-ddr4-90mb1cu0-m0eay0_1698753587_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler ASUS ROG Strix LC III 240 ARGB, 240mm, AMD e Intel, Preto - 90RC00S1-M0UAY0', 'price': 'R$ 1.099,99', 'link': 'https://www.kabum.com.br/produto/526975/water-cooler-asus-rog-strix-lc-iii-240-argb-240mm-amd-e-intel-preto-90rc00s1-m0uay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F526975%2Fwater-cooler-asus-rog-strix-lc-iii-240-argb-240mm-amd-e-intel-preto-90rc00s1-m0uay0_1722347439_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': "HD WD 3TB Purple, 5400 RPM, 3.5', SATA - WD33PURZ", 'price': 'R$ 734,99', 'link': 'https://www.kabum.com.br/produto/497178/hd-wd-3tb-purple-5400-rpm-3-5-sata-wd33purz', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F497178%2Fhd-wd-3tb-purple-5400-rpm-3-5-sata-wd33purz_1709642988_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte EVGA Super NOVA 1000 GT, 1000W, 80 Plus Gold, Full Modular, Auto Eco Mode com Fan FDB, Power ON Self Tester Incluso - 220-GT-1000-X1', 'price': 'R$ 1.399,99', 'link': 'https://www.kabum.com.br/produto/518026/fonte-evga-super-nova-1000-gt-1000w-80-plus-gold-full-modular-auto-eco-mode-com-fan-fdb-power-on-self-tester-incluso-220-gt-1000-x1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F518026%2Ffonte-evga-super-nova-1000-gt-1000w-80-plus-gold-full-modular-auto-eco-mode-com-fan-fdb-power-on-self-tester-incluso-220-gt-1000-x1_1714763047_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Kingston Fury Beast, RGB, 64GB (4x16GB), 3200MHz, DDR4, CL16, Preto - KF432C16BB2AK4/64', 'price': 'R$ 1.499,99', 'link': 'https://www.kabum.com.br/produto/480534/memoria-ram-kingston-fury-beast-rgb-64gb-4x16gb-3200mhz-ddr4-cl16-preto-kf432c16bb2ak4-64', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F480534%2Fmemoria-kingston-fury-beast-rgb-64gb-4x16gb-3200mhz-ddr4-cl16-preto-kf432c16bb2ak4-64_1698351278_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Corsair Dominator, RGB, 16GB (2x8GB), 3200MHz, DDR4, CL16, Preto - CMT16GX4M2C3200C16', 'price': 'R$ 649,99', 'link': 'https://www.kabum.com.br/produto/101157/memoria-ram-corsair-dominator-rgb-16gb-2x8gb-3200mhz-ddr4-cl16-preto-cmt16gx4m2c3200c16', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F101157%2Fmemoria-corsair-dominator-rgb-16gb-2x8gb-3200mhz-ddr4-cl16-preto-cmt16gx4m2c3200c16_memoria-corsair-dominator-rgb-16gb-2x8gb-3200mhz-ddr4-cl16-preto-cmt16gx4m2c3200c16_1555533864_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa mãe Colorful CVN Z790 GAMING FROZEN V20 LGA 1700 Intel ATX DDR4 PCIE5.0, 13th Gen Intel Core - CVN-Z790GF-DDR4-WW', 'price': 'R$ 1.929,99', 'link': 'https://www.kabum.com.br/produto/522308/placa-mae-colorful-cvn-z790-gaming-frozen-v20-lga-1700-intel-atx-ddr4-pcie5-0-13th-gen-intel-core-cvn-z790gf-ddr4-ww', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F522308%2Fplaca-mae-colorful-cvn-z790-gaming-frozen-v20-lga-1700-intel-atx-ddr4-pcie5-0-13th-gen-intel-core-cvn-z790gf-ddr4-ww_1718293350_m.jpg&w=384&q=75'}
+salvando_historico
+Erro na paginação: Message: no such element: Unable to locate element: {"method":"css selector","selector":".priceCard"}
+  (Session info: chrome=128.0.6613.119); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55960fec62da <unknown>
+#1 0x55960fb94200 <unknown>
+#2 0x55960fbe3aa2 <unknown>
+#3 0x55960fbe3d41 <unknown>
+#4 0x55960fbd8386 <unknown>
+#5 0x55960fc088fd <unknown>
+#6 0x55960fbd8279 <unknown>
+#7 0x55960fc08a9e <unknown>
+#8 0x55960fc26dfd <unknown>
+#9 0x55960fc08673 <unknown>
+#10 0x55960fbd6473 <unknown>
+#11 0x55960fbd747e <unknown>
+#12 0x55960fe8d0db <unknown>
+#13 0x55960fe91071 <unknown>
+#14 0x55960fe799d5 <unknown>
+#15 0x55960fe91bf2 <unknown>
+#16 0x55960fe5eb6f <unknown>
+#17 0x55960feb5248 <unknown>
+#18 0x55960feb5417 <unknown>
+#19 0x55960fec50cc <unknown>
+#20 0x7f42f6d66ac3 <unknown>
+
+Finalizando o scraping...
+-----> FIM DA ITERAÇÃO WHILE <--------
+
+
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Processador AMD Ryzen 5 5600GT, 3.6 GHz, (4.6GHz Max Turbo), Cachê 4MB, 6 Núcleos, 12 Threads, AM4 - 100-100001488BOX', 'price': 'R$ 894,73', 'link': 'https://www.kabum.com.br/produto/520368/processador-amd-ryzen-5-5600gt-3-6-ghz-4-6ghz-max-turbo-cache-4mb-6-nucleos-12-threads-am4-100-100001488box', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F520368%2Fprocessador-amd-ryzen-5-5600gt-3-6-ghz-4-6ghz-max-turbo-cache-4mb-6-nucleos-12-threads-am4-100-100001488box_1708024586_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte Corsair CX Series CX750, 750W, 80 Plus Bronze, Com Cabo, Preto - CP-9020279-BR', 'price': 'R$ 599,99', 'link': 'https://www.kabum.com.br/produto/516057/fonte-corsair-cx-series-cx750-750w-80-plus-bronze-com-cabo-preto-cp-9020279-br', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F516057%2Ffonte-corsair-cx-series-cx750-750w-80-plus-bronze-sem-cabo-preto-cp-9020279-br_1714484853_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD 128GB KBM! Gaming, SATA III, leitura 500mbs/ Gravacao 450mbs - KGSSD110128', 'price': 'R$ 119,99', 'link': 'https://www.kabum.com.br/produto/538704/ssd-128gb-kbm-gaming-sata-iii-leitura-500mbs-gravacao-450mbs-kgssd110128', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F538704%2Fssd-128gb-kbm-gaming-sata-iii-leitura-500mbs-gravacao-450mbs-kgssd110128_1718387053_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Controladora Gamer Para Cooler Rise Mode Sound, ARGB, 6p, 10 Fans - RM-COS-ARGB', 'price': 'R$ 49,98', 'link': 'https://www.kabum.com.br/produto/506057/controladora-gamer-para-cooler-rise-mode-sound-argb-6p-10-fans-rm-cos-argb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F506057%2Fcontroladora-rise-mode-sound-argb-6p-10-fans-rm-cos-argb_1722944919_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Controladora Gamer Para Cooler Rise Mode PWM e ARGB Hub - RM-COPW-ARGB', 'price': 'R$ 49,98', 'link': 'https://www.kabum.com.br/produto/513860/controladora-gamer-para-cooler-rise-mode-pwm-e-argb-hub-rm-copw-argb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F513860%2Fcontroladora-gamer-para-cooler-rise-mode-pwm-e-argb-hub-rm-copw-argb_1725650950_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Air Cooler Deepcool AK620, AMD/Intel, 120mm, Preto - R-AK620-BKNNMT-G', 'price': 'R$ 429,99', 'link': 'https://www.kabum.com.br/produto/388307/air-cooler-deepcool-ak620-amd-intel-120mm-preto-r-ak620-bknnmt-g', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F388307%2Fcooler-para-processador-deepcool-ak620-amd-intel-120mm-preto-r-ak620-bknnmt-g_1670620004_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+Iterando página
+Iterando página
+Iterando página
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mae Asus ROG Strix X670E-F Gaming Wi-Fi, AMD X670, AM5, DDR5 - 90MB1BA0-M0EAY0', 'price': 'R$ 3.379,99', 'link': 'https://www.kabum.com.br/produto/376218/placa-mae-asus-rog-strix-x670e-f-gaming-wi-fi-amd-x670-am5-ddr5-90mb1ba0-m0eay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F376218%2Fplaca-mae-asus-rog-strix-x670e-f-gaming-wifi-amd-x670-am5-ddr5-90mb1ba0-m0eay0_1668176712_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte MSI MEG Ai1300P, 1300W, 80 Plus Platinum, Modular, PFC Ativo, Bivolt, Preto - MEG Ai1300P PCIE5', 'price': 'R$ 1.799,99', 'link': 'https://www.kabum.com.br/produto/508037/fonte-msi-meg-ai1300p-1300w-80-plus-platinum-modular-pfc-ativo-bivolt-preto-meg-ai1300p-pcie5', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F508037%2Ffonte-msi-meg-ai1300p-1300w-80-plus-platina-modular-pfc-ativo-bivolt-preto-meg-ai1300p-pcie5_1710333398_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'SSD Gigabyte AORUS Gen4 7300 2TB, PCI Express 4.0 x4, NVMe 1.4, Leitura:7300MB/s e Gravação:6850MB/s - AG4732TB', 'price': 'R$ 1.149,99', 'link': 'https://www.kabum.com.br/produto/485005/ssd-gigabyte-aorus-gen4-7300-2tb-pci-express-4-0-x4-nvme-1-4-leitura-7300mb-s-e-gravacao-6850mb-s-ag4732tb', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F485005%2Fssd-gigabyte-aorus-gen4-7300-2tb-pci-express-4-0-x4-nvme-1-4-leitura-7300mb-s-e-gravacao-6850mb-s-ag4732tb_1699538311_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Husky Gaming Storm RGB, 8GB, 3200MHz, DDR4 - CL22, Dourada - HGMF019', 'price': 'R$ 169,99', 'link': 'https://www.kabum.com.br/produto/454444/memoria-ram-husky-gaming-storm-rgb-8gb-3200mhz-ddr4-cl22-dourada-hgmf019', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F454444%2Fmemoria-husky-gaming-storm-rgb-8gb-3200mhz-ddr4-cl22-dourada-hgmf019_1691158365_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'HD Externo WD 1TB Elements, USB 3.0, Preto - WDBUZG0010BBK', 'price': 'R$ 404,99', 'link': 'https://www.kabum.com.br/produto/66405/hd-externo-wd-1tb-elements-usb-3-0-preto-wdbuzg0010bbk', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F66405%2F66405_1439816331_m.jpg&w=384&q=75'}
+salvando_historico
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe ASRock B550M Phantom Gaming 4, AMD B550, mATX, DDR4 - 90-MXBE9*', 'price': 'R$ 709,99', 'link': 'https://www.kabum.com.br/produto/525051/placa-mae-asrock-b550m-phantom-gaming-4-amd-b550-matx-ddr4-90-mxbe9-', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F525051%2Fplaca-mae-asrock-b550m-phantom-gaming-4-amd-b550-matx-ddr4-90-mxbe9-_1718718634_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'HD WD Externo Portátil My Passport, 2TB, USB 3.2, Vermelho - WDBYVG0020BRD-WESN', 'price': 'R$ 514,99', 'link': 'https://www.kabum.com.br/produto/108062/hd-wd-externo-portatil-my-passport-2tb-usb-3-2-vermelho-wdbyvg0020brd-wesn', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F108062%2Fhd-wd-externo-portatil-my-passport-2tb-usb-3-0-vermelho-wdbyvg0020brd-wesn_hd-wd-externo-portatil-my-passport-2tb-usb-3-0-vermelho-wdbyvg0020brd-wesn_1573648569_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Kit Com 3 Ventoinhas NZXT, 120mm, RGB, Branco - RF-R12TF-W1', 'price': 'R$ 389,99', 'link': 'https://www.kabum.com.br/produto/369239/kit-com-3-ventoinhas-nzxt-120mm-rgb-branco-rf-r12tf-w1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F369239%2Fkit-3-cooler-fan-nzxt-120mm-rgb-branco-rf-r12tf-w1_1667925640_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler MSI Mag Coreliquid E240, ARGB, 240mm, Intel/AMD, Preto - MAG CORELIQUID E240', 'price': 'R$ 539,99', 'link': 'https://www.kabum.com.br/produto/524435/water-cooler-msi-mag-coreliquid-e240-argb-240mm-intel-amd-preto-mag-coreliquid-e240', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F524435%2Fwater-cooler-msi-mag-coreliquid-e240-argb-240mm-intel-amd-preto-mag-coreliquid-e240_1713809616_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Husky Gaming Blizzard RGB, 16GB, 3600MHz, DDR4 - CL26, Dourada - HGMF028', 'price': 'R$ 299,99', 'link': 'https://www.kabum.com.br/produto/454461/memoria-ram-husky-gaming-blizzard-rgb-16gb-3600mhz-ddr4-cl26-dourada-hgmf028', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F454461%2Fmemoria-husky-gaming-blizzard-rgb-16gb-3600mhz-ddr4-cl26-dourada-hgmf028_1696871808_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte KBM! GAMING FN750, 750W, 80 Plus e Cybenetics Gold, PFC Ativo, Full Modular, Bivolt - KGFN75075PT', 'price': 'R$ 549,99', 'link': 'https://www.kabum.com.br/produto/472037/fonte-kbm-gaming-fn750-750w-80-plus-e-cybenetics-gold-pfc-ativo-full-modular-bivolt-kgfn75075pt', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F472037%2Ffonte-kbm-gaming-fn750-750w-80-plus-e-cybenetics-gold-pfc-ativo-full-modular-bivolt-kgfn75075pt_1723556203_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Air Cooler Cooler Master MasterAir MA824 Stealth, Intel-AMD, 120mm, Preto - MAM-D8PN-318PK-R1', 'price': 'R$ 679,99', 'link': 'https://www.kabum.com.br/produto/472542/air-cooler-cooler-master-masterair-ma824-stealth-intel-amd-120mm-preto-mam-d8pn-318pk-r1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F472542%2Fcooler-para-processador-cooler-master-masterair-ma824-stealth-rgb-intel-amd-120mm-preto-mam-d8pn-318pk-r1_1690222672_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler Cooler Master Masterliquid ML120L V2, 120mm, AMD/Intel, Preto - MLW-D12M-A18PK-R2', 'price': 'R$ 249,99', 'link': 'https://www.kabum.com.br/produto/129927/water-cooler-cooler-master-masterliquid-ml120l-v2-120mm-amd-intel-preto-mlw-d12m-a18pk-r2', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F129927%2Fwater-cooler-cooler-master-masterliquid-ml120l-v2-120mm-rgb-mlw-d12m-a18pk-r2_1604694642_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM Kingston Fury Beast, 128GB (4x32GB), 5600MHz, DDR5, CL40,para Intel XMP, Preto - KF556C40BBK4-128', 'price': 'R$ 3.299,99', 'link': 'https://www.kabum.com.br/produto/452733/memoria-ram-kingston-fury-beast-128gb-4x32gb-5600mhz-ddr5-cl40-para-intel-xmp-preto-kf556c40bbk4-128', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F452733%2Fmemoria-kingston-fury-beast-para-intel-xmp-128gb-4x32gb-5600mhz-ddr5-cl40-preto-kf556c40bbk4-128_1688753455_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler NZXT Kraken Elite 240, 240mm, AMD/Intel, Preto - RL-KN24E-B1', 'price': 'R$ 1.439,99', 'link': 'https://www.kabum.com.br/produto/415803/water-cooler-nzxt-kraken-elite-240-240mm-amd-intel-preto-rl-kn24e-b1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F415803%2Fwater-cooler-nzxt-kraken-elite-240-240mm-c-display-e-radiator-fans-preto-rl-kn24e-b1_1685642333_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Asus ROG STRIX Z790-A GAMING WIFI II, INTEL, Z790, ATX, DDR5 - 90MB1FN0-M0AAY0', 'price': 'R$ 2.879,99', 'link': 'https://www.kabum.com.br/produto/521062/placa-mae-asus-rog-strix-z790-a-gaming-wifi-ii-intel-z790-atx-ddr5-90mb1fn0-m0aay0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F521062%2Fplaca-mae-asus-rog-strix-z790-a-gaming-wifi-ii-intel-z790-atx-ddr5-90mb1fn0-m0aay0_1723750263_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte EVGA 650 B5, 650W, 80 Plus Bronze, Full Modular, EVGA ECO Mode, Tamanho Compacto 150mm Size - 220-B5-0650-V1', 'price': 'R$ 579,99', 'link': 'https://www.kabum.com.br/produto/518022/fonte-evga-650-b5-650w-80-plus-bronze-full-modular-evga-eco-mode-tamanho-compacto-150mm-size-220-b5-0650-v1', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F518022%2Ffonte-evga-650-b5-650w-80-plus-bronze-full-modular-evga-eco-mode-tamanho-compacto-150mm-size-220-b5-0650-v_1714410751_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+get ultimo produt
+update gpu on aws -> {'adm': 'kabum', 'name': 'Water Cooler Corsair H100i Elite, RGB, 240mm, AMD/Intel, Branco - CW-9060078-WW', 'price': 'R$ 710,99', 'link': 'https://www.kabum.com.br/produto/496665/water-cooler-corsair-h100i-elite-rgb-240mm-amd-intel-branco-cw-9060078-ww', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F496665%2Fwater-cooler-corsair-h100i-rgb-elite-branco-16-leds-rgb-dinamicos-ventoinhas-af120-elite-pwm-cw-9060078-ww_1706641967_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Traceback (most recent call last):
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/main.py", line 17, in <module>
+    main_selenium(driver, URL)
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/handler.py", line 95, in main_selenium
+    handle_pagination(driver)
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/handler.py", line 77, in handle_pagination
+    handle_pagination(driver)
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/handler.py", line 77, in handle_pagination
+    handle_pagination(driver)
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/handler.py", line 77, in handle_pagination
+    handle_pagination(driver)
+  [Previous line repeated 7 more times]
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/handler.py", line 76, in handle_pagination
+    process_products(driver)
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/handler.py", line 59, in process_products
+    update_price(db_conn, gpu_item)
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/crud.py", line 79, in update_price
+    asyncio.run(mensagem_novo_valor_gpu(old_produto, produto))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/utils/utils_telegram.py", line 28, in mensagem_novo_valor_gpu
+    produto_link = escape_markdown_v2(create_affiliate_link(produto["link"]))
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/utils/utils_affiliate.py", line 35, in create_affiliate_link
+    create_affiliate_link(original_url)
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/utils/utils_affiliate.py", line 35, in create_affiliate_link
+    create_affiliate_link(original_url)
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/utils/utils_affiliate.py", line 35, in create_affiliate_link
+    create_affiliate_link(original_url)
+  [Previous line repeated 77 more times]
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/utils/utils_affiliate.py", line 32, in create_affiliate_link
+    sleep(60)
+KeyboardInterrupt
