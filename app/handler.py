@@ -60,19 +60,15 @@ def process_products(driver):
             else:
                 insert_product(db_conn, gpu_item)
 
-        if index == len(table) - 1:
-            driver.execute_script("arguments[0].scrollIntoView();", item)
-            sleep(1)
-
 
 def handle_pagination(driver):
     """Handles pagination by clicking the 'next' button and processing subsequent pages."""
     try:
         next_element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, NEXT_BUTTON_SELECTOR)))
         driver.execute_script("arguments[0].scrollIntoView();", next_element)
-        sleep(1)
+        sleep(2)
         next_element.click()
-        sleep(randint(0,4))
+        sleep(2)
         process_products(driver)
         handle_pagination(driver)
     except (NoSuchElementException, ElementNotInteractableException, TimeoutException) as e:

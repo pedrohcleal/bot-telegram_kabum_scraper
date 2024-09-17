@@ -2578,3 +2578,132 @@ Traceback (most recent call last):
   File "/home/pedro/Github/kabum_sqlite_telegram/app/utils/utils_affiliate.py", line 32, in create_affiliate_link
     sleep(60)
 KeyboardInterrupt
+-----> NOVA ITERAÇÃO WHILE <--------
+Iniciando Scraping, URL = https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched
+Iterando página
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte MSI MAG A650BN, 650W, 80 Plus Bronze, PFC Ativo, Com Cabo, Preto - 306-7ZP2B22-CE0', 'price': 'R$ 299,99', 'link': 'https://www.kabum.com.br/produto/369658/fonte-msi-mag-a650bn-650w-80-plus-bronze-pfc-ativo-com-cabo-preto-306-7zp2b22-ce0', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F369658%2Ffonte-msi-mag-a650bn-atx-650w-80-plus-bronze-pfc-ativo-entrada-bivolt-preto-306-7zp2b22-ce0_1665770996_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa de Vídeo RTX 4060 VENTUS 2x Black OC MSI NVIDIA GeForce, 8GB GDDR6, DLSS, Ray Tracing', 'price': 'R$ 1.899,99', 'link': 'https://www.kabum.com.br/produto/469132/placa-de-video-rtx-4060-ventus-2x-black-oc-msi-nvidia-geforce-8gb-gddr6-dlss-ray-tracing', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F469132%2Fplaca-de-video-rtx-4060-ventus-2x-black-oc-msi-nvidia-geforce-8gb-gddr6-dlss-ray-tracing_1688052210_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte MSI MAG A600DN, 600W, 80 Plus White, PFC Ativo, Com Cabo, Preto - 306-7ZP6B22-809', 'price': 'R$ 264,99', 'link': 'https://www.kabum.com.br/produto/369655/fonte-msi-mag-a600dn-600w-80-plus-white-pfc-ativo-com-cabo-preto-306-7zp6b22-809', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F369655%2Ffonte-msi-mag-a600dn-atx-600w-80-plus-pfc-ativo-entrada-bivolt-preto-306-7zp6b22-809_1667475815_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Placa Mãe Asus TUF GAMING A520M-PLUS II, AMD AM4, mATX, DDR4', 'price': 'R$ 559,99', 'link': 'https://www.kabum.com.br/produto/165133/placa-mae-asus-tuf-gaming-a520m-plus-ii-amd-am4-matx-ddr4', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F165133%2Fplaca-mae-asus-tuf-gaming-a520m-plus-ii-amd-am4-matx-ddr4-90mb17g0-m0eay0_1632513548_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Memória RAM XPG Gammix D35, 8GB, 3200MHz, DDR4, CL16, Preto - AX4U32008G16A-SBKD35', 'price': 'R$ 159,99', 'link': 'https://www.kabum.com.br/produto/474939/memoria-ram-xpg-gammix-d35-8gb-3200mhz-ddr4-cl16-preto-ax4u32008g16a-sbkd35', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F474939%2Fmemoria-adata-xpg-gammix-d35-8gb-3200mhz-ddr4-cl16-preto-ax4u32008g16a-sbkd35-_1692884059_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Fonte Corsair CX Series CX750, 750W, 80 Plus Bronze, Com Cabo, Preto - CP-9020279-BR', 'price': 'R$ 434,99', 'link': 'https://www.kabum.com.br/produto/516057/fonte-corsair-cx-series-cx750-750w-80-plus-bronze-com-cabo-preto-cp-9020279-br', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F516057%2Ffonte-corsair-cx-series-cx750-750w-80-plus-bronze-sem-cabo-preto-cp-9020279-br_1714484853_m.jpg&w=384&q=75'}
+salvando_historico
+update gpu on aws -> {'adm': 'kabum', 'name': 'Processador AMD Ryzen 5 5600X, 3.7GHz (4.6GHz Max Turbo), Cache 35MB, 6 Núcleos, 12 Threads, AM4 - 100-100000065BOX', 'price': 'R$ 1.099,99', 'link': 'https://www.kabum.com.br/produto/129451/processador-amd-ryzen-5-5600x-3-7ghz-4-6ghz-max-turbo-cache-35mb-6-nucleos-12-threads-am4-100-100000065box', 'url_image': 'https://www.kabum.com.br//_next/image?url=https%3A%2F%2Fimages.kabum.com.br%2Fprodutos%2Ffotos%2F129451%2Fprocessador-amd-ryzen-9-5950x-cache-72mb-3-4ghz-4-9ghz-max-turbo-am4-100-100000065box_1602603581_m.jpg&w=384&q=75'}
+salvando_historico
+enviando mensagem pro telegram - Atualização de produto
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Erro: 429, b'{"error":"server.client.error","description":"Unknown error! Please try again later!"}'
+Tentando criar link de afiliado novamente
+Traceback (most recent call last):
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/main.py", line 17, in <module>
+    main_selenium(driver, URL)
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/handler.py", line 90, in main_selenium
+    process_products(driver)
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/handler.py", line 59, in process_products
+    update_price(db_conn, gpu_item)
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/crud.py", line 79, in update_price
+    asyncio.run(mensagem_novo_valor_gpu(old_produto, produto))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/utils/utils_telegram.py", line 28, in mensagem_novo_valor_gpu
+    produto_link = escape_markdown_v2(create_affiliate_link(produto["link"]))
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/utils/utils_affiliate.py", line 35, in create_affiliate_link
+    create_affiliate_link(original_url)
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/utils/utils_affiliate.py", line 35, in create_affiliate_link
+    create_affiliate_link(original_url)
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/utils/utils_affiliate.py", line 35, in create_affiliate_link
+    create_affiliate_link(original_url)
+  [Previous line repeated 23 more times]
+  File "/home/pedro/Github/kabum_sqlite_telegram/app/utils/utils_affiliate.py", line 26, in create_affiliate_link
+    response = requests.post(url_api, headers=headers, json=data)
+  File "/home/pedro/Github/kabum_sqlite_telegram/venv/lib/python3.10/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/pedro/Github/kabum_sqlite_telegram/venv/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pedro/Github/kabum_sqlite_telegram/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pedro/Github/kabum_sqlite_telegram/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pedro/Github/kabum_sqlite_telegram/venv/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/pedro/Github/kabum_sqlite_telegram/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/pedro/Github/kabum_sqlite_telegram/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "/home/pedro/Github/kabum_sqlite_telegram/venv/lib/python3.10/site-packages/urllib3/connection.py", line 464, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/usr/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.10/ssl.py", line 1303, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.10/ssl.py", line 1159, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
