@@ -26,7 +26,7 @@ def salve_hist(conn: psycopg2.extensions.connection, produto) -> None:
 
 
 def get_last_5prices(conn: psycopg2.extensions.connection, produto):
-    print('get ultimo produt')
+    print('últimos valores hist')
     try:
         query = """
             SELECT price FROM public.produtos_hist WHERE link = %s ORDER BY register_date DESC LIMIT 5

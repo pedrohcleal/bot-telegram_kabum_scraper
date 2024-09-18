@@ -9,6 +9,7 @@ from crud_prices_hist import salve_hist
 
 def insert_product(conn: psycopg2.extensions.connection, produto):
     print(f"insert produto on aws -> {produto}")
+    salve_hist(conn, produto)
     asyncio.run(novo_produto(produto))
     try:
         now = datetime.now()

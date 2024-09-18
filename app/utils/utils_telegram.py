@@ -37,7 +37,7 @@ async def mensagem_novo_valor_gpu(old_produto, produto):
         f"📉 Valor novo: *{new_price}*\n\n"
         f"🔍 Mais informações: [Site Kabum]({produto_link})\n\n"
         f"Última atualização foi em: {last_update}\n\n"
-        f"5 últimos preços: {last_5prices}\n\n"
+        f"Últimos preços: {last_5prices}\n\n"
         f"🔥 Aproveite as ofertas 🔥"
     )
 
@@ -64,7 +64,7 @@ async def novo_produto(produto):
         f'🆕 *Produto Adicionado:* *"{name}"*\n\n'
         f"💰 *Preço:* *{price}*\n\n"
         f"🔗 *Mais detalhes:* [Site Kabum]({link})\n\n"
-        f"5 últimos preços: {last_5prices}\n\n"
+        f"Últimos preços: {last_5prices}\n\n"
         f"🚀 Não perca essa novidade 🚀"
     )
 
