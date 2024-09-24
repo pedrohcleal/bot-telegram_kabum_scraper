@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import (
     NoSuchElementException,
     ElementNotInteractableException,
-    TimeoutException
+    TimeoutException,
 )
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -24,14 +24,13 @@ def fetch_product_data(item):
     link = item.find_element(By.CLASS_NAME, "productLink").get_attribute("href").strip()
     image_element = item.find_element(By.CLASS_NAME, "imageCard")
     image_url = URL_MAIN + image_element.get_attribute("src")
-    
-        
+
     return {
         "adm": "kabum",
         "name": descricao,
         "price": preco,
         "link": link,
-        "url_image": image_url
+        "url_image": image_url,
     }
 
 
@@ -42,15 +41,14 @@ def process_products(driver):
     )
     table = driver.find_elements(By.CSS_SELECTOR, TABLE_SELECTOR)
     print("Iterando página")
-    
-    for index, item in enumerate(table):
+
+    for item in table:
         preco = item.find_element(By.CLASS_NAME, "priceCard").text.strip()
-        if preco == 'R$ ----':
+        if preco == "R$ ----" or preco == "----" or 'x' in preco:
             continue
-            
+
         gpu_item = fetch_product_data(item)
-        
-        
+
         with get_db_connection() as db_conn:
             if have_product_in_bd(db_conn, gpu_item):
                 atual_product = get_product(db_conn, gpu_item)
@@ -64,28 +62,35 @@ def process_products(driver):
 def handle_pagination(driver):
     """Handles pagination by clicking the 'next' button and processing subsequent pages."""
     try:
-        next_element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, NEXT_BUTTON_SELECTOR)))
+        next_element = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, NEXT_BUTTON_SELECTOR))
+        )
         driver.execute_script("arguments[0].scrollIntoView();", next_element)
         sleep(2)
         next_element.click()
-        sleep(2)
+        sleep(4)
         process_products(driver)
         handle_pagination(driver)
-    except (NoSuchElementException, ElementNotInteractableException, TimeoutException) as e:
+    except (
+        NoSuchElementException,
+        ElementNotInteractableException,
+        TimeoutException,
+    ) as e:
         print(f"Erro na paginação: {e}")
         print("Finalizando o scraping...")
         return
+
 
 def main_selenium(driver, URL):
     """Main function to initialize scraping process."""
     print(f"Iniciando Scraping, URL = {URL}")
     driver.get(URL)
     sleep(1)
-    
+
     cookie_button = WebDriverWait(driver, 15).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, COOKIE_BUTTON_SELECTOR))
     )
     cookie_button.click()
-    
+
     process_products(driver)
     handle_pagination(driver)

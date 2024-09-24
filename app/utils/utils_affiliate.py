@@ -20,14 +20,14 @@ def create_affiliate_link(original_url):
     data = {
         "advertiserId": advertiser_id,
         "destinationUrl": original_url,
-       # "shorten": True,
+        # "shorten": True,
     }
 
     response = requests.post(url_api, headers=headers, json=data)
     # response = requests.get('https://api.awin.com/accounts', headers=headers)
 
     if response.status_code == 200:
-        return response.json()['url']  #["shortUrl"]
+        return response.json()["url"]  # ["shortUrl"]
     else:
         sleep(120)
         print(f"Erro: {response.status_code}, {response.content}")

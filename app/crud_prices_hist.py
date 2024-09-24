@@ -2,6 +2,7 @@ import psycopg2
 from psycopg2 import OperationalError
 from datetime import datetime
 
+
 def salve_hist(conn: psycopg2.extensions.connection, produto) -> None:
     print("salvando_historico")
     now = datetime.now()
@@ -26,7 +27,7 @@ def salve_hist(conn: psycopg2.extensions.connection, produto) -> None:
 
 
 def get_last_5prices(conn: psycopg2.extensions.connection, produto):
-    print('últimos valores hist')
+    print("últimos valores hist")
     try:
         query = """
             SELECT price FROM public.produtos_hist WHERE link = %s ORDER BY register_date DESC LIMIT 5
@@ -36,8 +37,8 @@ def get_last_5prices(conn: psycopg2.extensions.connection, produto):
             cursor.execute(query, params)
             result = cursor.fetchall()
         if not result:
-            return 'sem histórico no momento...'
-        return ', '.join([x[0] for x in result])
+            return "sem histórico no momento..."
+        return ", ".join([x[0] for x in result])
     except OperationalError as e:
         print(f"SQL error = {e}")
         raise e
