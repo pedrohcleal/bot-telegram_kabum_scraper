@@ -1,25 +1,25 @@
 [
-    {   
+    {
         "URL" : "https://www.kabum.com.br/hardware",
         "TABLE_SELECTOR" : "#listing > div.sc-ikPAEB.sc-202cc1e9-2.jcryDv.SzkqH > div > div > div.sc-biBsmb.kcFaol > div > main > *"
     },
-    {   
+    {
         "URL" : "https://www.kabum.com.br/perifericos",
         "TABLE_SELECTOR" : "#listing > div.sc-gsTEea.sc-202cc1e9-2.ezCvIu.SzkqH > div > div > div.sc-hKgJUU.hzqTWi > div > main > *"
     },
-    {   
+    {
         "URL" : "https://www.kabum.com.br/computadores",
         "TABLE_SELECTOR" : "#listing > div.sc-gsTEea.sc-202cc1e9-2.ezCvIu.SzkqH > div > div > div.sc-hKgJUU.hzqTWi > div > main > *"
     },
-    {   
+    {
         "URL" : "https://www.kabum.com.br/gamer",
         "TABLE_SELECTOR" : "#listing > div.sc-ikPAEB.sc-202cc1e9-2.jcryDv.SzkqH > div > div > div.sc-biBsmb.kcFaol > div > main > *"
-    }, 
-    {   
+    },
+    {
         "URL" : "https://www.kabum.com.br/celular-smartphone",
         "TABLE_SELECTOR" : "#listing > div.sc-gsTEea.sc-202cc1e9-2.ezCvIu.SzkqH > div > div > div.sc-hKgJUU.hzqTWi > div > main > *"
     },
-    {   
+    {
         "URL" : "https://www.kabum.com.br/tv",
         "TABLE_SELECTOR" : "#listing > div.sc-gsTEea.sc-202cc1e9-2.ezCvIu.SzkqH > div > div > div.sc-hKgJUU.hzqTWi > div > main > *"
     }

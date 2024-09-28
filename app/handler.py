@@ -27,13 +27,13 @@ def db_updates(gpu_item):
             if have_product_in_bd(db_conn, gpu_item):
                 atual_product = get_product(db_conn, gpu_item)
                 if atual_product is not None:
-                    
+
                     # Verifica se o preço mudou, se sim, atualiza
                     if atual_product["price"] != gpu_item["price"]:
                         update_price(db_conn, gpu_item)
             else:
                 # Insere o novo produto se não existir no banco
-                print('not in bd')
+                print("not in bd")
                 insert_product(db_conn, gpu_item)
 
     except Exception as e:
@@ -68,9 +68,9 @@ def process_products(driver):
 
     for item in table:
         preco = item.find_element(By.CLASS_NAME, "priceCard").text.strip()
-        if preco == "R$ ----" or preco == "----" or 'x' in preco:
+        if preco == "R$ ----" or preco == "----" or "x" in preco:
             continue
-        
+
         gpu_item = fetch_product_data(item)
         db_updates(gpu_item=gpu_item)
 

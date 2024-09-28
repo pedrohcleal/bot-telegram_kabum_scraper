@@ -16,27 +16,27 @@ while True:
 
     current_time: str = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     start: float = time.perf_counter()
-    urls: list[dict[str,str]] = json.loads(open('urls.json').read())
+    urls: list[dict[str, str]] = json.loads(open("urls.json").read())
 
     pont = init
     try:
         item: dict[str, str] = urls[pont]
-        url: str = item['URL']
-        table_selector: str = item['TABLE_SELECTOR']
+        url: str = item["URL"]
+        table_selector: str = item["TABLE_SELECTOR"]
         main_selenium(driver, url, table_selector)
     except Exception as e:
         print("Ocorre um erro em main_selenium() (main), reiniciando Script")
         print(e)
-        
+
     pont += 1
     if pont > max:
         pont = init
-        
+
     end: float = time.perf_counter()
-    
+
     driver: WebDriver = reset_driver(driver)
     exec_time: float = end - start
-    
+
     print(f"Tempo de execução às {current_time} -> {exec_time:.6f} segundos <-\n")
     print("-----> FIM DA ITERAÇÃO WHILE <--------\n\n")
     print()
