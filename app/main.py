@@ -1,32 +1,42 @@
+from selenium.webdriver.chrome.webdriver import WebDriver
 from handler import main_selenium
 from chrome_config import create_driver, reset_driver
 import time
 from time import sleep
 from datetime import datetime
+import json
 
 driver = create_driver()
 
+init = 0
+max = 2
+
 while True:
     print("-----> NOVA ITERAÇÃO WHILE <--------")
-    # URL = "https://www.kabum.com.br/hardware/placa-de-video-vga?page_number=1&page_size=100&facet_filters=&sort=most_searched" # GPU
-    URL = "https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched"  # Categoria hardware
 
-    current_time = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-    start = time.perf_counter()
+    current_time: str = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+    start: float = time.perf_counter()
+    urls: list[dict[str,str]] = json.loads(open('urls.json').read())
+
+    pont = init
     try:
-        main_selenium(driver, URL)
+        item: dict[str, str] = urls[pont]
+        url: str = item['URL']
+        table_selector: str = item['TABLE_SELECTOR']
+        main_selenium(driver, url, table_selector)
     except Exception as e:
         print("Ocorre um erro em main_selenium() (main), reiniciando Script")
         print(e)
-
-    end = time.perf_counter()
-    driver = reset_driver(driver)
-    exec_time = end - start
-    log_message = (
-        f"Tempo de execução às {current_time} -> {exec_time:.6f} segundos <-\n"
-    )
-
-    with open("execs_logs.txt", mode="a", encoding="utf-8") as file:
-        file.write(log_message)
-    sleep(1)
+        
+    pont += 1
+    if pont > max:
+        pont = init
+        
+    end: float = time.perf_counter()
+    
+    driver: WebDriver = reset_driver(driver)
+    exec_time: float = end - start
+    
+    print(f"Tempo de execução às {current_time} -> {exec_time:.6f} segundos <-\n")
     print("-----> FIM DA ITERAÇÃO WHILE <--------\n\n")
+    print()

@@ -9,12 +9,36 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 from db_config import get_db_connection
-from random import randint
+from pprint import pprint
 
 URL_MAIN = "https://www.kabum.com.br/"
-TABLE_SELECTOR = "#listing > div.sc-ikPAEB.sc-202cc1e9-2.jcryDv.SzkqH > div > div > div.sc-biBsmb.kcFaol > div > main > *"
 NEXT_BUTTON_SELECTOR = "#listingPagination > ul > li.next > a"
 COOKIE_BUTTON_SELECTOR = "#onetrust-accept-btn-handler"
+
+
+def db_updates(gpu_item):
+    try:
+        # Tentativa de abrir a conexão com o banco de dados
+        with get_db_connection() as db_conn:
+            if not db_conn:
+                raise Exception("Conexão com o banco de dados falhou.")
+
+            # Verifica se o produto já existe no banco de dados
+            if have_product_in_bd(db_conn, gpu_item):
+                atual_product = get_product(db_conn, gpu_item)
+                if atual_product is not None:
+                    
+                    # Verifica se o preço mudou, se sim, atualiza
+                    if atual_product["price"] != gpu_item["price"]:
+                        update_price(db_conn, gpu_item)
+            else:
+                # Insere o novo produto se não existir no banco
+                print('not in bd')
+                insert_product(db_conn, gpu_item)
+
+    except Exception as e:
+        # Captura qualquer exceção e exibe o erro
+        print(f"Erro ao processar a atualização do banco de dados: {str(e)}")
 
 
 def fetch_product_data(item):
@@ -46,17 +70,9 @@ def process_products(driver):
         preco = item.find_element(By.CLASS_NAME, "priceCard").text.strip()
         if preco == "R$ ----" or preco == "----" or 'x' in preco:
             continue
-
+        
         gpu_item = fetch_product_data(item)
-
-        with get_db_connection() as db_conn:
-            if have_product_in_bd(db_conn, gpu_item):
-                atual_product = get_product(db_conn, gpu_item)
-                if atual_product is not None:
-                    if atual_product["price"] != gpu_item["price"]:
-                        update_price(db_conn, gpu_item)
-            else:
-                insert_product(db_conn, gpu_item)
+        db_updates(gpu_item=gpu_item)
 
 
 def handle_pagination(driver):
@@ -81,8 +97,10 @@ def handle_pagination(driver):
         return
 
 
-def main_selenium(driver, URL):
+def main_selenium(driver, URL, table_selector):
     """Main function to initialize scraping process."""
+    global TABLE_SELECTOR
+    TABLE_SELECTOR = table_selector
     print(f"Iniciando Scraping, URL = {URL}")
     driver.get(URL)
     sleep(1)
