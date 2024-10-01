@@ -8,7 +8,7 @@ from selenium.common.exceptions import (
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
-from db_config import get_db_connection
+from config.db_config import get_db_connection
 from pprint import pprint
 
 URL_MAIN = "https://www.kabum.com.br/"

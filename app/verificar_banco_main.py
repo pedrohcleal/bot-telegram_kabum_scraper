@@ -5,7 +5,7 @@ import requests
 from bs4 import BeautifulSoup as bs4
 from time import sleep
 from crud import deletar
-from db_config import get_db_connection
+from config.db_config import get_db_connection
 
 
 def verificar_banco(conn: psycopg2.extensions.connection):
@@ -17,7 +17,6 @@ def verificar_banco(conn: psycopg2.extensions.connection):
             rows = cursor.fetchall()
             print(f"quantidade produtos a serem verificados = {len(rows)}")
             for produto in rows:
-                sleep(3)
                 print(f'verificando -> {produto["link"]}')
                 response = requests.get(produto["link"])
                 if response.status_code == 200:
@@ -28,6 +27,7 @@ def verificar_banco(conn: psycopg2.extensions.connection):
                 else:
                     print(f"link incorreto, Produto -> {produto}")
                     break
+                sleep(3)
     except OperationalError as e:
         print(f"SQL error = {e}")
         raise e

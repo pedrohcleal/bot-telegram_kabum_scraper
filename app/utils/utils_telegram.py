@@ -6,7 +6,7 @@ from utils.utils import escape_markdown_v2
 from time import sleep
 from utils.utils_affiliate import create_affiliate_link
 from crud_prices_hist import get_last_5prices
-from db_config import get_db_connection
+from config.db_config import get_db_connection
 from telegram.error import RetryAfter, TelegramError
 
 load_dotenv()
@@ -75,7 +75,7 @@ async def mensagem_novo_valor_gpu(old_produto, produto):
 
 async def novo_produto(produto):
     print("enviando mensagem pro telegram - Novo produto")
-    sleep(5)
+    sleep(6)
     name = escape_markdown_v2(produto["name"])
     price = escape_markdown_v2(produto["price"])
     link = escape_markdown_v2(create_affiliate_link(produto["link"]))

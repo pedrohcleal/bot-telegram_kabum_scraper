@@ -1,6 +1,6 @@
 from selenium.webdriver.chrome.webdriver import WebDriver
 from handler import main_selenium
-from chrome_config import create_driver, reset_driver
+from config.chrome_config import create_driver, reset_driver
 import time
 from time import sleep
 from datetime import datetime
@@ -8,9 +8,9 @@ import json
 
 driver = create_driver()
 
-init = 3
-pont = 3
-max = 5
+init = 0
+pont = 0
+max = 2
 
 while True:
     print("-----> NOVA ITERAÇÃO WHILE <--------")
