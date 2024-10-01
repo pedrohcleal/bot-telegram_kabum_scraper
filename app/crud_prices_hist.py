@@ -30,7 +30,7 @@ def get_last_5prices(conn: psycopg2.extensions.connection, produto):
     print("últimos valores hist")
     try:
         query = """
-            SELECT price FROM public.produtos_hist WHERE link = %s ORDER BY register_date DESC LIMIT 5
+            SELECT DISTINCT price FROM public.produtos_hist WHERE link = %s ORDER BY register_date DESC LIMIT 5
         """
         params = (produto["link"],)
         with conn.cursor() as cursor:

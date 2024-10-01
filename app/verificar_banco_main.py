@@ -17,7 +17,7 @@ def verificar_banco(conn: psycopg2.extensions.connection):
             rows = cursor.fetchall()
             print(f"quantidade produtos a serem verificados = {len(rows)}")
             for produto in rows:
-                sleep(0.5)
+                sleep(3)
                 print(f'verificando -> {produto["link"]}')
                 response = requests.get(produto["link"])
                 if response.status_code == 200:
