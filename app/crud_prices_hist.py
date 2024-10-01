@@ -36,14 +36,14 @@ def get_last_5prices(conn: psycopg2.extensions.connection, produto):
                 FROM public.produtos_hist
                 WHERE link = %s AND price NOT LIKE '%x%'
                 ORDER BY register_date DESC
-                LIMIT 5
+                LIMIT 6
             ) AS subquery;
         """
         params: tuple[str] = (produto["link"],)
         with conn.cursor() as cursor:
             cursor.execute(query, params)
             result: list[tuple[str]] = cursor.fetchall()
-        if not result:
+        if not result[0]:
             return "sem histórico no momento..."
         return ", ".join([x[0] for x in result])
     except OperationalError as e:
