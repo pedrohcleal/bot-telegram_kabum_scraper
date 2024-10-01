@@ -17,28 +17,16 @@ COOKIE_BUTTON_SELECTOR = "#onetrust-accept-btn-handler"
 
 
 def db_updates(gpu_item):
-    try:
-        # Tentativa de abrir a conexão com o banco de dados
-        with get_db_connection() as db_conn:
-            if not db_conn:
-                raise Exception("Conexão com o banco de dados falhou.")
-
-            # Verifica se o produto já existe no banco de dados
-            if have_product_in_bd(db_conn, gpu_item):
-                atual_product = get_product(db_conn, gpu_item)
-                if atual_product is not None:
-
-                    # Verifica se o preço mudou, se sim, atualiza
-                    if atual_product["price"] != gpu_item["price"]:
-                        update_price(db_conn, gpu_item)
-            else:
-                # Insere o novo produto se não existir no banco
-                print("not in bd")
-                insert_product(db_conn, gpu_item)
-
-    except Exception as e:
-        # Captura qualquer exceção e exibe o erro
-        print(f"Erro ao processar a atualização do banco de dados: {str(e)}")
+    with get_db_connection() as db_conn:
+        if not db_conn:
+            raise Exception("Conexão com o banco de dados falhou.")
+        if have_product_in_bd(db_conn, gpu_item):
+            atual_product = get_product(db_conn, gpu_item)
+            if atual_product is not None:
+                if atual_product["price"] != gpu_item["price"]:
+                    update_price(db_conn, gpu_item)
+        else:
+            insert_product(db_conn, gpu_item)
 
 
 def fetch_product_data(item):

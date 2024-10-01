@@ -8,8 +8,9 @@ import json
 
 driver = create_driver()
 
-init = 0
-max = 2
+init = 3
+pont = 3
+max = 5
 
 while True:
     print("-----> NOVA ITERAÇÃO WHILE <--------")
@@ -18,7 +19,6 @@ while True:
     start: float = time.perf_counter()
     urls: list[dict[str, str]] = json.loads(open("urls.json").read())
 
-    pont = init
     try:
         item: dict[str, str] = urls[pont]
         url: str = item["URL"]

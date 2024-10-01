@@ -7,6 +7,7 @@ from time import sleep
 from utils.utils_affiliate import create_affiliate_link
 from crud_prices_hist import get_last_5prices
 from db_config import get_db_connection
+from telegram.error import RetryAfter, TelegramError
 
 load_dotenv()
 
@@ -16,7 +17,18 @@ GROUP_ID = os.getenv("ID_GROUP")
 
 async def enviar_mensagem(texto):
     bot = Bot(token=TOKEN)
-    await bot.send_message(chat_id=GROUP_ID, text=texto)
+    success = False
+    while not success:
+        try:
+            await bot.send_message(chat_id=GROUP_ID, text=texto)
+            success = True
+        except RetryAfter as e:
+            wait_time = int(e.retry_after)
+            print(f"Limite de envio excedido. Aguardando {wait_time} segundos.")
+            sleep(wait_time)
+        except TelegramError as e:
+            print(f"Erro ao enviar mensagem: {e}")
+            sleep(60)  # Espera 1 minuto antes de tentar novamente
 
 
 async def mensagem_novo_valor_gpu(old_produto, produto):
@@ -42,12 +54,23 @@ async def mensagem_novo_valor_gpu(old_produto, produto):
     )
 
     bot = Bot(token=TOKEN)
-    await bot.send_photo(
-        chat_id=GROUP_ID,
-        caption=text,
-        parse_mode="MarkdownV2",
-        photo=produto["url_image"],
-    )
+    success = False
+    while not success:
+        try:
+            await bot.send_photo(
+                chat_id=GROUP_ID,
+                caption=text,
+                parse_mode="MarkdownV2",
+                photo=produto["url_image"],
+            )
+            success = True
+        except RetryAfter as e:
+            wait_time = int(e.retry_after)
+            print(f"Limite de envio excedido. Aguardando {wait_time} segundos.")
+            sleep(wait_time)
+        except TelegramError as e:
+            print(f"Erro ao enviar mensagem: {e}")
+            sleep(60)
 
 
 async def novo_produto(produto):
@@ -69,12 +92,23 @@ async def novo_produto(produto):
     )
 
     bot = Bot(token=TOKEN)
-    await bot.send_photo(
-        chat_id=GROUP_ID,
-        caption=text,
-        parse_mode="MarkdownV2",
-        photo=produto["url_image"],
-    )
+    success = False
+    while not success:
+        try:
+            await bot.send_photo(
+                chat_id=GROUP_ID,
+                caption=text,
+                parse_mode="MarkdownV2",
+                photo=produto["url_image"],
+            )
+            success = True
+        except RetryAfter as e:
+            wait_time = int(e.retry_after)
+            print(f"Limite de envio excedido. Aguardando {wait_time} segundos.")
+            sleep(wait_time)
+        except TelegramError as e:
+            print(f"Erro ao enviar mensagem: {e}")
+            sleep(60)
 
 
 async def test_envio_mensagem_grupo():

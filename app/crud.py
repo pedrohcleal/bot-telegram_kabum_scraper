@@ -11,7 +11,7 @@ from crud_prices_hist import salve_hist
 def insert_product(conn: psycopg2.extensions.connection, produto):
     print(f"insert produto on aws -> {produto}")
     salve_hist(conn, produto)
-    # asyncio.run(novo_produto(produto))
+    asyncio.run(novo_produto(produto))
     try:
         now = datetime.now()
         date_now = now.strftime("%Y-%m-%d %H:%M:%S")
@@ -78,8 +78,7 @@ def update_price(conn: psycopg2.extensions.connection, produto):
         old_produto
         and real_to_float(produto["price"]) - real_to_float(old_produto["price"]) < -50
     ):
-        pass
-        # asyncio.run(mensagem_novo_valor_gpu(old_produto, produto))
+        asyncio.run(mensagem_novo_valor_gpu(old_produto, produto))
 
     try:
         now = datetime.now()
