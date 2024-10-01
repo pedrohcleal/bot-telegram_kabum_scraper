@@ -5,8 +5,8 @@ from datetime import datetime
 
 def salve_hist(conn: psycopg2.extensions.connection, produto) -> None:
     print("salvando_historico")
-    now = datetime.now()
-    date_now = now.strftime("%Y-%m-%d %H:%M:%S")  # Formato padrão para PostgreSQL
+    now: datetime = datetime.now()
+    date_now: str = now.strftime("%Y-%m-%d %H:%M:%S")  # Formato padrão para PostgreSQL
     try:
         query = """
             INSERT INTO public.produtos_hist (nome, link, price, register_date)
@@ -27,15 +27,22 @@ def salve_hist(conn: psycopg2.extensions.connection, produto) -> None:
 
 
 def get_last_5prices(conn: psycopg2.extensions.connection, produto):
-    print("últimos valores hist")
+    print("Veficando últimos preços na aws")
     try:
         query = """
-            SELECT DISTINCT price FROM public.produtos_hist WHERE link = %s ORDER BY register_date DESC LIMIT 5
+            SELECT DISTINCT price
+            FROM (
+                SELECT price
+                FROM public.produtos_hist
+                WHERE link = %s AND price NOT LIKE '%x%'
+                ORDER BY register_date DESC
+                LIMIT 5
+            ) AS subquery;
         """
-        params = (produto["link"],)
+        params: tuple[str] = (produto["link"],)
         with conn.cursor() as cursor:
             cursor.execute(query, params)
-            result = cursor.fetchall()
+            result: list[tuple[str]] = cursor.fetchall()
         if not result:
             return "sem histórico no momento..."
         return ", ".join([x[0] for x in result])
