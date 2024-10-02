@@ -106,9 +106,6 @@ async def novo_produto(produto):
             wait_time = int(e.retry_after)
             print(f"Limite de envio excedido. Aguardando {wait_time} segundos.")
             sleep(wait_time)
-        except TelegramError as e:
-            print(f"Erro ao enviar mensagem: {e}")
-            sleep(60)
 
 
 async def test_envio_mensagem_grupo():
