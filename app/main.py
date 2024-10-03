@@ -35,8 +35,8 @@ while True:
     end: float = time.perf_counter()
 
     driver: WebDriver = reset_driver(driver)
+    sleep(2)
     exec_time: float = end - start
 
     print(f"Tempo de execução às {current_time} -> {exec_time:.6f} segundos <-\n")
     print("-----> FIM DA ITERAÇÃO WHILE <--------\n\n")
-    print()

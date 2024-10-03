@@ -54,13 +54,16 @@ def process_products(driver):
     table = driver.find_elements(By.CSS_SELECTOR, TABLE_SELECTOR)
     print("Iterando página")
 
-    for item in table:
+    for index, item in enumerate(table):
         preco = item.find_element(By.CLASS_NAME, "priceCard").text.strip()
         if preco == "R$ ----" or preco == "----" or "x" in preco:
             continue
 
         gpu_item = fetch_product_data(item)
         db_updates(gpu_item=gpu_item)
+        if index == len(table)-1:
+            driver.execute_script("arguments[0].scrollIntoView();", item)
+            sleep(2.5)
 
 
 def handle_pagination(driver):
@@ -69,10 +72,8 @@ def handle_pagination(driver):
         next_element = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, NEXT_BUTTON_SELECTOR))
         )
-        driver.execute_script("arguments[0].scrollIntoView();", next_element)
+        driver.execute_script("arguments[0].click();", next_element)
         sleep(2)
-        next_element.click()
-        sleep(4)
         process_products(driver)
         handle_pagination(driver)
     except (
