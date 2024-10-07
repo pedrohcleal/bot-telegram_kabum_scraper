@@ -39,8 +39,8 @@ def get_last_5prices(conn: psycopg2.extensions.connection, produto):
         with conn.cursor() as cursor:
             cursor.execute(query, params)
             result: list[tuple[str]] = cursor.fetchall()
-            print(f'result = {result}')
-            print(f'type result = {type(result)}')
+            print(f"result = {result}")
+            print(f"type result = {type(result)}")
 
         if not result:
             return "sem histórico no momento..."

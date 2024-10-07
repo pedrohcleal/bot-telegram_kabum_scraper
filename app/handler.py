@@ -61,7 +61,7 @@ def process_products(driver):
 
         gpu_item = fetch_product_data(item)
         db_updates(gpu_item=gpu_item)
-        if index == len(table)-1:
+        if index == len(table) - 1:
             driver.execute_script("arguments[0].scrollIntoView();", item)
             sleep(2.5)
 
