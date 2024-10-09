@@ -26,9 +26,6 @@ async def enviar_mensagem(texto):
             wait_time = int(e.retry_after)
             print(f"Limite de envio excedido. Aguardando {wait_time} segundos.")
             sleep(wait_time)
-        except TelegramError as e:
-            print(f"Erro ao enviar mensagem: {e}")
-            sleep(60)  # Espera 1 minuto antes de tentar novamente
 
 
 async def mensagem_novo_valor_gpu(old_produto, produto):
@@ -68,9 +65,6 @@ async def mensagem_novo_valor_gpu(old_produto, produto):
             wait_time = int(e.retry_after)
             print(f"Limite de envio excedido. Aguardando {wait_time} segundos.")
             sleep(wait_time)
-        except TelegramError as e:
-            print(f"Erro ao enviar mensagem: {e}")
-            sleep(60)
 
 
 async def novo_produto(produto):
