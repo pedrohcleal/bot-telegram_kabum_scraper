@@ -1,4 +1,4 @@
-from crud import insert_product, have_product_in_bd, get_product, update_price
+from database.crud import insert_product, have_product_in_bd, get_product, update_price
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import (
     NoSuchElementException,

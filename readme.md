@@ -23,7 +23,7 @@ Este projeto faz o scraping de produtos da categoria de hardware (ex: GPUs) do s
 
 ```bash
 ├── bot.py                 # Bot do Telegram para enviar mensagens de atualizações de preço/produto
-├── crud.py                # Funções CRUD para interagir com o banco de dados PostgreSQL
+├── database.crud.py                # Funções database.crud para interagir com o banco de dados PostgreSQL
 ├── db_config.py           # Configuração da conexão com o banco de dados
 ├── handler.py             # Funções principais para scraping e automação
 ├── selenium_config.py     # Configurações do Selenium WebDriver

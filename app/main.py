@@ -1,5 +1,5 @@
 from selenium.webdriver.chrome.webdriver import WebDriver
-from handler import main_selenium
+from services.kabum_scraper import main_selenium
 from config.chrome_config import create_driver, reset_driver
 import time
 from time import sleep

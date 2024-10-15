@@ -2,10 +2,10 @@ import os
 from dotenv import load_dotenv
 from telegram import Bot
 from telegram.ext import Application
-from utils.utils import escape_markdown_v2
+from utils.sanitize import escape_markdown_v2
 from time import sleep
-from utils.utils_affiliate import create_affiliate_link
-from crud_prices_hist import get_last_5prices
+from utils.awin_api import create_affiliate_link
+from database.crud_prices_hist import get_last_5prices
 from config.db_config import get_db_connection
 from telegram.error import RetryAfter, TelegramError
 

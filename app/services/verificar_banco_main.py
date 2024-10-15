@@ -4,7 +4,7 @@ from psycopg2.extras import RealDictCursor
 import requests
 from bs4 import BeautifulSoup as bs4
 from time import sleep
-from crud import deletar
+from database.crud import deletar
 from config.db_config import get_db_connection
 
 

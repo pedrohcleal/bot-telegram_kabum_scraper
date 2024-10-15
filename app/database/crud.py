@@ -2,10 +2,10 @@ from datetime import datetime
 import psycopg2
 from psycopg2 import OperationalError
 from psycopg2.extras import RealDictCursor
-from utils.utils_telegram import mensagem_novo_valor_gpu, novo_produto
+from utils.telegram_api import mensagem_novo_valor_gpu, novo_produto
 import asyncio
-from utils.utils import real_to_float
-from crud_prices_hist import salve_hist
+from utils.sanitize import real_to_float
+from database.crud_prices_hist import salve_hist
 
 
 def insert_product(conn: psycopg2.extensions.connection, produto):
