@@ -22,13 +22,31 @@ Este projeto faz o scraping de produtos da categoria de hardware (ex: GPUs) do s
 ## 📦 Estrutura de Pastas
 
 ```bash
-├── bot.py                 # Bot do Telegram para enviar mensagens de atualizações de preço/produto
-├── database.crud.py                # Funções database.crud para interagir com o banco de dados PostgreSQL
-├── db_config.py           # Configuração da conexão com o banco de dados
-├── handler.py             # Funções principais para scraping e automação
-├── selenium_config.py     # Configurações do Selenium WebDriver
-├── utils.py               # Funções utilitárias, como escape de caracteres e conversão de moeda
-└── execs_logs.txt         # Log de execução para monitoramento
+├── app
+│   ├── config
+│   │   ├── chrome_config.py
+│   │   └── db_config.py
+│   ├── database
+│   │   ├── crud.py
+│   │   └── crud_prices_hist.py
+│   ├── main.py
+│   ├── services
+│   │   ├── kabum_scraper.py
+│   │   └── verificar_banco_main.py
+│   ├── urls.json
+│   └── utils
+│       ├── awin_api.py
+│       ├── sanitize.py
+│       └── telegram_api.py
+├── backups
+│   └── kabum.db
+├── commands.txt
+├── readme.md
+├── requirements.txt
+└── tests
+    ├── tests_bd.py
+    ├── tests_others.py
+    └── tests_scraper.py
 ```
 
 ## 📝 Configuração do Ambiente

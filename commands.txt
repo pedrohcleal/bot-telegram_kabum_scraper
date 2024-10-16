@@ -14,3 +14,6 @@ pylint .
 
 # run and save logs
 python app\main.py *> logs.txt
+
+# visualizar estrutura de pastas (linux)
+tree -I 'venv|__init__.py|__pycache__'
