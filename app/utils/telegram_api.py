@@ -7,7 +7,7 @@ from time import sleep
 from utils.awin_api import create_affiliate_link
 from database.crud_prices_hist import get_last_5prices
 from config.db_config import get_db_connection
-from telegram.error import RetryAfter, TelegramError
+from telegram.error import RetryAfter
 
 load_dotenv()
 
@@ -105,7 +105,7 @@ async def novo_produto(produto):
 async def test_envio_mensagem_grupo():
     app = Application.builder().token(TOKEN).build()
     async with app:
-        mensage = "ON AWS"
+        mensage = "TESTE ENVIO DE MENSAGEM OK"
         await enviar_mensagem(mensage)
 
 

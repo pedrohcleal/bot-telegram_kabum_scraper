@@ -58,6 +58,7 @@ def process_products(driver):
         preco = item.find_element(By.CLASS_NAME, "priceCard").text.strip()
         if preco == "R$ ----" or preco == "----" or "x" in preco:
             continue
+        print(preco)
 
         gpu_item = fetch_product_data(item)
         db_updates(gpu_item=gpu_item)
