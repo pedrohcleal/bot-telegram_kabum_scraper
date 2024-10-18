@@ -1,20 +1,21 @@
 # 🛒 Kabum Scraper & Telegram Bot
 
-Este projeto faz o scraping de produtos da categoria de hardware (ex: GPUs) do site Kabum e utiliza um bot do Telegram para enviar atualizações de preço e novos produtos para um grupo. Além disso, gera links de afiliado automaticamente utilizando a API da Awin.
+Este projeto realiza o scraping de produtos de diversas categorias do site Kabum (hardware, periféricos, computadores, etc.) e utiliza um bot do Telegram para enviar atualizações rápidas sobre preços e novos produtos diretamente para um grupo.
 
 ## 🚀 Funcionalidades
 
-- **Scraping Automático**: Utiliza Selenium para percorrer as páginas de produtos da Kabum, coletando informações como nome, preço, link e imagem.
-- **Armazenamento no Banco de Dados**: Os dados dos produtos são salvos em um banco PostgreSQL, e novos preços são atualizados conforme necessário.
-- **Bot do Telegram**: Envia notificações automáticas para um grupo do Telegram quando novos produtos são detectados ou preços são atualizados.
+- **Scraping Automático**: Utiliza Selenium para percorrer páginas de produtos da Kabum, coletando informações como nome, preço, link e imagem.
+- **Armazenamento no Banco de Dados**: Os dados dos produtos são salvos em um banco PostgreSQL, e novos preços são atualizados conforme necessário. Além disso, o backup é feito em SQLite.
+- **Bot do Telegram**: Envia notificações automáticas e rápidas para um grupo do Telegram quando novos produtos são detectados ou preços são atualizados.
+- **Configuração Flexível**: As URLs e seletores CSS para scraping são configurados através do arquivo `urls.json`, que contém as categorias e o seletor do elemento `table` para os produtos.
+- **Execução Contínua**: O bot é projetado para funcionar continuamente, garantindo que as atualizações ocorram sem interrupções.
 - **Geração de Link de Afiliado**: Cria links curtos de afiliado usando a API da Awin, integrados nas mensagens do Telegram.
-- **Logs de Execução**: Mantém um log de execução detalhado para monitoramento e debug.
 
 ## 🛠️ Tecnologias Utilizadas
 
 - **Linguagem**: Python
 - **Web Scraping**: `Selenium`, `BeautifulSoup`
-- **Banco de Dados**: `PostgreSQL`
+- **Banco de Dados**: `PostgreSQL` (principal), `SQLite` (backup)
 - **Bot do Telegram**: `python-telegram-bot`
 - **Geração de Link de Afiliado**: `Awin API`
 - **Controle de Ambiente**: `dotenv` para carregar variáveis de ambiente
@@ -65,8 +66,8 @@ publisher_id=seu_publisher_id
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu_usuario/seu_projeto.git
-   cd seu_projeto
+   git clone https://github.com/pedrohcleal/bot-telegram_kabum_scraper_bd.git
+   cd bot-telegram_kabum_scraper_bd
    ```
 
 2. Instale as dependências:
@@ -78,13 +79,18 @@ publisher_id=seu_publisher_id
 
 4. Inicie o scraping e o bot:
    ```bash
-   python bot.py
+   cd app
+   python app/main.py
    ```
 
 ## 🔗 API da Awin
 
 O projeto usa a API da Awin para gerar links de afiliados. Para mais informações sobre a API, consulte a [documentação oficial](https://wiki.awin.com/index.php/API_Documentation).
 
-## 📝 Licença
+## ⚠️ Limites da Telegram Bot API:
 
-Este projeto é distribuído sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+- Não enviar mais de uma mensagem por segundo para um chat específico.
+- Não enviar mais de 30 mensagens por segundo para múltiplos usuários.
+- Não enviar mais de 20 mensagens por minuto para o mesmo grupo.
+
+Exceder esses limites pode resultar em erros de "Too Many Requests" (429).
