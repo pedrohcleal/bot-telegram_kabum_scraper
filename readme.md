@@ -106,3 +106,13 @@ A Awin limita o número de solicitações de API a 20 chamadas por minuto por us
 - Não enviar mais de 20 mensagens por minuto para o mesmo grupo.
 
 Exceder esses limites pode resultar em erros de "Too Many Requests" (429).
+
+Aqui está a seção que você pode adicionar ao seu `README.md` para incluir informações sobre contribuições via PIX:
+
+## 💖 Contribuições
+
+Se você gostou do projeto e deseja apoiar o desenvolvimento, sinta-se à vontade para fazer uma contribuição via PIX:
+
+**Chave PIX**: `pedroleal360@gmail.com`
+
+Agradeço seu apoio! Sua contribuição ajuda a manter o projeto ativo e a implementar novas funcionalidades.
