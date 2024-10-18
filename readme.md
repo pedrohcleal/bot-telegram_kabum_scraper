@@ -58,14 +58,18 @@ Este projeto realiza o scraping de produtos de diversas categorias do site Kabum
 
 ## 📝 Configuração do Ambiente
 
-Crie um arquivo `.env` com as seguintes variáveis:
+Altere o arquivo `.env.example` para `.env` com as seguintes variáveis:
 
 ```bash
-TELEGRAM_TOKEN=seu_token_telegram
-ID_GROUP=seu_id_grupo
-advertiser_id=seu_advertiser_id
-access_token=seu_access_token_awin
-publisher_id=seu_publisher_id
+TELEGRAM_TOKEN=""
+ID_GROUP=""
+access_token=''
+advertiser_id=''
+publisher_id=''
+host=''
+port=''
+principaluser=''
+senha=''
 ```
 
 ## 🔧 Como Executar
