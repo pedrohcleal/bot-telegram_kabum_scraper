@@ -28,7 +28,7 @@ async def enviar_mensagem(texto):
             sleep(wait_time)
 
 
-async def mensagem_novo_valor_gpu(old_produto, produto):
+async def mensagem_novo_valor_produto(old_produto, produto):
     print("enviando mensagem pro telegram - Atualização de produto")
     sleep(6)
     old_name: str = escape_markdown_v2(old_produto["name"])

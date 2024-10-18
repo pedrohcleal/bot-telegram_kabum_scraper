@@ -16,17 +16,17 @@ NEXT_BUTTON_SELECTOR = "#listingPagination > ul > li.next > a"
 COOKIE_BUTTON_SELECTOR = "#onetrust-accept-btn-handler"
 
 
-def db_updates(gpu_item) -> None:
+def db_updates(produto) -> None:
     with get_db_connection() as db_conn:
         if not db_conn:
             raise Exception("Conexão com o banco de dados falhou.")
-        if have_product_in_bd(db_conn, gpu_item):
-            atual_product = get_product(db_conn, gpu_item)
+        if have_product_in_bd(db_conn, produto):
+            atual_product = get_product(db_conn, produto)
             if atual_product is not None:
-                if atual_product["price"] != gpu_item["price"]:
-                    update_price(db_conn, gpu_item)
+                if atual_product["price"] != produto["price"]:
+                    update_price(db_conn, produto)
         else:
-            insert_product(db_conn, gpu_item)
+            insert_product(db_conn, produto)
 
 
 def fetch_product_data(item) -> dict[str, str]:
@@ -58,8 +58,8 @@ def process_products(driver) -> None:
         preco = item.find_element(By.CLASS_NAME, "priceCard").text.strip()
         if preco == "R$ ----" or preco == "----" or "x" in preco:
             continue
-        gpu_item: dict[str, str] = fetch_product_data(item)
-        db_updates(gpu_item=gpu_item)
+        produto: dict[str, str] = fetch_product_data(item)
+        db_updates(produto=produto)
         if index == len(table) - 1:
             driver.execute_script("arguments[0].scrollIntoView();", item)
             sleep(2.5)
