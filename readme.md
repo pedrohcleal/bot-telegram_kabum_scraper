@@ -97,6 +97,8 @@ senha=''
 
 O projeto usa a API da Awin para gerar links de afiliados. Para mais informações sobre a API, consulte a [documentação oficial](https://wiki.awin.com/index.php/API_Documentation).
 
+A Awin limita o número de solicitações de API a 20 chamadas por minuto por usuário
+
 ## ⚠️ Limites da Telegram Bot API:
 
 - Não enviar mais de uma mensagem por segundo para um chat específico.
