@@ -1,3 +1,9 @@
+![python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54)
+![postgres](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
+![SQLITE](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=selenium&logoColor=white)
+![telegram-bot](https://img.shields.io/badge/Telegram-2CA5E0?style=flat&logo=telegram&logoColor=white)
+
 # 🛒 Kabum Scraper & Telegram Bot
 
 Este projeto realiza o scraping de produtos de diversas categorias do site Kabum (hardware, periféricos, computadores, etc.) e utiliza um bot do Telegram para enviar atualizações rápidas sobre preços e novos produtos diretamente para um grupo.
