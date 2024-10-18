@@ -6,7 +6,7 @@ from datetime import datetime
 def salve_hist(conn: psycopg2.extensions.connection, produto) -> None:
     print("salvando_historico")
     now: datetime = datetime.now()
-    date_now: str = now.strftime("%Y-%m-%d %H:%M:%S")  # Formato padrão para PostgreSQL
+    date_now: str = now.strftime("%Y-%m-%d %H:%M:%S")
     try:
         query = """
             INSERT INTO public.produtos_hist (nome, link, price, register_date)
@@ -21,12 +21,13 @@ def salve_hist(conn: psycopg2.extensions.connection, produto) -> None:
         with conn.cursor() as cursor:
             cursor.execute(query, params)
             conn.commit()
+            
     except OperationalError as e:
         print(f"SQL error = {e}")
         raise e
 
 
-def get_last_5prices(conn: psycopg2.extensions.connection, produto):
+def get_last_5prices(conn: psycopg2.extensions.connection, produto) -> str:
     print("Veficando últimos preços na aws")
     try:
         query = """

@@ -16,7 +16,7 @@ NEXT_BUTTON_SELECTOR = "#listingPagination > ul > li.next > a"
 COOKIE_BUTTON_SELECTOR = "#onetrust-accept-btn-handler"
 
 
-def db_updates(gpu_item):
+def db_updates(gpu_item) -> None:
     with get_db_connection() as db_conn:
         if not db_conn:
             raise Exception("Conexão com o banco de dados falhou.")
@@ -29,13 +29,13 @@ def db_updates(gpu_item):
             insert_product(db_conn, gpu_item)
 
 
-def fetch_product_data(item):
+def fetch_product_data(item) -> dict[str, str]:
     """Fetches product data from the given item element."""
     descricao = item.find_element(By.TAG_NAME, "h3").text.strip()
     preco = item.find_element(By.CLASS_NAME, "priceCard").text.strip()
     link = item.find_element(By.CLASS_NAME, "productLink").get_attribute("href").strip()
     image_element = item.find_element(By.CLASS_NAME, "imageCard")
-    image_url = URL_MAIN + image_element.get_attribute("src")
+    image_url = image_element.get_attribute("src")
 
     return {
         "adm": "kabum",
@@ -46,7 +46,7 @@ def fetch_product_data(item):
     }
 
 
-def process_products(driver):
+def process_products(driver) -> None:
     """Iterates over each product on the page and processes its data."""
     WebDriverWait(driver, 15).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, TABLE_SELECTOR))
@@ -58,9 +58,7 @@ def process_products(driver):
         preco = item.find_element(By.CLASS_NAME, "priceCard").text.strip()
         if preco == "R$ ----" or preco == "----" or "x" in preco:
             continue
-        print(preco)
-
-        gpu_item = fetch_product_data(item)
+        gpu_item: dict[str, str] = fetch_product_data(item)
         db_updates(gpu_item=gpu_item)
         if index == len(table) - 1:
             driver.execute_script("arguments[0].scrollIntoView();", item)

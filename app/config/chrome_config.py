@@ -1,10 +1,11 @@
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.webdriver import WebDriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
 
 
-def create_driver():
+def create_driver() -> WebDriver:
     chrome_options = Options()
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--no-sandbox")
@@ -22,6 +23,6 @@ def create_driver():
     return driver
 
 
-def reset_driver(driver):
+def reset_driver(driver) -> WebDriver:
     driver.quit()  # Fecha o driver atual
     return create_driver()  # Cria uma nova instância do driver

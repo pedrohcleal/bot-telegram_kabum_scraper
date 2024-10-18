@@ -1,5 +1,5 @@
-def escape_markdown_v2(text):
-    replacements = {
+def escape_markdown_v2(text: str) -> str:
+    replacements: dict[str, str] = {
         "\\": "\\\\",  # Escapar barra invertida
         "_": "\\_",  # Escapar sublinhado
         "*": "\\*",  # Escapar asterisco

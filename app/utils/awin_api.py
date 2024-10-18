@@ -13,21 +13,21 @@ headers = {
 }
 
 
-def create_affiliate_link(original_url):
+def create_affiliate_link(original_url) -> str | None:
     sleep(5)
-    url_api = f"https://api.awin.com/publishers/{publisher_id}/linkbuilder/generate"
+    url_api: str = f"https://api.awin.com/publishers/{publisher_id}/linkbuilder/generate"
 
-    data = {
+    data: dict[str, str] = {
         "advertiserId": advertiser_id,
         "destinationUrl": original_url,
         # "shorten": True,
     }
 
-    response = requests.post(url_api, headers=headers, json=data)
+    response: requests.Response = requests.post(url_api, headers=headers, json=data)
     # response = requests.get('https://api.awin.com/accounts', headers=headers)
 
     if response.status_code == 200:
-        return response.json()["url"]  # ["shortUrl"]
+        return str(response.json()["url"])  # ["shortUrl"]
     else:
         sleep(120)
         print(f"Erro: {response.status_code}, {response.content}")
