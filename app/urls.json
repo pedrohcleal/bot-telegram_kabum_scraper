@@ -6,7 +6,7 @@
     {
         "URL" : "https://www.kabum.com.br/perifericos",
         "TABLE_SELECTOR" : "#listing > div.sc-fubCzh.sc-202cc1e9-2.iKEDOD.SzkqH > div > div > div.sc-jrAFXE.jxFgWu > div > main > *"
-        
+
     },
     {
         "URL" : "https://www.kabum.com.br/computadores",
@@ -19,11 +19,11 @@
     {
         "URL" : "https://www.kabum.com.br/celular-smartphone",
         "TABLE_SELECTOR" : "#listing > div.sc-fubCzh.sc-202cc1e9-2.iKEDOD.SzkqH > div > div > div.sc-jrAFXE.jxFgWu > div > main > *"
-        
+
     },
     {
         "URL" : "https://www.kabum.com.br/tv",
         "TABLE_SELECTOR" : "#listing > div.sc-fubCzh.sc-202cc1e9-2.iKEDOD.SzkqH > div > div > div.sc-jrAFXE.jxFgWu > div > main > *"
-        
+
     }
 ]

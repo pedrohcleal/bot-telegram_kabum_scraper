@@ -15,7 +15,9 @@ headers = {
 
 def create_affiliate_link(original_url) -> str | None:
     sleep(5)
-    url_api: str = f"https://api.awin.com/publishers/{publisher_id}/linkbuilder/generate"
+    url_api: str = (
+        f"https://api.awin.com/publishers/{publisher_id}/linkbuilder/generate"
+    )
 
     data: dict[str, str] = {
         "advertiserId": advertiser_id,

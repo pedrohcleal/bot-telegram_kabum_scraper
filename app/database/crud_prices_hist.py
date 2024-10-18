@@ -21,7 +21,7 @@ def salve_hist(conn: psycopg2.extensions.connection, produto) -> None:
         with conn.cursor() as cursor:
             cursor.execute(query, params)
             conn.commit()
-            
+
     except OperationalError as e:
         print(f"SQL error = {e}")
         raise e

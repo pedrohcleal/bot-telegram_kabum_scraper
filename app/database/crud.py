@@ -76,7 +76,7 @@ def update_price(conn: psycopg2.extensions.connection, produto):
     old_produto: RealDictRow = get_product(conn, produto)
     valor_atual: float = abs(real_to_float(produto["price"]))
     valor_antigo: float = abs(real_to_float(old_produto["price"]))
-    
+
     if valor_atual - valor_antigo < -50:
         asyncio.run(mensagem_novo_valor_produto(old_produto, produto))
 
