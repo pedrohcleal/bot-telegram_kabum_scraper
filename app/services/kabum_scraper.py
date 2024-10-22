@@ -11,7 +11,6 @@ from time import sleep
 from config.db_config import get_db_connection
 from pprint import pprint
 
-URL_MAIN = "https://www.kabum.com.br/"
 NEXT_BUTTON_SELECTOR = "#listingPagination > ul > li.next > a"
 COOKIE_BUTTON_SELECTOR = "#onetrust-accept-btn-handler"
 
