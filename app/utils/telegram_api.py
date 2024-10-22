@@ -28,24 +28,24 @@ async def enviar_mensagem(texto):
             sleep(wait_time)
 
 
-async def mensagem_novo_valor_gpu(old_produto, produto):
+async def mensagem_novo_valor_produto(old_produto, produto):
     print("enviando mensagem pro telegram - Atualização de produto")
     sleep(6)
     old_name: str = escape_markdown_v2(old_produto["name"])
     old_price: str = escape_markdown_v2(old_produto["price"])
     new_price: str = escape_markdown_v2(produto["price"])
     produto_link: str = escape_markdown_v2(create_affiliate_link(produto["link"]))
-    #last_update: str = escape_markdown_v2(old_produto["last_register_date"])
+    # last_update: str = escape_markdown_v2(old_produto["last_register_date"])
     with get_db_connection() as conn:
         last_5prices: str = escape_markdown_v2(get_last_5prices(conn, produto))
-        
+
     text: str = (
         f"🚀 **Black Friday** 🚀\n\n"
         f'🔄 O valor do item *"{old_name}"* foi atualizado\n\n'
         f"📈 Valor antigo: *{old_price}*\n"
         f"📉 Valor novo: *{new_price}*\n\n"
         f"🔍 Mais informações: [Site Kabum]({produto_link})\n\n"
-        #f"Última atualização foi em: {last_update}\n\n"
+        # f"Última atualização foi em: {last_update}\n\n"
         f"Últimos preços: {last_5prices}\n\n"
         f"🔥 Aproveite as ofertas 🔥"
     )

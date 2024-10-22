@@ -2,7 +2,7 @@ from datetime import datetime
 import psycopg2
 from psycopg2 import OperationalError
 from psycopg2.extras import RealDictCursor, RealDictRow
-from utils.telegram_api import mensagem_novo_valor_gpu, novo_produto
+from utils.telegram_api import mensagem_novo_valor_produto, novo_produto
 import asyncio
 from utils.sanitize import real_to_float
 from database.crud_prices_hist import salve_hist
@@ -71,14 +71,14 @@ def get_product(conn: psycopg2.extensions.connection, produto):
 
 
 def update_price(conn: psycopg2.extensions.connection, produto):
-    print(f"update gpu on aws -> {produto}")
+    print(f"update product on aws -> {produto}")
     salve_hist(conn, produto)
     old_produto: RealDictRow = get_product(conn, produto)
     valor_atual: float = abs(real_to_float(produto["price"]))
     valor_antigo: float = abs(real_to_float(old_produto["price"]))
-    
+
     if valor_atual - valor_antigo < -50:
-        asyncio.run(mensagem_novo_valor_gpu(old_produto, produto))
+        asyncio.run(mensagem_novo_valor_produto(old_produto, produto))
 
     try:
         now = datetime.now()

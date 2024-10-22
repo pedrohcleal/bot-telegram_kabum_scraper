@@ -30,5 +30,5 @@ def real_to_float(reais):
 
     if "," in reais:
         reais = reais.replace(".", "").replace(",", ".")
-    
+
     return float(reais)
