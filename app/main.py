@@ -8,9 +8,9 @@ import json
 
 driver = create_driver()
 
-init = 0
+init = 3
 pont = init
-max = 2
+max = 5
 
 while True:
     print("-----> NOVA ITERAÇÃO WHILE <--------")

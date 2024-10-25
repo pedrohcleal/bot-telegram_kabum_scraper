@@ -24,5 +24,5 @@ def create_driver() -> WebDriver:
 
 
 def reset_driver(driver) -> WebDriver:
-    driver.quit()  # Fecha o driver atual
-    return create_driver()  # Cria uma nova instância do driver
+    driver.quit() 
+    return create_driver()  
