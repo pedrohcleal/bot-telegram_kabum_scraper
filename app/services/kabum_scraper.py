@@ -47,7 +47,7 @@ def fetch_product_data(item) -> dict[str, str]:
 
 def process_products(driver) -> None:
     """Iterates over each product on the page and processes its data."""
-    print('verificando tabela de produtos no site')
+    print("verificando tabela de produtos no site")
     WebDriverWait(driver, 15).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, TABLE_SELECTOR))
     )

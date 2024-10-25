@@ -31,7 +31,7 @@ def get_last_5prices(conn: psycopg2.extensions.connection, produto) -> str:
     print("Veficando últimos preços na aws")
     try:
         query = """
-            SELECT DISTINCT price, 
+            SELECT DISTINCT price,
             CAST(REPLACE(REPLACE(REPLACE(TRIM(price), 'R$', ''), '.', ''), ',', '.') AS DECIMAL) AS numeric_price
             FROM public.produtos_hist
             WHERE link = %s AND price NOT LIKE '%%x%%'
