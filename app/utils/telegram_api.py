@@ -30,7 +30,6 @@ async def enviar_mensagem(texto):
 
 async def mensagem_novo_valor_produto(old_produto, produto):
     print("enviando mensagem pro telegram - Atualização de produto")
-    sleep(6)
     old_name: str = escape_markdown_v2(old_produto["name"])
     old_price: str = escape_markdown_v2(old_produto["price"])
     new_price: str = escape_markdown_v2(produto["price"])
@@ -69,7 +68,7 @@ async def mensagem_novo_valor_produto(old_produto, produto):
 
 async def novo_produto(produto):
     print("enviando mensagem pro telegram - Novo produto")
-    sleep(6)
+    sleep(2)
     name: str = escape_markdown_v2(produto["name"])
     price: str = escape_markdown_v2(produto["price"])
     link: str = escape_markdown_v2(create_affiliate_link(produto["link"]))

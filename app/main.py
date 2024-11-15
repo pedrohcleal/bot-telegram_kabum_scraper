@@ -10,7 +10,7 @@ driver = create_driver()
 
 init = 0
 pont = init
-max = 2
+max = 5
 
 while True:
     print("-----> NOVA ITERAÇÃO WHILE <--------")
@@ -35,7 +35,7 @@ while True:
     end: float = time.perf_counter()
 
     driver: WebDriver = reset_driver(driver)
-    sleep(5)
+    sleep(3)
     exec_time: float = end - start
 
     print(f"Tempo de execução às {current_time} -> {exec_time:.6f} segundos <-\n")
