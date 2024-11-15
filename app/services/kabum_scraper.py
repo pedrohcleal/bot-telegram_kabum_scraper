@@ -18,7 +18,6 @@ NEXT_BUTTON_SELECTOR = "#listingPagination > ul > li.next > a"
 COOKIE_BUTTON_SELECTOR = "#onetrust-accept-btn-handler"
 
 
-
 def db_updates(produto, db_conn) -> None:
     if not db_conn:
         raise Exception("Conexão com o banco de dados falhou.")
@@ -47,10 +46,11 @@ def fetch_product_data(item) -> dict[str, str]:
         "url_image": image_url,
     }
 
+
 def process_item(item) -> None | dict[str, str]:
     preco = item.find_element(By.CLASS_NAME, "priceCard").text.strip()
     if preco == "R$ ----" or preco == "----" or "x" in preco:
-        return 
+        return
     return fetch_product_data(item)
 
 
@@ -58,12 +58,12 @@ def process_products(driver) -> None:
     """Iterates over each product on the page and processes its data."""
     print("verificando tabela de produtos no site")
     start_t = datetime.now()
-    
+
     WebDriverWait(driver, 15, poll_frequency=0.1).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, TABLE_SELECTOR))
     )
     table = driver.find_elements(By.CSS_SELECTOR, TABLE_SELECTOR)
-    
+
     print("Iterando página")
     with ThreadPoolExecutor(max_workers=5) as executor:
         produtos = list(executor.map(process_item, table))
