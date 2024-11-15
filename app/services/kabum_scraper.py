@@ -11,9 +11,12 @@ from time import sleep
 from config.db_config import get_db_connection
 from pprint import pprint
 from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor
+
 
 NEXT_BUTTON_SELECTOR = "#listingPagination > ul > li.next > a"
 COOKIE_BUTTON_SELECTOR = "#onetrust-accept-btn-handler"
+
 
 
 def db_updates(produto, db_conn) -> None:
@@ -44,6 +47,12 @@ def fetch_product_data(item) -> dict[str, str]:
         "url_image": image_url,
     }
 
+def process_item(item) -> None | dict[str, str]:
+    preco = item.find_element(By.CLASS_NAME, "priceCard").text.strip()
+    if preco == "R$ ----" or preco == "----" or "x" in preco:
+        return 
+    return fetch_product_data(item)
+
 
 def process_products(driver) -> None:
     """Iterates over each product on the page and processes its data."""
@@ -53,18 +62,14 @@ def process_products(driver) -> None:
     )
     table = driver.find_elements(By.CSS_SELECTOR, TABLE_SELECTOR)
     print("Iterando página")
-
-    produtos = []
-
+    
     start_t = datetime.now()
-    for item in table:
-        preco = item.find_element(By.CLASS_NAME, "priceCard").text.strip()
-        if preco == "R$ ----" or preco == "----" or "x" in preco:
-            continue
-        produtos.append(fetch_product_data(item))
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        produtos = list(executor.map(process_item, table))
+    produtos = list(filter(lambda x: x is not None, produtos))
     print(f"tempo de leitura de página = {datetime.now() - start_t}")
 
-    driver.execute_script("arguments[0].scrollIntoView();", item)
+    driver.execute_script("arguments[0].scrollIntoView();", table[-1])
     with get_db_connection() as db_conn:
         for x in produtos:
             db_updates(produto=x, db_conn=db_conn)
