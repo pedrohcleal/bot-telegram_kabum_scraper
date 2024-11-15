@@ -14,7 +14,6 @@ headers = {
 
 
 def create_affiliate_link(original_url) -> str | None:
-    sleep(3)
     url_api: str = (
         f"https://api.awin.com/publishers/{publisher_id}/linkbuilder/generate"
     )

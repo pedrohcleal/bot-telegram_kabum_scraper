@@ -57,33 +57,35 @@ def process_item(item) -> None | dict[str, str]:
 def process_products(driver) -> None:
     """Iterates over each product on the page and processes its data."""
     print("verificando tabela de produtos no site")
-    WebDriverWait(driver, 15).until(
+    start_t = datetime.now()
+    
+    WebDriverWait(driver, 15, poll_frequency=0.1).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, TABLE_SELECTOR))
     )
     table = driver.find_elements(By.CSS_SELECTOR, TABLE_SELECTOR)
-    print("Iterando página")
     
-    start_t = datetime.now()
+    print("Iterando página")
     with ThreadPoolExecutor(max_workers=5) as executor:
         produtos = list(executor.map(process_item, table))
     produtos = list(filter(lambda x: x is not None, produtos))
-    print(f"tempo de leitura de página = {datetime.now() - start_t}")
 
     driver.execute_script("arguments[0].scrollIntoView();", table[-1])
     with get_db_connection() as db_conn:
         for x in produtos:
             db_updates(produto=x, db_conn=db_conn)
 
+    print(f"tempo de leitura de página = {datetime.now() - start_t}")
+
 
 def handle_pagination(driver):
     """Handles pagination by clicking the 'next' button and processing subsequent pages."""
     try:
-        next_element = WebDriverWait(driver, 2).until(
+        process_products(driver)
+        next_element = WebDriverWait(driver, 5, poll_frequency=0.1).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, NEXT_BUTTON_SELECTOR))
         )
-        driver.execute_script("arguments[0].click();", next_element)
+        next_element.click()
         sleep(1)
-        process_products(driver)
         handle_pagination(driver)
     except (
         NoSuchElementException,
@@ -107,5 +109,4 @@ def main_selenium(driver, URL, table_selector):
     )
     cookie_button.click()
 
-    process_products(driver)
     handle_pagination(driver)
