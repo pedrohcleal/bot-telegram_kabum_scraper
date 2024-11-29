@@ -1,26 +1,26 @@
 [
     {
         "URL" : "https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched",
-        "TABLE_SELECTOR" : "#listing > div.sc-ikPAEB.sc-e9b7c081-1.jcryDv.ezGdji > div > div > div.sc-biBsmb.kcFaol > div.sc-1be01e1c-0.jjRsUT > main > *"
+        "TABLE_SELECTOR" : "#listing > div.sc-ikPAEB.sc-1edb36ab-1.jcryDv.cdfLWB > div > div > div.sc-biBsmb.kcFaol > div > main > *"
     },
     {
         "URL" : "https://www.kabum.com.br/perifericos?page_number=1&page_size=100&facet_filters=&sort=most_searched",
-        "TABLE_SELECTOR" : "#listing > div.sc-fubCzh.sc-e9b7c081-1.iKEDOD.ezGdji > div > div > div.sc-jrAFXE.jxFgWu > div.sc-1be01e1c-0.jjRsUT > main > *"
+        "TABLE_SELECTOR" : "#listing > div.sc-fubCzh.sc-1edb36ab-1.iKEDOD.cdfLWB > div > div > div.sc-jrAFXE.jxFgWu > div > main > *"
     },
     {
         "URL" : "https://www.kabum.com.br/computadores?page_number=1&page_size=100&facet_filters=&sort=most_searched",
-        "TABLE_SELECTOR" : "#listing > div.sc-fubCzh.sc-e9b7c081-1.iKEDOD.ezGdji > div > div > div.sc-jrAFXE.jxFgWu > div.sc-1be01e1c-0.jjRsUT > main > *"
+        "TABLE_SELECTOR" : "#listing > div.sc-fubCzh.sc-1edb36ab-1.iKEDOD.cdfLWB > div > div > div.sc-jrAFXE.jxFgWu > div > main > *"
     },
     {
         "URL" : "https://www.kabum.com.br/gamer?page_number=1&page_size=100&facet_filters=&sort=most_searched",
-        "TABLE_SELECTOR" : "#listing > div.sc-ikPAEB.sc-e9b7c081-1.jcryDv.ezGdji > div > div > div.sc-biBsmb.kcFaol > div.sc-1be01e1c-0.jjRsUT > main > *"
+        "TABLE_SELECTOR" : "#listing > div.sc-ikPAEB.sc-1edb36ab-1.jcryDv.cdfLWB > div > div > div.sc-biBsmb.kcFaol > div > main > *"
     },
     {
         "URL" : "https://www.kabum.com.br/celular-smartphone?page_number=1&page_size=100&facet_filters=&sort=most_searched",
-        "TABLE_SELECTOR" : "#listing > div.sc-fubCzh.sc-e9b7c081-1.iKEDOD.ezGdji > div > div > div.sc-jrAFXE.jxFgWu > div.sc-1be01e1c-0.jjRsUT > main > *"
+        "TABLE_SELECTOR" : "#listing > div.sc-fubCzh.sc-1edb36ab-1.iKEDOD.cdfLWB > div > div > div.sc-jrAFXE.jxFgWu > div > main > *"
     },
     {
         "URL" : "https://www.kabum.com.br/tv?page_number=1&page_size=100&facet_filters=&sort=most_searched",
-        "TABLE_SELECTOR" : "#listing > div.sc-fubCzh.sc-e9b7c081-1.iKEDOD.ezGdji > div > div > div.sc-jrAFXE.jxFgWu > div.sc-1be01e1c-0.jjRsUT > main > *"
+        "TABLE_SELECTOR" : "#listing > div.sc-fubCzh.sc-1edb36ab-1.iKEDOD.cdfLWB > div > div > div.sc-jrAFXE.jxFgWu > div > main > *"
     }
 ]
