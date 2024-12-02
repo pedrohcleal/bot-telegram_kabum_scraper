@@ -17,44 +17,6 @@ Este projeto realiza o scraping de produtos de diversas categorias do site Kabum
 - **Execução Contínua**: O bot é projetado para funcionar continuamente, garantindo que as atualizações ocorram sem interrupções.
 - **Geração de Link de Afiliado**: Cria links curtos de afiliado usando a API da Awin, integrados nas mensagens do Telegram.
 
-## 🛠️ Tecnologias Utilizadas
-
-- **Linguagem**: Python
-- **Web Scraping**: `Selenium`, `BeautifulSoup`
-- **Banco de Dados**: `PostgreSQL` (principal), `SQLite` (backup)
-- **Bot do Telegram**: `python-telegram-bot`
-- **Geração de Link de Afiliado**: `Awin API`
-- **Controle de Ambiente**: `dotenv` para carregar variáveis de ambiente
-
-## 📦 Estrutura de Pastas
-
-```bash
-├── app
-│   ├── config
-│   │   ├── chrome_config.py
-│   │   └── db_config.py
-│   ├── database
-│   │   ├── crud.py
-│   │   └── crud_prices_hist.py
-│   ├── main.py
-│   ├── services
-│   │   ├── kabum_scraper.py
-│   │   └── verificar_banco_main.py
-│   ├── urls.json
-│   └── utils
-│       ├── awin_api.py
-│       ├── sanitize.py
-│       └── telegram_api.py
-├── backups
-│   └── kabum.db
-├── commands.txt
-├── readme.md
-├── requirements.txt
-└── tests
-    ├── tests_bd.py
-    ├── tests_others.py
-    └── tests_scraper.py
-```
 
 ## 📝 Configuração do Ambiente
 
