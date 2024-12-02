@@ -1,12 +1,10 @@
 from selenium.webdriver.chrome.webdriver import WebDriver
 from services.kabum_scraper import main_selenium
-from config.chrome_config import create_driver, reset_driver
+from config.chrome_config import create_driver
 import time
 from time import sleep
 from datetime import datetime
 import json
-
-driver = create_driver()
 
 init = 0
 pont = init
@@ -19,23 +17,21 @@ while True:
     start: float = time.perf_counter()
     urls: list[dict[str, str]] = json.loads(open("urls.json").read())
 
-    try:
-        item: dict[str, str] = urls[pont]
-        url: str = item["URL"]
-        table_selector: str = item["TABLE_SELECTOR"]
-        main_selenium(driver, url, table_selector)
-    except Exception as e:
-        print("Ocorre um erro em main_selenium() (main), reiniciando Script")
-        print(e)
+    with create_driver() as driver:
+        try:
+            item: dict[str, str] = urls[pont]
+            url: str = item["URL"]
+            table_selector: str = item["TABLE_SELECTOR"]
+            main_selenium(driver, url, table_selector)
+        except Exception as e:
+            print("Ocorre um erro em main_selenium() (main), reiniciando Script")
+            print(e)
 
     pont += 1
     if pont > max:
         pont = init
 
     end: float = time.perf_counter()
-
-    driver: WebDriver = reset_driver(driver)
-    sleep(3)
     exec_time: float = end - start
 
     print(f"Tempo de execução às {current_time} -> {exec_time:.6f} segundos <-\n")

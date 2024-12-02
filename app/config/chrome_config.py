@@ -2,12 +2,13 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.webdriver import WebDriver
 from webdriver_manager.chrome import ChromeDriverManager
+from contextlib import contextmanager
 from selenium import webdriver
 
-
-def create_driver() -> WebDriver:
+@contextmanager
+def create_driver():
     chrome_options = Options()
-    chrome_options.add_argument("--headless")
+    #chrome_options.add_argument("--headless")
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--disable-notifications")
@@ -20,9 +21,8 @@ def create_driver() -> WebDriver:
 
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=chrome_options)
-    return driver
-
-
-def reset_driver(driver) -> WebDriver:
-    driver.quit()
-    return create_driver()
+    try:
+        yield driver
+    finally:
+        print('fim do chromedriver')
+        driver.quit()
