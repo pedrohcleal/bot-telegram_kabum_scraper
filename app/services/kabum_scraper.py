@@ -70,6 +70,7 @@ def process_products(driver) -> None:
     produtos = list(filter(lambda x: x is not None, produtos))
 
     driver.execute_script("arguments[0].scrollIntoView();", table[-1])
+    sleep(0.5)
     with get_db_connection() as db_conn:
         for x in produtos:
             db_updates(produto=x, db_conn=db_conn)
@@ -81,7 +82,7 @@ def handle_pagination(driver):
     """Handles pagination by clicking the 'next' button and processing subsequent pages."""
     try:
         process_products(driver)
-        next_element = WebDriverWait(driver, 5, poll_frequency=0.1).until(
+        next_element = WebDriverWait(driver, 10, poll_frequency=0.1).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, NEXT_BUTTON_SELECTOR))
         )
         next_element.click()
