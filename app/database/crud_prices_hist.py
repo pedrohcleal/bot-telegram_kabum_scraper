@@ -1,6 +1,7 @@
 import psycopg2
 from psycopg2 import OperationalError
 from datetime import datetime
+from utils.sanitize import real_to_float
 
 
 def salve_hist(conn: psycopg2.extensions.connection, produto) -> None:
@@ -9,13 +10,13 @@ def salve_hist(conn: psycopg2.extensions.connection, produto) -> None:
     date_now: str = now.strftime("%Y-%m-%d %H:%M:%S")
     try:
         query = """
-            INSERT INTO public.produtos_hist (nome, link, price, register_date)
+            INSERT INTO produtos_kabum.produtos_hist (nome, link, price, register_date)
             VALUES (%s, %s, %s, %s)
         """
         params = (
             produto["name"],
             produto["link"],
-            produto["price"],
+            real_to_float(produto["price"]),
             date_now,
         )
         with conn.cursor() as cursor:
@@ -32,12 +33,10 @@ def get_last_5prices(conn: psycopg2.extensions.connection, produto) -> str:
     try:
         query = """
             SELECT DISTINCT price,
-            CAST(REPLACE(REPLACE(REPLACE(TRIM(price), 'R$', ''), '.', ''), ',', '.') AS DECIMAL) AS numeric_price
-            FROM public.produtos_hist
+            FROM produtos_kabum.produtos_hist
             WHERE link = %s AND price NOT LIKE '%%x%%'
-            ORDER BY numeric_price
+            ORDER BY price ASC
             LIMIT 6;
-
         """
         params = (produto["link"],)
         with conn.cursor() as cursor:
@@ -48,7 +47,7 @@ def get_last_5prices(conn: psycopg2.extensions.connection, produto) -> str:
 
         if not result:
             return "sem histórico no momento..."
-        return ", ".join([x[0] for x in result])
+        return ", R$".join([x[0] for x in result])
     except OperationalError as e:
         print(f"SQL error = {e}")
         raise e

@@ -12,6 +12,7 @@ from config.db_config import get_db_connection
 from pprint import pprint
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
+from utils.sanitize import real_to_float
 
 
 NEXT_BUTTON_SELECTOR = "#listingPagination > ul > li.next > a"
@@ -24,7 +25,7 @@ def db_updates(produto, db_conn) -> None:
     if have_product_in_bd(db_conn, produto):
         atual_product = get_product(db_conn, produto)
         if atual_product is not None:
-            if atual_product["price"] != produto["price"]:
+            if float(atual_product["price"]) != real_to_float(produto["price"]):
                 update_price(db_conn, produto)
     else:
         insert_product(db_conn, produto)
@@ -39,7 +40,6 @@ def fetch_product_data(item) -> dict[str, str]:
     image_url = image_element.get_attribute("src")
 
     return {
-        "adm": "kabum",
         "name": descricao,
         "price": preco,
         "link": link,

@@ -46,7 +46,7 @@ async def mensagem_novo_valor_produto(old_produto, produto):
         f"📈 Valor antigo: *{old_price}*\n"
         f"📉 Valor novo: *{new_price}*\n\n"
         f"🔍 Mais informações: [Site Kabum]({produto_link})\n\n"
-        f"Últimos preços: {last_5prices}\n\n"
+        f"Últimos preços: R${last_5prices}\n\n"
         f"🔥 Aproveite as ofertas 🔥"
     )
 

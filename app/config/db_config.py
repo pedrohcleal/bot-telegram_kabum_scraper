@@ -8,7 +8,7 @@ HOST = os.getenv("host")
 PORT = os.getenv("port")
 USER = os.getenv("principaluser")
 PASSWORD = os.getenv("senha")
-DATABASE = "produtos"
+DATABASE = os.getenv("database")
 
 DATABASE_URL = f"postgresql://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}"
 
