@@ -5,6 +5,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from contextlib import contextmanager
 from selenium import webdriver
 
+
 @contextmanager
 def create_driver():
     chrome_options = Options()
@@ -24,5 +25,5 @@ def create_driver():
     try:
         yield driver
     finally:
-        print('fim do chromedriver')
+        print("fim do chromedriver")
         driver.quit()

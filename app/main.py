@@ -22,7 +22,8 @@ while True:
             item: dict[str, str] = urls[pont]
             url: str = item["URL"]
             table_selector: str = item["TABLE_SELECTOR"]
-            main_selenium(driver, url, table_selector)
+            categoria = item["categoria"]
+            main_selenium(driver, url, table_selector, categoria)
         except Exception as e:
             print("Ocorre um erro em main_selenium() (main), reiniciando Script")
             print(e)

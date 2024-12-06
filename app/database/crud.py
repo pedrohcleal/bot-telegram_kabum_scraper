@@ -14,14 +14,15 @@ def insert_product(conn: psycopg2.extensions.connection, produto):
     # asyncio.run(novo_produto(produto))
     try:
         query = """
-            INSERT INTO produtos_kabum.produtos (name, price, link, image)
-            VALUES (%s, %s, %s, %s)
+            INSERT INTO produtos_kabum.produtos (name, price, link, image, categoria)
+            VALUES (%s, %s, %s, %s, %s)
         """
         params = (
             produto["name"],
             real_to_float(produto["price"]),
             produto["link"],
             produto["url_image"],
+            produto["categoria"],
         )
 
         with conn.cursor() as cursor:
