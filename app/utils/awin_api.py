@@ -1,5 +1,6 @@
 from dotenv import load_dotenv
-import os, requests
+import os
+import requests
 from time import sleep
 
 load_dotenv()

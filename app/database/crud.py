@@ -1,8 +1,7 @@
-from datetime import datetime
 import psycopg2
 from psycopg2 import OperationalError
 from psycopg2.extras import RealDictCursor, RealDictRow
-from utils.telegram_api import mensagem_novo_valor_produto, novo_produto
+from utils.telegram_api import mensagem_novo_valor_produto
 import asyncio
 from utils.sanitize import real_to_float
 from database.crud_prices_hist import salve_hist
@@ -75,7 +74,9 @@ def update_price(conn: psycopg2.extensions.connection, produto):
     valor_antigo: float = float(old_produto["price"])
 
     if valor_atual - valor_antigo < -50:
-        asyncio.run(mensagem_novo_valor_produto(old_produto, produto))
+        asyncio.run(
+            mensagem_novo_valor_produto(old_produto=old_produto, produto=produto)
+        )
 
     try:
         query = """

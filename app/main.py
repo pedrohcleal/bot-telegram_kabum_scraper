@@ -1,8 +1,6 @@
-from selenium.webdriver.chrome.webdriver import WebDriver
 from services.kabum_scraper import main_selenium
 from config.chrome_config import create_driver
 import time
-from time import sleep
 from datetime import datetime
 import json
 

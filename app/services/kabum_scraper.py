@@ -9,7 +9,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 from config.db_config import get_db_connection
-from pprint import pprint
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
 from utils.sanitize import real_to_float

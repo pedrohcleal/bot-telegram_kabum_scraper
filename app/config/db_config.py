@@ -1,5 +1,5 @@
 import os
-from typing import Generator
+from collections.abc import Generator
 from contextlib import contextmanager
 import psycopg2
 from psycopg2 import OperationalError

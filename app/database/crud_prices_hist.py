@@ -33,13 +33,13 @@ def get_last_5prices(conn: psycopg2.extensions.connection, produto) -> str:
     print("Veficando últimos preços na aws")
     try:
         query = """
-            SELECT DISTINCT price,
+            SELECT DISTINCT price
             FROM produtos_kabum.produtos_hist
-            WHERE link = %s AND price NOT LIKE '%%x%%'
+            WHERE link = %s AND price != %s
             ORDER BY price ASC
             LIMIT 6;
         """
-        params = (produto["link"],)
+        params = (produto["link"], real_to_float(produto["price"]))
         with conn.cursor() as cursor:
             cursor.execute(query, params)
             result: list[tuple[str]] = cursor.fetchall()
@@ -48,7 +48,7 @@ def get_last_5prices(conn: psycopg2.extensions.connection, produto) -> str:
 
         if not result:
             return "sem histórico no momento..."
-        return ", R$".join([x[0] for x in result])
+        return ", R$".join([str(x[0]) for x in result])
     except OperationalError as e:
         print(f"SQL error = {e}")
         raise e

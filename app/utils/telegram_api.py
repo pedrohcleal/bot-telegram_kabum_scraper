@@ -9,6 +9,7 @@ from database.crud_prices_hist import get_last_5prices
 from config.db_config import get_db_connection
 from telegram.error import RetryAfter
 
+
 load_dotenv()
 
 TOKEN = os.getenv("TELEGRAM_TOKEN")
@@ -30,10 +31,10 @@ async def enviar_mensagem(texto):
 
 async def mensagem_novo_valor_produto(old_produto, produto):
     sleep(3)
-    print("enviando mensagem pro telegram - Atualização de produto")
+    print("enviando mensagem pro telegram - Dif Valor > 50")
 
     old_name: str = escape_markdown_v2(old_produto["name"])
-    old_price: str = escape_markdown_v2(old_produto["price"])
+    old_price: str = escape_markdown_v2(str(old_produto["price"]))
     new_price: str = escape_markdown_v2(produto["price"])
     produto_link: str = escape_markdown_v2(create_affiliate_link(produto["link"]))
 
@@ -41,12 +42,11 @@ async def mensagem_novo_valor_produto(old_produto, produto):
         last_5prices: str = escape_markdown_v2(get_last_5prices(conn, produto))
 
     text: str = (
-        f"🚀 **Black Friday** 🚀\n\n"
-        f'🔄 O valor do item *"{old_name}"* foi atualizado\n\n'
-        f"📈 Valor antigo: *{old_price}*\n"
+        f"🔄 O valor do item *{old_name}* foi atualizado\n\n"
+        f"📈 Valor antigo: R$*{old_price}*\n"
         f"📉 Valor novo: *{new_price}*\n\n"
         f"🔍 Mais informações: [Site Kabum]({produto_link})\n\n"
-        f"Últimos preços: R${last_5prices}\n\n"
+        f"Preços mais baixos: R${last_5prices}\n\n"
         f"🔥 Aproveite as ofertas 🔥"
     )
 

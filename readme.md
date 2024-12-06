@@ -17,7 +17,6 @@ Este projeto realiza o scraping de produtos de diversas categorias do site Kabum
 - **Execução Contínua**: O bot é projetado para funcionar continuamente, garantindo que as atualizações ocorram sem interrupções.
 - **Geração de Link de Afiliado**: Cria links curtos de afiliado usando a API da Awin, integrados nas mensagens do Telegram.
 
-
 ## 📝 Configuração do Ambiente
 
 Altere o arquivo `.env.example` para `.env` com as seguintes variáveis:
@@ -37,19 +36,22 @@ senha=''
 ## 🔧 Como Executar
 
 1. Clone o repositório:
+
    ```bash
    git clone https://github.com/pedrohcleal/bot-telegram_kabum_scraper.git
    cd bot-telegram_kabum_scraper_bd
    ```
 
-2. Instale as dependências:
+1. Instale as dependências:
+
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Configure as variáveis de ambiente criando o arquivo `.env` com seus tokens e IDs.
+1. Configure as variáveis de ambiente criando o arquivo `.env` com seus tokens e IDs.
 
-4. Inicie o scraping e o bot:
+1. Inicie o scraping e o bot:
+
    ```bash
    cd app
    python app/main.py
@@ -69,7 +71,7 @@ A Awin limita o número de solicitações de API a 20 chamadas por minuto por us
 
 Exceder esses limites pode resultar em erros de "Too Many Requests" (429).
 
-##  Contribuições
+## Contribuições
 
 Se você gostou do projeto e deseja apoiar o desenvolvimento, sinta-se à vontade para fazer uma contribuição via PIX:
 
