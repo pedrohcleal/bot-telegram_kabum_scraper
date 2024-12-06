@@ -44,6 +44,7 @@ def fetch_product_data(item) -> dict[str, str]:
         "price": preco,
         "link": link,
         "url_image": image_url,
+        "categoria": categoria_atual,
     }
 
 
@@ -98,10 +99,14 @@ def handle_pagination(driver):
         return
 
 
-def main_selenium(driver, URL, table_selector):
+def main_selenium(driver, URL, table_selector, categoria):
     """Main function to initialize scraping process."""
     global TABLE_SELECTOR
     TABLE_SELECTOR = table_selector
+
+    global categoria_atual
+    categoria_atual = categoria
+
     print(f"Iniciando Scraping, URL = {URL}")
     driver.get(URL)
 
