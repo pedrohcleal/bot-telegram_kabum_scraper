@@ -11,7 +11,7 @@ def salve_hist(conn: psycopg2.extensions.connection, produto) -> None:
     try:
         query = """
             INSERT INTO produtos_kabum.produtos_hist (nome, link, price, register_date, categoria, produto_id)
-            VALUES (%s, %s, %s, %s, %s, %s, %s)
+            VALUES (%s, %s, %s, %s, %s, %s)
         """
         produto_id = int(produto["link"].split('/')[4])
         
