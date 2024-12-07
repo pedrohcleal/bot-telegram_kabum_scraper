@@ -10,15 +10,18 @@ def salve_hist(conn: psycopg2.extensions.connection, produto) -> None:
     date_now: str = now.strftime("%Y-%m-%d %H:%M:%S")
     try:
         query = """
-            INSERT INTO produtos_kabum.produtos_hist (nome, link, price, register_date, categoria)
-            VALUES (%s, %s, %s, %s, %s)
+            INSERT INTO produtos_kabum.produtos_hist (nome, link, price, register_date, categoria, produto_id)
+            VALUES (%s, %s, %s, %s, %s, %s, %s)
         """
+        produto_id = int(produto["link"].split('/')[4])
+        
         params = (
             produto["name"],
             produto["link"],
             real_to_float(produto["price"]),
             date_now,
             produto["categoria"],
+            produto_id
         )
         with conn.cursor() as cursor:
             cursor.execute(query, params)
