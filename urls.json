@@ -1,7 +1,7 @@
 [
     {
         "URL" : "https://www.kabum.com.br/hardware?page_number=1&page_size=100&facet_filters=&sort=most_searched",
-        "TABLE_SELECTOR" : "#listing > div.sc-ikPAEB.sc-1edb36ab-1.jcryDv.cdfLWB > div > div > div.sc-biBsmb.kcFaol > div > main > *",
+        "TABLE_SELECTOR" : "#listing > div.sc-fubCzh.sc-1edb36ab-1.iKEDOD.cdfLWB > div > div > div.sc-jrAFXE.jxFgWu > div > main > *",
         "categoria": "hardware"
     },
     {

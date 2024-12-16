@@ -59,9 +59,12 @@ def process_products(driver) -> None:
     print("verificando tabela de produtos no site")
     start_t = datetime.now()
 
-    WebDriverWait(driver, 15, poll_frequency=0.1).until(
-        EC.presence_of_element_located((By.CSS_SELECTOR, TABLE_SELECTOR))
-    )
+    try:
+        WebDriverWait(driver, 15, poll_frequency=0.1).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, TABLE_SELECTOR))
+        )
+    except TimeoutException:
+        print(f'LINK = {categoria_atual} ESTÁ COM SELETOR ERRADO, VERIFICAR!')
     table = driver.find_elements(By.CSS_SELECTOR, TABLE_SELECTOR)
 
     print("Iterando página")

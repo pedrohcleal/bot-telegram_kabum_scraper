@@ -7,12 +7,14 @@ import json
 init = 0
 pont = init
 max = 5
+start: float = time.perf_counter()
+print(datetime.now())
 
 while True:
     print("-----> NOVA ITERAÇÃO WHILE <--------")
 
-    current_time: str = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-    start: float = time.perf_counter()
+    
+    
     urls: list[dict[str, str]] = json.loads(open("urls.json").read())
 
     with create_driver() as driver:
@@ -28,10 +30,11 @@ while True:
 
     pont += 1
     if pont > max:
+        end: float = time.perf_counter()
+        exec_time: float = end - start
+
+        print(f"Tempo de execução às -> {exec_time:.6f} segundos <-\n")
+        start: float = time.perf_counter()
         pont = init
-
-    end: float = time.perf_counter()
-    exec_time: float = end - start
-
-    print(f"Tempo de execução às {current_time} -> {exec_time:.6f} segundos <-\n")
+    
     print("-----> FIM DA ITERAÇÃO WHILE <--------\n\n")
