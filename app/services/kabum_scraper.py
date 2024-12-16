@@ -65,6 +65,7 @@ def process_products(driver) -> None:
         )
     except TimeoutException:
         print(f'LINK = {categoria_atual} ESTÁ COM SELETOR ERRADO, VERIFICAR!')
+        exit()
     table = driver.find_elements(By.CSS_SELECTOR, TABLE_SELECTOR)
 
     print("Iterando página")
