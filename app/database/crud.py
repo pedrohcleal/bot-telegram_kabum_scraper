@@ -27,21 +27,21 @@ def insert_product(conn: sqlite3.Connection, produto):
 
         return True
     except Error as e:
-        print(f"SQL error = {e}")
+        print(f"SQL error = {e}, product = {produto}")
         raise e
 
 def have_product_in_bd(conn: sqlite3.Connection, produto):
     try:
         query = """
             SELECT * FROM produtos
-            WHERE name = ? AND link = ?
+            WHERE id = ?
         """
-        params = (produto["name"], produto["link"])
+        params = (produto["id"], )
         cursor = conn.execute(query, params)
         result = cursor.fetchone()
         return result is not None
     except Error as e:
-        print(f"SQL error = {e}")
+        print(f"SQL error = {e} , produto: {produto}")
         raise e
 
 def get_product(conn: sqlite3.Connection, produto):
@@ -72,15 +72,18 @@ def update_price(conn: sqlite3.Connection, produto):
 
     try:
         query = """
-            UPDATE produtos SET price = ?
-            WHERE name = ? AND link = ?
+            UPDATE produtos SET name = ?, price = ?, link = ?, image = ?, categoria = ?
+            WHERE id = ?
         """
         params = (
-            produto["price"],
             produto["name"],
+            produto["price"],
             produto["link"],
+            produto["url_image"],
+            produto["categoria"],
+            produto['id']
         )
-        with conn:  # Autocommit enabled
+        with conn:
             cursor = conn.execute(query, params)
             if cursor.rowcount > 0:
                 return True

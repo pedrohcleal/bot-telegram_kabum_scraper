@@ -8,8 +8,6 @@ import requests
 
 
 def update_product_in_db(product, db_conn) -> None:
-    if not db_conn:
-        raise Exception("Database connection failed.")
     if have_product_in_bd(db_conn, product):
         existing_product = get_product(db_conn, product)
         if existing_product and existing_product["price"] != product["price"]:
@@ -23,7 +21,7 @@ def parse_product_data(response_json_data, category) -> list[dict]:
         {
             "id": x["id"],
             "name": x["attributes"]["title"],
-            "price_without_disctoun": x["attributes"]["price"],
+            "price_without_discount": x["attributes"]["price"],
             "price": x["attributes"]["price_with_discount"],
             "quantity_available": x["attributes"]
             .get("offer", {})
