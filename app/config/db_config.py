@@ -3,7 +3,7 @@ from collections.abc import Generator
 from contextlib import contextmanager
 import sqlite3
 
-DATABASE_PATH = os.getenv("database_path")
+DATABASE_PATH = os.getenv("database_path", 'KabumDatabase.db')
 
 @contextmanager
 def get_db_connection() -> Generator[sqlite3.Connection, None, None]:
