@@ -71,6 +71,32 @@ A Awin limita o número de solicitações de API a 20 chamadas por minuto por us
 
 Exceder esses limites pode resultar em erros de "Too Many Requests" (429).
 
+## Modelagem SQLITE:
+
+-- Tabela principal para armazenar os produtos
+CREATE TABLE IF NOT EXISTS produtos (
+    id INTEGER PRIMARY KEY NOT NULL, -- ID único para cada produto
+    name TEXT NOT NULL,                   -- Nome do produto
+    price REAL NOT NULL,                  -- Preço atual do produto
+    link TEXT UNIQUE NOT NULL,            -- Link único do produto
+    image TEXT,                           -- URL da imagem do produto
+    categoria TEXT                      -- Categoria do produto
+);
+
+-- Tabela para armazenar o histórico de preços dos produtos
+CREATE TABLE IF NOT EXISTS produtos_hist (
+    id INTEGER KEY NOT NULL,      -- ID único para cada registro
+    nome TEXT NOT NULL,                   -- Nome do produto
+    link TEXT NOT NULL,                   -- Link do produto
+    price REAL NOT NULL,                  -- Preço registrado no histórico
+    register_date TEXT NOT NULL,          -- Data e hora do registro
+    categoria TEXT                       -- Categoria do produto
+);
+
+
+DROP  Table produtos_hist ;
+DROP  Table produtos ;
+
 ## Contribuições
 
 Se você gostou do projeto e deseja apoiar o desenvolvimento, sinta-se à vontade para fazer uma contribuição via PIX:

@@ -1,57 +1,52 @@
-import psycopg2
-from psycopg2 import OperationalError
+import sqlite3
+from sqlite3 import Error
 from datetime import datetime
-from utils.sanitize import real_to_float
 
-
-def salve_hist(conn: psycopg2.extensions.connection, produto) -> None:
+def salve_hist(conn: sqlite3.Connection, produto) -> None:
     print("salvando_historico")
     now: datetime = datetime.now()
     date_now: str = now.strftime("%Y-%m-%d %H:%M:%S")
     try:
         query = """
-            INSERT INTO produtos_kabum.produtos_hist (nome, link, price, register_date, categoria, produto_id)
-            VALUES (%s, %s, %s, %s, %s, %s)
+            INSERT INTO produtos_hist (id, nome, link, price, register_date, categoria)
+            VALUES (?, ?, ?, ?, ?, ?)
         """
-        produto_id = int(produto["link"].split('/')[4])
-        
+
         params = (
+            produto['id'],
             produto["name"],
             produto["link"],
-            real_to_float(produto["price"]),
+            produto["price"],
             date_now,
             produto["categoria"],
-            produto_id
-        )
-        with conn.cursor() as cursor:
-            cursor.execute(query, params)
-            conn.commit()
 
-    except OperationalError as e:
+        )
+        with conn:  # Autocommit enabled
+            conn.execute(query, params)
+
+    except Error as e:
         print(f"SQL error = {e}")
         raise e
 
-
-def get_last_5prices(conn: psycopg2.extensions.connection, produto) -> str:
-    print("Veficando últimos preços na aws")
+def get_last_5prices(conn: sqlite3.Connection, produto) -> str:
+    print("Verificando últimos preços")
     try:
         query = """
             SELECT DISTINCT price
-            FROM produtos_kabum.produtos_hist
-            WHERE link = %s AND price != %s
+            FROM produtos_hist
+            WHERE link = ? AND price != ?
             ORDER BY price ASC
             LIMIT 6;
         """
-        params = (produto["link"], real_to_float(produto["price"]))
-        with conn.cursor() as cursor:
-            cursor.execute(query, params)
-            result: list[tuple[str]] = cursor.fetchall()
-            print(f"result = {result}")
-            print(f"type result = {type(result)}")
+        params = (produto["link"], produto["price"])
+        cursor = conn.execute(query, params)
+        result = cursor.fetchall()
+        print(f"result = {result}")
+        print(f"type result = {type(result)}")
 
         if not result:
             return "sem histórico no momento..."
         return ", R$".join([str(x[0]) for x in result])
-    except OperationalError as e:
+    except Error as e:
         print(f"SQL error = {e}")
         raise e

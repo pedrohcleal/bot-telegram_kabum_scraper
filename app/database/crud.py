@@ -1,79 +1,68 @@
-import psycopg2
-from psycopg2 import OperationalError
-from psycopg2.extras import RealDictCursor, RealDictRow
+import sqlite3
+from sqlite3 import Error
 from utils.telegram_api import mensagem_novo_valor_produto
 import asyncio
-from utils.sanitize import real_to_float
 from database.crud_prices_hist import salve_hist
 
-
-def insert_product(conn: psycopg2.extensions.connection, produto):
-    print(f"insert produto on aws -> {produto}")
+def insert_product(conn: sqlite3.Connection, produto):
+    print(f"insert produto -> {produto['link']}")
     salve_hist(conn, produto)
-    # asyncio.run(novo_produto(produto))
     try:
         query = """
-            INSERT INTO produtos_kabum.produtos (name, price, link, image, categoria, produto_id)
-            VALUES (%s, %s, %s, %s, %s, %s)
+            INSERT INTO produtos (id, name, price, link, image, categoria)
+            VALUES (?, ?, ?, ?, ?, ?)
         """
-        produto_id = int(produto["link"].split('/')[4])
-        
+
         params = (
+            produto['id'],
             produto["name"],
-            real_to_float(produto["price"]),
+            produto["price"],
             produto["link"],
             produto["url_image"],
             produto["categoria"],
-            produto_id
         )
 
-        with conn.cursor() as cursor:
-            cursor.execute(query, params)
-            conn.commit()
+        with conn:  # Autocommit enabled
+            conn.execute(query, params)
 
         return True
-    except OperationalError as e:
+    except Error as e:
         print(f"SQL error = {e}")
         raise e
 
-
-def have_product_in_bd(conn: psycopg2.extensions.connection, produto):
+def have_product_in_bd(conn: sqlite3.Connection, produto):
     try:
         query = """
-            SELECT * FROM produtos_kabum.produtos
-            WHERE name = %s AND link = %s
+            SELECT * FROM produtos
+            WHERE name = ? AND link = ?
         """
         params = (produto["name"], produto["link"])
-        with conn.cursor() as cursor:
-            cursor.execute(query, params)
-            result = cursor.fetchone()
+        cursor = conn.execute(query, params)
+        result = cursor.fetchone()
         return result is not None
-    except OperationalError as e:
+    except Error as e:
         print(f"SQL error = {e}")
         raise e
 
-
-def get_product(conn: psycopg2.extensions.connection, produto):
+def get_product(conn: sqlite3.Connection, produto):
     try:
         query = """
-            SELECT * FROM produtos_kabum.produtos
-            WHERE name = %s AND link = %s
+            SELECT * FROM produtos
+            WHERE name = ? AND link = ?
         """
         params = (produto["name"], produto["link"])
-        with conn.cursor(cursor_factory=RealDictCursor) as cursor:
-            cursor.execute(query, params)
-            result = cursor.fetchone()
+        cursor = conn.execute(query, params)
+        result = cursor.fetchone()
         return result
-    except OperationalError as e:
+    except Error as e:
         print(f"SQL error = {e}")
         raise e
 
-
-def update_price(conn: psycopg2.extensions.connection, produto):
-    print(f"update product on aws -> {produto}")
+def update_price(conn: sqlite3.Connection, produto):
+    print(f"update product -> {produto['link']}")
     salve_hist(conn, produto)
-    old_produto: RealDictRow = get_product(conn, produto)
-    valor_atual: float = real_to_float(produto["price"])
+    old_produto = get_product(conn, produto)
+    valor_atual: float = produto["price"]
     valor_antigo: float = float(old_produto["price"])
 
     if valor_atual - valor_antigo < -50:
@@ -83,42 +72,39 @@ def update_price(conn: psycopg2.extensions.connection, produto):
 
     try:
         query = """
-            UPDATE produtos_kabum.produtos SET price = %s
-            WHERE name = %s AND link = %s
+            UPDATE produtos SET price = ?
+            WHERE name = ? AND link = ?
         """
         params = (
-            real_to_float(produto["price"]),
+            produto["price"],
             produto["name"],
             produto["link"],
         )
-        with conn.cursor() as cursor:
-            cursor.execute(query, params)
+        with conn:  # Autocommit enabled
+            cursor = conn.execute(query, params)
             if cursor.rowcount > 0:
-                conn.commit()
                 return True
             raise ValueError("Qtd de linhas afetadas = 0, verificar...")
 
-    except OperationalError as e:
+    except Error as e:
         print(f"SQL error = {e}")
         raise e
 
-
-def deletar(conn: psycopg2.extensions.connection, produto):
-    print(f"--->  Deletando linha do produto -> {produto} <---")
+def deletar(conn: sqlite3.Connection, produto):
+    print(f"--->  Deletando linha do produto -> {produto['link']} <---")
     try:
         query = """
-            DELETE FROM produtos_kabum.produtos WHERE link = %s
+            DELETE FROM produtos WHERE link = ?
         """
         params = (produto["link"],)
-        with conn.cursor() as cursor:
-            cursor.execute(query, params)
+        with conn:  # Autocommit enabled
+            cursor = conn.execute(query, params)
 
             if cursor.rowcount > 0:
-                conn.commit()
                 print("item deletado")
                 return True
             raise ValueError("Qtd de linhas afetadas = 0, verificar...")
 
-    except OperationalError as e:
+    except Error as e:
         print(f"SQL error = {e}")
         raise e

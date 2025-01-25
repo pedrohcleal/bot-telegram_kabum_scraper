@@ -1,5 +1,4 @@
 import os
-from dotenv import load_dotenv
 from telegram import Bot
 from telegram.ext import Application
 from utils.sanitize import escape_markdown_v2
@@ -9,8 +8,6 @@ from database.crud_prices_hist import get_last_5prices
 from config.db_config import get_db_connection
 from telegram.error import RetryAfter
 
-
-load_dotenv()
 
 TOKEN = os.getenv("TELEGRAM_TOKEN")
 GROUP_ID = os.getenv("ID_GROUP")
@@ -33,9 +30,9 @@ async def mensagem_novo_valor_produto(old_produto, produto):
     sleep(3)
     print("enviando mensagem pro telegram - Dif Valor > 50")
 
-    old_name: str = escape_markdown_v2(old_produto["name"])
+    old_name: str = escape_markdown_v2(str(old_produto["name"]))
     old_price: str = escape_markdown_v2(str(old_produto["price"]))
-    new_price: str = escape_markdown_v2(produto["price"])
+    new_price: str = escape_markdown_v2(str(produto["price"]))
     produto_link: str = escape_markdown_v2(create_affiliate_link(produto["link"]))
 
     with get_db_connection() as conn:
@@ -44,47 +41,10 @@ async def mensagem_novo_valor_produto(old_produto, produto):
     text: str = (
         f"🔄 O valor do item *{old_name}* foi atualizado\n\n"
         f"📈 Valor antigo: R$*{old_price}*\n"
-        f"📉 Valor novo: *{new_price}*\n\n"
+        f"📉 Valor novo: R$*{new_price}*\n\n"
         f"🔍 Mais informações: [Site Kabum]({produto_link})\n\n"
         f"Preços mais baixos: R${last_5prices}\n\n"
         f"🔥 Aproveite as ofertas 🔥"
-    )
-
-    bot = Bot(token=TOKEN)
-    success = False
-    while not success:
-        try:
-            await bot.send_photo(
-                chat_id=GROUP_ID,
-                caption=text,
-                parse_mode="MarkdownV2",
-                photo=produto["url_image"],
-            )
-            success = True
-        except RetryAfter as e:
-            wait_time = int(e.retry_after)
-            print(f"Limite de envio excedido. Aguardando {wait_time} segundos.")
-            sleep(wait_time)
-
-
-async def novo_produto(produto):
-    print("enviando mensagem pro telegram - Novo produto")
-    sleep(2)
-
-    name: str = escape_markdown_v2(produto["name"])
-    price: str = escape_markdown_v2(produto["price"])
-    link: str = escape_markdown_v2(create_affiliate_link(produto["link"]))
-
-    with get_db_connection() as conn:
-        last_5prices = escape_markdown_v2(get_last_5prices(conn, produto))
-
-    text = (
-        f"✨ **Novo Produto em Destaque** ✨\n\n"
-        f'🆕 *Produto Adicionado:* *"{name}"*\n\n'
-        f"💰 *Preço:* *{price}*\n\n"
-        f"🔗 *Mais detalhes:* [Site Kabum]({link})\n\n"
-        f"Últimos preços: {last_5prices}\n\n"
-        f"🚀 Não perca essa novidade 🚀"
     )
 
     bot = Bot(token=TOKEN)
