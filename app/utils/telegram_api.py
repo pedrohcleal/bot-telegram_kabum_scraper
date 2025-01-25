@@ -7,6 +7,9 @@ from utils.awin_api import create_affiliate_link
 from database.crud_prices_hist import get_last_5prices
 from config.db_config import get_db_connection
 from telegram.error import RetryAfter
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 TOKEN = os.getenv("TELEGRAM_TOKEN")

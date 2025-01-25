@@ -21,6 +21,7 @@ var/
 .installed.cfg
 *.egg
 venv/
+pytests*
 
 # Installer logs
 pip-log.txt

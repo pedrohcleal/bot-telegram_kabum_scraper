@@ -1,6 +1,10 @@
 import os
 import requests
 from time import sleep
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 advertiser_id = os.getenv("advertiser_id")
 access_token = os.getenv("access_token")

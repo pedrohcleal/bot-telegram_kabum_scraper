@@ -1,8 +1,6 @@
 from services.kabum_scraper import main_scraping_process
 import time
-from dotenv import load_dotenv
 
-load_dotenv()
 
 while True:
     print("-----> NOVA ITERAÇÃO WHILE <--------")
