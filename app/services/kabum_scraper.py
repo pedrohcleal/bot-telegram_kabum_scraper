@@ -6,6 +6,11 @@ from concurrent.futures import ThreadPoolExecutor
 from utils.sanitize import normalize_title_to_link
 import requests
 
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
+    "Accept-Language": "pt-BR,pt;q=0.9",
+    "X-Origin": "Brasil"
+}
 
 def update_product_in_db(product, db_conn) -> None:
     if have_product_in_bd(db_conn, product):
@@ -42,7 +47,7 @@ def parse_product_data(response_json_data, category) -> list[dict]:
 def fetch_products_from_api(page, category) -> list[dict]:
     url = f"https://servicespub.prod.api.aws.grupokabum.com.br/catalog/v2/products-by-category/{category}?page_number={page}&page_size=100&facet_filters=&sort=most_searched&is_prime=false&payload_data=products_category_filters&include=gift"
     try:
-        response = requests.get(url)
+        response = requests.get(url, headers=HEADERS)
         response.raise_for_status()
     except requests.exceptions.HTTPError as err:
         print(f"Request error: URL {url}, status_code: {response.status_code}")
@@ -53,7 +58,7 @@ def fetch_products_from_api(page, category) -> list[dict]:
 
 def fetch_all_products(category) -> list[dict]:
     url = f"https://servicespub.prod.api.aws.grupokabum.com.br/catalog/v2/products-by-category/{category}?page_number=1&page_size=100&facet_filters=&sort=most_searched&is_prime=false&payload_data=products_category_filters&include=gift"
-    response = requests.get(url)
+    response = requests.get(url, headers=HEADERS)
     total_pages = response.json()["meta"]["total_pages_count"]
     all_products = []
 
