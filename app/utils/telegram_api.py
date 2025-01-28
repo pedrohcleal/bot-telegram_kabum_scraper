@@ -16,17 +16,19 @@ TOKEN = os.getenv("TELEGRAM_TOKEN")
 GROUP_ID = os.getenv("ID_GROUP")
 
 
-async def enviar_mensagem(texto):
+async def enviar_mensagem_admins(texto):
     bot = Bot(token=TOKEN)
     success = False
-    while not success:
-        try:
-            await bot.send_message(chat_id=GROUP_ID, text=texto)
-            success = True
-        except RetryAfter as e:
-            wait_time = int(e.retry_after)
-            print(f"Limite de envio excedido. Aguardando {wait_time} segundos.")
-            sleep(wait_time)
+    ids = [5442998287, 7259003092]
+    for id in ids:
+        while not success:
+            try:
+                await bot.send_message(chat_id=id, text=texto)
+                success = True
+            except RetryAfter as e:
+                wait_time = int(e.retry_after)
+                print(f"Limite de envio excedido. Aguardando {wait_time} segundos.")
+                sleep(wait_time)
 
 
 async def mensagem_novo_valor_produto(old_produto, produto):
@@ -71,7 +73,7 @@ async def test_envio_mensagem_grupo():
     app = Application.builder().token(TOKEN).build()
     async with app:
         mensage = "TESTE ENVIO DE MENSAGEM OK"
-        await enviar_mensagem(mensage)
+        await enviar_mensagem_admins(mensage)
 
 
 if __name__ == "__main__":

@@ -4,6 +4,8 @@ from config.db_config import get_db_connection
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
 from utils.sanitize import normalize_title_to_link
+from utils.telegram_api import enviar_mensagem_admins
+import asyncio
 import requests
 
 HEADERS = {
@@ -34,8 +36,8 @@ def parse_product_data(response_json_data, category) -> list[dict]:
             if x["attributes"].get("offer") else 0,
             "score_of_ratings": x["attributes"]["score_of_ratings"],
             "number_of_ratings": x["attributes"]["number_of_ratings"],
-            "photos_list": str(x["attributes"]["photos"]["g"]),
-            "url_image": str(x["attributes"]["photos"]["g"][0]),
+            "photos_list": x["attributes"]["photos"],#[G][0]
+            "url_image": str(x["attributes"]["photos"]["p"][0]),
             "warranty": x["attributes"]["warranty"],
             'categoria': category,
             'link': f'https://www.kabum.com.br/produto/{x["id"]}/{normalize_title_to_link(x["attributes"]["title"])}',
@@ -45,6 +47,7 @@ def parse_product_data(response_json_data, category) -> list[dict]:
 
 
 def fetch_products_from_api(page: int, category: str) -> list[dict]:
+    print('acessando pag ', page)
     url = f"https://servicespub.prod.api.aws.grupokabum.com.br/catalog/v2/products-by-category/{category}?page_number={page}&page_size=100&facet_filters=&sort=most_searched&is_prime=false&payload_data=products_category_filters&include=gift"
     try:
         response = requests.get(url, headers=HEADERS)
@@ -64,15 +67,15 @@ def fetch_all_products(category) -> list[dict]:
 
     print(f'Total pages: {total_pages}')
     start_time = datetime.now()
-    # with ThreadPoolExecutor(max_workers=5) as executor:
-    #     futures = [
-    #         executor.submit(fetch_products_from_api, page, category) for page in range(1, total_pages + 1)
-    #     ]
-    #     for future in futures:
-    #         all_products.extend(future.result())
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        futures = [
+            executor.submit(fetch_products_from_api, page, category) for page in range(1, total_pages + 1)
+        ]
+        for future in futures:
+            all_products.extend(future.result())
     
-    for page in range(1, total_pages + 1):
-        all_products.extend(fetch_products_from_api(page, category))
+    # for page in range(1, total_pages + 1):
+    #     all_products.extend(fetch_products_from_api(page, category))
 
     print(f"Total time for requests -> {datetime.now() - start_time}")
     return all_products
@@ -91,6 +94,8 @@ def process_and_update_products(products) -> None:
 
 def main_scraping_process(category):
     print(f'processing {category}')
+    
     products = fetch_all_products(category)
     process_and_update_products(products)
+    
     print('--------/----------')
