@@ -37,7 +37,7 @@ def parse_product_data(response_json_data, category) -> list[dict]:
             "score_of_ratings": x["attributes"]["score_of_ratings"],
             "number_of_ratings": x["attributes"]["number_of_ratings"],
             "photos_list": x["attributes"]["photos"],#[G][0]
-            "url_image": str(x["attributes"]["photos"]["m"][0]),
+            "url_image": str(x["attributes"]["photos"]["gg"][0]),
             "warranty": x["attributes"]["warranty"],
             'categoria': category,
             'link': f'https://www.kabum.com.br/produto/{x["id"]}/{normalize_title_to_link(x["attributes"]["title"])}',
