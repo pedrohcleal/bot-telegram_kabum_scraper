@@ -26,5 +26,6 @@ while True:
         
     except Exception as err:
         asyncio.run(enviar_mensagem_admins(f'erro no bot: {err}'))
+        raise err
     finally:
         asyncio.run(enviar_mensagem_admins('Atividades do bot no grupo encerradas'))
