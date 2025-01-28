@@ -67,15 +67,15 @@ def fetch_all_products(category) -> list[dict]:
 
     print(f'Total pages: {total_pages}')
     start_time = datetime.now()
-    with ThreadPoolExecutor(max_workers=5) as executor:
-        futures = [
-            executor.submit(fetch_products_from_api, page, category) for page in range(1, total_pages + 1)
-        ]
-        for future in futures:
-            all_products.extend(future.result())
+    # with ThreadPoolExecutor(max_workers=5) as executor:
+    #     futures = [
+    #         executor.submit(fetch_products_from_api, page, category) for page in range(1, total_pages + 1)
+    #     ]
+    #     for future in futures:
+    #         all_products.extend(future.result())
     
-    # for page in range(1, total_pages + 1):
-    #     all_products.extend(fetch_products_from_api(page, category))
+    for page in range(1, total_pages + 1):
+        all_products.extend(fetch_products_from_api(page, category))
 
     print(f"Total time for requests -> {datetime.now() - start_time}")
     return all_products
