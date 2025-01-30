@@ -57,20 +57,37 @@ def get_product(conn: sqlite3.Connection, produto):
     except Error as e:
         print(f"SQL error = {e}")
         raise e
+    
+def get_product_from_hist(conn: sqlite3.Connection, produto):
+    try:
+        query = """
+           SELECT * FROM produtos_hist
+            WHERE id = ?
+            ORDER BY register_date ASC
+        """
+        params = (produto["id"], )
+        cursor = conn.execute(query, params)
+        result = cursor.fetchone()
+        print(f'old_produto_from_hist = {result}')
+        return result
+    except Error as e:
+        print(f"SQL error = {e}")
+        raise e
 
 def update_price(conn: sqlite3.Connection, produto):
     print(f"update product -> {produto['link']}")
     salve_hist(conn, produto)
-    old_produto = get_product(conn, produto)
-    valor_atual: float = produto["price"]
-    valor_antigo: float = float(old_produto["price"])
-
     
-    if valor_atual - valor_antigo < -50: #and produto['id'] != 581685:
+    old_produto = get_product(conn, produto)
+    
+    valor_atual: float = produto["price"]
+    valor_antigo: float = old_produto["price"]
+    
+    if valor_atual - valor_antigo < -100:
         asyncio.run(
             mensagem_novo_valor_produto(old_produto=old_produto, produto=produto)
         )
-
+    
     try:
         query = """
             UPDATE produtos SET name = ?, price = ?, link = ?, image = ?, categoria = ?

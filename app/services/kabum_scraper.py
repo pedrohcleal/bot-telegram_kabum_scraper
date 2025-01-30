@@ -4,8 +4,6 @@ from config.db_config import get_db_connection
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
 from utils.sanitize import normalize_title_to_link
-from utils.telegram_api import enviar_mensagem_admins
-import asyncio
 import requests
 
 HEADERS = {

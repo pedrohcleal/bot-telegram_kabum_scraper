@@ -4,8 +4,9 @@ from utils.telegram_api import enviar_mensagem_admins
 import time
 
 asyncio.run(enviar_mensagem_admins('Atividades do BOT no grupo Iniciadas'))
-while True:
-    try:
+
+try:
+    while True:
         print("-----> NOVA ITERAÇÃO WHILE <--------")
         
         categorias = ["hardware", "perifericos", "computadores", "gamer", "celular-smartphone", "tv"]
@@ -24,8 +25,8 @@ while True:
         print(f"Tempo gasto para percorrer todas as categorias: {minutes}m {seconds}s")
         print("-----> FIM DA ITERAÇÃO WHILE <--------\n")
         
-    except Exception as err:
-        asyncio.run(enviar_mensagem_admins(f'erro no bot: {err}'))
-        raise err
-    finally:
-        asyncio.run(enviar_mensagem_admins('Atividades do bot no grupo encerradas'))
+except Exception as err:
+    asyncio.run(enviar_mensagem_admins(f'erro no bot: {err} - Atividades encerradas'))
+    raise err
+finally:
+    asyncio.run(enviar_mensagem_admins('Atividades do bot no grupo encerradas'))
