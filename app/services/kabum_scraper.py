@@ -74,7 +74,7 @@ def fetch_all_products(category) -> list[dict]:
     #     for future in futures:
     #         all_products.extend(future.result())
     
-    for page in range(1, 3):
+    for page in range(1, total_pages+1):
         all_products.extend(fetch_products_from_api(page, category))
 
     print(f"Total time for requests -> {datetime.now() - start_time}")
