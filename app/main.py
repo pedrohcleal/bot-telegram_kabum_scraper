@@ -26,7 +26,7 @@ try:
         print("-----> FIM DA ITERAÇÃO WHILE <--------\n")
         
 except Exception as err:
-    asyncio.run(enviar_mensagem_admins(f'erro no bot: {err} - Atividades encerradas'))
+    asyncio.run(enviar_mensagem_admins(f'erro no bot: {err}, encerrando'))
     raise err
 finally:
     asyncio.run(enviar_mensagem_admins('Atividades do bot no grupo encerradas'))

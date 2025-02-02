@@ -84,6 +84,7 @@ def update_price(conn: sqlite3.Connection, produto):
     valor_antigo: float = old_produto["price"]
     
     if valor_atual - valor_antigo < -100:
+        print(f'ID do produto {produto['id']}')
         asyncio.run(
             mensagem_novo_valor_produto(old_produto=old_produto, produto=produto)
         )

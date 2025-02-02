@@ -53,6 +53,8 @@ def fetch_products_from_api(page: int, category: str) -> list[dict]:
     except requests.exceptions.HTTPError as err:
         print(f"Request error: URL {url}, status_code: {response.status_code}")
         raise err
+    
+    sleep(5)
 
     return parse_product_data(response.json()['data'], category)
 
@@ -72,7 +74,7 @@ def fetch_all_products(category) -> list[dict]:
     #     for future in futures:
     #         all_products.extend(future.result())
     
-    for page in range(1, total_pages + 1):
+    for page in range(1, 3):
         all_products.extend(fetch_products_from_api(page, category))
 
     print(f"Total time for requests -> {datetime.now() - start_time}")
